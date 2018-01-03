@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:ore_overworldcb",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "terra:ore_overworldci_bituminous",
+    "count": 9
+  }
+}

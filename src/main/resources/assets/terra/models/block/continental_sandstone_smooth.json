@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "terra:blocks/continental_sandstone_bottom",
+        "top": "terra:blocks/continental_sandstone_top",
+        "side": "terra:blocks/continental_sandstone_smooth"
+    }
+}

@@ -1,0 +1,10 @@
+   {
+    "variants": {
+        "normal": [
+            { "model": "terra:purple_sand" },
+            { "model": "terra:purple_sand", "y": 90 },
+            { "model": "terra:purple_sand", "y": 180 },
+            { "model": "terra:purple_sand", "y": 270 }
+        ]
+    }
+}

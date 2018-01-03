@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:ore_overworldcb",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "terra:ore_overworldci_anthracite",
+    "count": 9
+  }
+}

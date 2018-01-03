@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "terra:blocks/black_sandstone_bottom",
+        "top": "terra:blocks/black_sandstone_top",
+        "side": "terra:blocks/black_sandstone_carved"
+    }
+}

@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:orange_sandstone"
+    }
+  },
+  "result": {
+    "item": "terra:orange_sandstone_smooth",
+   "count": 4
+  }
+}

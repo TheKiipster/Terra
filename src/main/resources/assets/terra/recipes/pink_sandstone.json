@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:pink_sand"
+    }
+  },
+  "result": {
+    "item": "terra:pink_sandstone",
+   "count": 4
+  }
+}

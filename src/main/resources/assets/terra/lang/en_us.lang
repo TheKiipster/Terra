@@ -1,0 +1,65 @@
+itemGroup.terratab=Terra
+
+tile.black_sand.name=Black Sand
+tile.black_sandstone.name=Black Sandstone
+tile.black_sandstone_smooth.name=Black Smooth Sandstone
+tile.black_sandstone_carved.name=Black Carved Sandstone
+
+tile.continental_sand.name=Continental Sand
+tile.continental_sandstone.name=Continental Sandstone
+tile.continental_sandstone_smooth.name=Continental Smooth Sandstone
+tile.continental_sandstone_carved.name=Continental Carved Sandstone
+
+tile.iron_sand.name=Iron Sand
+tile.iron_sandstone.name=Iron Sandstone
+tile.iron_sandstone_smooth.name=Iron Smooth Sandstone
+tile.iron_sandstone_carved.name=Iron Carved Sandstone
+
+tile.olivine_sand.name=Olivine Sand
+tile.olivine_sandstone.name=Olivine Sandstone
+tile.olivine_sandstone_smooth.name=Olivine Smooth Sandstone
+tile.olivine_sandstone_carved.name=Olivine Carved Sandstone
+
+tile.orange_sand.name=Orange Sand
+tile.orange_sandstone.name=Orange Sandstone
+tile.orange_sandstone_smooth.name=Orange Smooth Sandstone
+tile.orange_sandstone_carved.name=Orange Carved Sandstone
+
+tile.pink_sand.name=Pink Sand
+tile.pink_sandstone.name=Pink Sandstone
+tile.pink_sandstone_smooth.name=Pink Smooth Sandstone
+tile.pink_sandstone_carved.name=Pink Carved Sandstone
+
+tile.purple_sand.name=Purple Sand
+tile.purple_sandstone.name=Purple Sandstone
+tile.purple_sandstone_smooth.name=Purple Smooth Sandstone
+tile.purple_sandstone_carved.name=Purple Carved Sandstone
+
+tile.white_sand.name=White Sand
+tile.white_sandstone.name=White Sandstone
+tile.white_sandstone_smooth.name=White Smooth Sandstone
+tile.white_sandstone_carved.name=White Carved Sandstone
+
+tile.ore_overworldi_hematite.name=Hematite Iron Ore
+tile.ore_overworldi_goethite.name=Goethite Iron Ore
+tile.ore_overworldi_magnetite.name=Magnetite Iron Ore
+tile.ore_overworldi_limonite.name=Limonite Iron Ore
+tile.ore_overworldi_siderite.name=Siderite Iron Ore
+tile.ore_overworldi_ankerite.name=Ankerite Iron Ore
+tile.ore_overworldi_taconite.name=Taconite Iron Ore
+tile.ore_overworldi_banded.name=Banded Iron Ore
+
+tile.ore_overworldc_anthracite.name=Anthracite Coal Ore
+tile.ore_overworldc_bituminous.name=Bituminous Coal Ore
+tile.ore_overworldc_lignite.name=Lignite Coal Ore
+tile.ore_overworldc_peat.name=Peat Coal Ore
+
+tile.ore_overworldcb_anthracite.name=Block of Anthracite Coal
+tile.ore_overworldcb_bituminous.name=Block of Bituminous Coal
+tile.ore_overworldcb_lignite.name=Block of Lignite Coal
+tile.ore_overworldcb_peat.name=Block of Peat Coal
+
+item.ore_overworldci_anthracite.name=Anthracite Coal
+item.ore_overworldci_bituminous.name=Bituminous Coal
+item.ore_overworldci_lignite.name=Lignite Coal
+item.ore_overworldci_peat.name=Peat Coal

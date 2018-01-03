@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+     "item": "terra:ore_overworldci_peat"
+    }
+  },
+  "result": {
+    "item": "terra:ore_overworldcb_peat",
+    "data": 3
+  }
+}

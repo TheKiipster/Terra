@@ -1,0 +1,10 @@
+   {
+    "variants": {
+        "normal": [
+            { "model": "terra:white_sand" },
+            { "model": "terra:white_sand", "y": 90 },
+            { "model": "terra:white_sand", "y": 180 },
+            { "model": "terra:white_sand", "y": 270 }
+        ]
+    }
+}

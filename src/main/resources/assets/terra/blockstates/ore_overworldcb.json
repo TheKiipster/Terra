@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "variant=anthracite": { "model": "terra:ore_overworldcb_anthracite" },
+        "variant=bituminous": { "model": "terra:ore_overworldcb_bituminous" },
+        "variant=lignite": { "model": "terra:ore_overworldcb_lignite" },
+        "variant=peat": { "model": "terra:ore_overworldcb_peat" }
+    }
+}
