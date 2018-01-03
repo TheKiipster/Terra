@@ -28,25 +28,20 @@ public  class FuelHandler implements IFuelHandler{
 		if (fuel.getItem() == ItemInit.PEAT_COAL) {
 			return 1600;
 		}
-		if (fuel.getMetadata() == ItemStack(BlockInit.ORE_OVERWORLDCB_ANTHRACITE, 1, 0)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
 			return 16000;
 		}
-		if (fuel.getMetadata() == ItemStack(BlockInit.ORE_OVERWORLDCB_BITUMINOUS, 1, 1)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
 			return 16000;
 		}
-		if (fuel.getMetadata() == ItemStack(BlockInit.ORE_OVERWORLDCB_LIGNITE, 1, 2)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
 			return 16000;
 		}
-		if (fuel.getMetadata() == ItemStack(BlockInit.ORE_OVERWORLDCB_PEAT, 1, 3)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
 			return 16000;
 		}
-		return -1;
+		return 0;
 	
 	}
-
-	private int ItemStack(Block oreOverworldCB, int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
 	}	
 	
-}

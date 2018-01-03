@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "terra:ore_overworldcb",
-      "data": 2
+      "item": "terra:ore_overworldcb_lignite"
     }
   ],
   "result": {

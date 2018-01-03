@@ -63,7 +63,7 @@ public class RegistryHandler
 	{
 		 File directory = e.getModConfigurationDirectory();
 	        config = new Configuration(new File(directory.getPath(), "terra.cfg"));
-	Config.readConfig();
+	        Config.readConfig();
 		GameRegistry.registerWorldGenerator(new WorldGenCoalOres(), 0);
 		GameRegistry.registerWorldGenerator(new WorldGenIronOres(), 0);
 		Shores.worldShore();

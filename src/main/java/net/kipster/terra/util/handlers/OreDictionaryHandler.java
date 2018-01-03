@@ -9,6 +9,14 @@ import net.minecraftforge.oredict.OreDictionary;
 public class OreDictionaryHandler {
 
 	public static void registerOreDictionary() {
+		OreDictionary.registerOre("sand", BlockInit.BLACK_SAND);
+		OreDictionary.registerOre("sand", BlockInit.CONTINENTAL_SAND);
+		OreDictionary.registerOre("sand", BlockInit.OLIVINE_SAND);
+		OreDictionary.registerOre("sand", BlockInit.IRON_SAND);
+		OreDictionary.registerOre("sand", BlockInit.ORANGE_SAND);
+		OreDictionary.registerOre("sand", BlockInit.PINK_SAND);
+		OreDictionary.registerOre("sand", BlockInit.PURPLE_SAND);
+		OreDictionary.registerOre("sand", BlockInit.WHITE_SAND);
 		OreDictionary.registerOre("sandstone", BlockInit.BLACK_SANDSTONE);
 		OreDictionary.registerOre("sandstone", BlockInit.BLACK_SANDSTONE_CARVED);
 		OreDictionary.registerOre("sandstone", BlockInit.BLACK_SANDSTONE_SMOOTH);
@@ -33,10 +41,10 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("sandstone", BlockInit.WHITE_SANDSTONE);
 		OreDictionary.registerOre("sandstone", BlockInit.WHITE_SANDSTONE_CARVED);
 		OreDictionary.registerOre("sandstone", BlockInit.WHITE_SANDSTONE_SMOOTH);
-		OreDictionary.registerOre("coalOre", BlockInit.ORE_OVERWORLD_ANTHRACITE);
-		OreDictionary.registerOre("coalOre", BlockInit.ORE_OVERWORLD_BITUMINOUS);
-		OreDictionary.registerOre("coalOre", BlockInit.ORE_OVERWORLD_LIGNITE);
-		OreDictionary.registerOre("coalOre", BlockInit.ORE_OVERWORLD_PEAT);
+		OreDictionary.registerOre("oreCoal", BlockInit.ORE_OVERWORLD_ANTHRACITE);
+		OreDictionary.registerOre("oreCoal", BlockInit.ORE_OVERWORLD_BITUMINOUS);
+		OreDictionary.registerOre("oreCoal", BlockInit.ORE_OVERWORLD_LIGNITE);
+		OreDictionary.registerOre("oreCoal", BlockInit.ORE_OVERWORLD_PEAT);
 		OreDictionary.registerOre("coal", ItemInit.ANTHRACITE_COAL);
 		OreDictionary.registerOre("coal", ItemInit.BITUMINOUS_COAL);
 		OreDictionary.registerOre("coal", ItemInit.LIGNITE_COAL);
@@ -47,18 +55,18 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("cobblestone", new ItemStack(Blocks.STONE, 1, 1));
 		OreDictionary.registerOre("cobblestone", new ItemStack(Blocks.STONE, 1, 3));
 		OreDictionary.registerOre("cobblestone", new ItemStack(Blocks.STONE, 1, 5));
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_ANKERITE);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_SIDERITE);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_HEMATITE);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_GOETHITE);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_BANDED);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_TACONITE);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_MAGNETITE);
-		OreDictionary.registerOre("ironOre", BlockInit.ORE_OVERWORLDI_LIMONITE);
-		OreDictionary.registerOre("coalBlock", BlockInit.ORE_OVERWORLDCB_ANTHRACITE);
-		OreDictionary.registerOre("coalBlock", BlockInit.ORE_OVERWORLDCB_BITUMINOUS);
-		OreDictionary.registerOre("coalBlock", BlockInit.ORE_OVERWORLDCB_LIGNITE);
-		OreDictionary.registerOre("coalBlock", BlockInit.ORE_OVERWORLDCB_PEAT);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_ANKERITE);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_SIDERITE);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_HEMATITE);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_GOETHITE);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_BANDED);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_TACONITE);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_MAGNETITE);
+		OreDictionary.registerOre("oreIron", BlockInit.ORE_OVERWORLDI_LIMONITE);
+		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_ANTHRACITE);
+		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_BITUMINOUS);
+		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_LIGNITE);
+		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_PEAT);
 		
 
 

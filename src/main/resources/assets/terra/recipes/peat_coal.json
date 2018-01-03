@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "terra:ore_overworldcb",
-      "data": 3
+      "item": "terra:ore_overworldcb_peat"
     }
   ],
   "result": {
