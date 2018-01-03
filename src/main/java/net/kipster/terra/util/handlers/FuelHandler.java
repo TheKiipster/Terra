@@ -31,13 +31,13 @@ public  class FuelHandler implements IFuelHandler{
 		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
 			return 16000;
 		}
-		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_BITUMINOUS)) {
 			return 16000;
 		}
-		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_LIGNITE)) {
 			return 16000;
 		}
-		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_ANTHRACITE)) {
+		if (fuel.getItem() == Item.getItemFromBlock(BlockInit.ORE_OVERWORLDCB_PEAT)) {
 			return 16000;
 		}
 		return 0;
