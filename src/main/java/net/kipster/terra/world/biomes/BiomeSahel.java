@@ -78,7 +78,7 @@ public class BiomeSahel extends Biome
             this.fillerBlock = Blocks.DIRT.getDefaultState();  } 
         else {
          this.topBlock = BlockInit.ORANGE_SAND.getDefaultState();
-            this.fillerBlock = BlockInit.ORANGE_SANDSTONE.getDefaultState();
+            this.fillerBlock = BlockInit.ORANGE_SAND.getDefaultState();
         }
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);

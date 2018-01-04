@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+       "type": "forge:ore_dict",
+        "ore": "stickWood"
+    },
+    "X": [
+      {
+         "type": "forge:ore_dict",
+        "ore": "coal"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:torch",
+    "count": 4
+  }
+}

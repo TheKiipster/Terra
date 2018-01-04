@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Level;
 public class Config {
 
     private static final String CATEGORY_BIOMES = "Biomes";
+    private static final String CATEGORY_ORES = "Ores";
 
  // Biomes
 	
@@ -49,12 +50,27 @@ public class Config {
  	 public static boolean disableGreenBeach = false;
  	 public static boolean disableOrangeBeach = false;
 
+ 	 //Ores
+ 	public static int anthracitePerChunk = 16;
+	public static int bituminousPerChunk = 16;
+	public static int lignitePerChunk = 16;
+	public static int peatPerChunk = 16;
+	public static int hematitePerChunk = 13;
+	public static int magnetitePerChunk = 13;
+	public static int limonitePerChunk = 13;
+	public static int goethitePerChunk = 13;
+	public static int ankeritePerChunk = 13;
+	public static int bandedPerChunk = 13;
+	public static int sideritePerChunk = 13;
+	public static int taconitePerChunk = 13;
+	
 
     public static void readConfig() {
         Configuration cfg = RegistryHandler.config;
         try {
             cfg.load();
             initGeneralConfig(cfg);
+            initOreConfig(cfg);
      
         } catch (Exception e1) {
           
@@ -103,5 +119,23 @@ public class Config {
 		disableLushForest = cfg.get(CATEGORY_BIOMES, "disableLushForest", disableLushForest).getBoolean();
 		disableRainforest = cfg.get(CATEGORY_BIOMES, "disableRainforest", disableRainforest).getBoolean();
 		disableWoodlands = cfg.get(CATEGORY_BIOMES, "disableWoodlands", disableWoodlands).getBoolean();
+    }
+    private static void initOreConfig(Configuration cfg) {
+        cfg.addCustomCategoryComment(CATEGORY_ORES, "Ore configuration");
+        anthracitePerChunk = cfg.getInt("anthracitePerChunk", CATEGORY_ORES, anthracitePerChunk, 0, 100, "Anthracite Per Chunk");
+        bituminousPerChunk = cfg.getInt("bituminousPerChunk", CATEGORY_ORES, bituminousPerChunk, 0, 100, "Bituminous Per Chunk");
+        lignitePerChunk = cfg.getInt("lignitePerChunk", CATEGORY_ORES, lignitePerChunk, 0, 100, "Lignite Per Chunk");
+        peatPerChunk = cfg.getInt("peatPerChunk", CATEGORY_ORES, peatPerChunk, 0, 100, "Peat Per Chunk");
+        hematitePerChunk = cfg.getInt("hematitePerChunk", CATEGORY_ORES, hematitePerChunk, 0, 100, "Hematite Per Chunk");
+        magnetitePerChunk = cfg.getInt("magnetitePerChunk", CATEGORY_ORES, magnetitePerChunk, 0, 100, "Magnetite Per Chunk");
+        limonitePerChunk = cfg.getInt("limonitePerChunk", CATEGORY_ORES, limonitePerChunk, 0, 100, "Limonite Per Chunk");
+        goethitePerChunk = cfg.getInt("goethitePerChunk", CATEGORY_ORES, goethitePerChunk, 0, 100, "Goethite Per Chunk");
+        ankeritePerChunk = cfg.getInt("ankeritePerChunk", CATEGORY_ORES, ankeritePerChunk, 0, 100, "Ankerite Per Chunk");
+        bandedPerChunk = cfg.getInt("bandedPerChunk", CATEGORY_ORES, bandedPerChunk, 0, 100, "Banded Per Chunk");
+        sideritePerChunk = cfg.getInt("sideritePerChunk", CATEGORY_ORES, sideritePerChunk, 0, 100, "Siderite Per Chunk");
+        taconitePerChunk = cfg.getInt("taconitePerChunk", CATEGORY_ORES, taconitePerChunk, 0, 100, "Taconite Per Chunk");
+       
+        
+        
     }
 }

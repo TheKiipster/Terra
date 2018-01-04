@@ -7,9 +7,7 @@ import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.init.ItemInit;
 import net.kipster.terra.util.interfaces.IHasModel;
-import net.kipster.terra.world.biomes.Shores;
-import net.kipster.terra.world.gen.WorldGenCoalOres;
-import net.kipster.terra.world.gen.WorldGenIronOres;
+import net.kipster.terra.world.gen.WorldGenOres;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.world.WorldType;
@@ -64,9 +62,7 @@ public class RegistryHandler
 		 File directory = e.getModConfigurationDirectory();
 	        config = new Configuration(new File(directory.getPath(), "terra.cfg"));
 	        Config.readConfig();
-		GameRegistry.registerWorldGenerator(new WorldGenCoalOres(), 0);
-		GameRegistry.registerWorldGenerator(new WorldGenIronOres(), 0);
-		Shores.worldShore();
+	        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 		BiomeInit.initSubBiomes();
 		BiomeInit.registerBiomes();
 

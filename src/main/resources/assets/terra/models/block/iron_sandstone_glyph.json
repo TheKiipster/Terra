@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "terra:blocks/iron_sandstone_glyph",
+        "top": "terra:blocks/iron_sandstone_glyph",
+        "side": "terra:blocks/iron_sandstone_glyph"
+    }
+}

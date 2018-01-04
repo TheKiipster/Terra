@@ -49,10 +49,6 @@ public class BiomeDunes extends BiomeBeach
 		
 		super(new BiomeProperties("Dunes").setBaseHeight(0.9F).setHeightVariation(0.4F).setTemperature(0.8F).setRainfall(0.4F));
 		
-		
-	topBlock = Blocks.SANDSTONE.getDefaultState();
-		fillerBlock = BlockInit.WHITE_SANDSTONE.getDefaultState();
-		
 		BiomeManager.addVillageBiome(BiomeInit.DUNES , true);
 		
 		this.decorator.extraTreeChance = 0.003F;
@@ -83,7 +79,7 @@ public class BiomeDunes extends BiomeBeach
     public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
         if (noiseVal > 1.5D) {
             this.topBlock = BlockInit.CONTINENTAL_SAND.getDefaultState();
-            this.fillerBlock = BlockInit.CONTINENTAL_SANDSTONE.getDefaultState();  } 
+            this.fillerBlock = BlockInit.CONTINENTAL_SAND.getDefaultState();  } 
         else {
          this.topBlock = Blocks.SANDSTONE.getDefaultState();
             this.fillerBlock = Blocks.SANDSTONE.getDefaultState();

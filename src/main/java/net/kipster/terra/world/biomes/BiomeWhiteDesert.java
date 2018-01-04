@@ -79,7 +79,7 @@ public class BiomeWhiteDesert extends Biome
             this.fillerBlock = Blocks.DIRT.getDefaultState();  } 
         else {
          this.topBlock = BlockInit.WHITE_SAND.getDefaultState();
-            this.fillerBlock = BlockInit.WHITE_SANDSTONE.getDefaultState();
+            this.fillerBlock = BlockInit.WHITE_SAND.getDefaultState();
         }
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);

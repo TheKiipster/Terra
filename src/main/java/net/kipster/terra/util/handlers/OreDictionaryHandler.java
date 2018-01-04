@@ -67,6 +67,22 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_BITUMINOUS);
 		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_LIGNITE);
 		OreDictionary.registerOre("blockCoal", BlockInit.ORE_OVERWORLDCB_PEAT);
+		OreDictionary.registerOre("sandstone", BlockInit.BLACK_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.BLACK_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.PINK_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.PINK_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.PURPLE_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.PURPLE_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.WHITE_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.WHITE_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.IRON_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.IRON_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.OLIVINE_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.OLIVINE_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.ORANGE_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.ORANGE_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("sandstone", BlockInit.CONTINENTAL_SANDSTONE_FACE);
+		OreDictionary.registerOre("sandstone", BlockInit.CONTINENTAL_SANDSTONE_GLYPH);
 		
 
 

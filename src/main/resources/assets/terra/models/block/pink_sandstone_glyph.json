@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "terra:blocks/pink_sandstone_glyph",
+        "top": "terra:blocks/pink_sandstone_glyph",
+        "side": "terra:blocks/pink_sandstone_glyph"
+    }
+}

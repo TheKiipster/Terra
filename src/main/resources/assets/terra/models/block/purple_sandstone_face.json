@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "terra:blocks/purple_sandstone_face",
+        "top": "terra:blocks/purple_sandstone_face",
+        "side": "terra:blocks/purple_sandstone_face"
+    }
+}

@@ -4,41 +4,57 @@ tile.black_sand.name=Black Sand
 tile.black_sandstone.name=Black Sandstone
 tile.black_sandstone_smooth.name=Black Smooth Sandstone
 tile.black_sandstone_carved.name=Black Carved Sandstone
+tile.black_sandstone_face.name=Black Face Sandstone
+tile.black_sandstone_glyph.name=Black Glyph Sandstone
 
 tile.continental_sand.name=Continental Sand
 tile.continental_sandstone.name=Continental Sandstone
 tile.continental_sandstone_smooth.name=Continental Smooth Sandstone
 tile.continental_sandstone_carved.name=Continental Carved Sandstone
+tile.continental_sandstone_face.name=Continental Face Sandstone
+tile.continental_sandstone_glyph.name=Continental Glyph Sandstone
 
 tile.iron_sand.name=Iron Sand
 tile.iron_sandstone.name=Iron Sandstone
 tile.iron_sandstone_smooth.name=Iron Smooth Sandstone
 tile.iron_sandstone_carved.name=Iron Carved Sandstone
+tile.iron_sandstone_face.name=Iron Face Sandstone
+tile.iron_sandstone_glyph.name=Iron Glyph Sandstone
 
 tile.olivine_sand.name=Olivine Sand
 tile.olivine_sandstone.name=Olivine Sandstone
 tile.olivine_sandstone_smooth.name=Olivine Smooth Sandstone
 tile.olivine_sandstone_carved.name=Olivine Carved Sandstone
+tile.olivine_sandstone_face.name=Olivine Face Sandstone
+tile.olivine_sandstone_glyph.name=Olivine Glyph Sandstone
 
 tile.orange_sand.name=Orange Sand
 tile.orange_sandstone.name=Orange Sandstone
 tile.orange_sandstone_smooth.name=Orange Smooth Sandstone
 tile.orange_sandstone_carved.name=Orange Carved Sandstone
+tile.orange_sandstone_face.name=Orange Face Sandstone
+tile.orange_sandstone_glyph.name=Orange Glyph Sandstone
 
 tile.pink_sand.name=Pink Sand
 tile.pink_sandstone.name=Pink Sandstone
 tile.pink_sandstone_smooth.name=Pink Smooth Sandstone
 tile.pink_sandstone_carved.name=Pink Carved Sandstone
+tile.pink_sandstone_face.name=Pink Face Sandstone
+tile.pink_sandstone_glyph.name=Pink Glyph Sandstone
 
 tile.purple_sand.name=Purple Sand
 tile.purple_sandstone.name=Purple Sandstone
 tile.purple_sandstone_smooth.name=Purple Smooth Sandstone
 tile.purple_sandstone_carved.name=Purple Carved Sandstone
+tile.purple_sandstone_face.name=Purple Face Sandstone
+tile.purple_sandstone_glyph.name=Purple Glyph Sandstone
 
 tile.white_sand.name=White Sand
 tile.white_sandstone.name=White Sandstone
 tile.white_sandstone_smooth.name=White Smooth Sandstone
 tile.white_sandstone_carved.name=White Carved Sandstone
+tile.white_sandstone_face.name=White Face Sandstone
+tile.white_sandstone_glyph.name=White Glyph Sandstone
 
 tile.ore_overworldi_hematite.name=Hematite Iron Ore
 tile.ore_overworldi_goethite.name=Goethite Iron Ore

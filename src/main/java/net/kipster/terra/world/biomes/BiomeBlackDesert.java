@@ -47,7 +47,7 @@ public class BiomeBlackDesert extends Biome
         this.decorator.grassPerChunk = 2;
         this.decorator.deadBushPerChunk = 20;
         this.decorator.reedsPerChunk = 2;
-        this.decorator.cactiPerChunk = 10;
+        this.decorator.cactiPerChunk = 1;
         
         this.spawnableCreatureList.clear();
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
@@ -74,7 +74,7 @@ public class BiomeBlackDesert extends Biome
             this.fillerBlock = Blocks.GRAVEL.getDefaultState();  } 
         else {
          this.topBlock = BlockInit.BLACK_SAND.getDefaultState();
-            this.fillerBlock = BlockInit.BLACK_SANDSTONE.getDefaultState();
+            this.fillerBlock = BlockInit.BLACK_SAND.getDefaultState();
         }
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
@@ -137,12 +137,12 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
         }
 @Override
 public int getModdedBiomeGrassColor(int original) {
-    return 0x9C986F;
+    return 0x52503F;
 }
 
 @Override
 public int getModdedBiomeFoliageColor(int original) {
-    return 0x9C986F;
+    return 0x52503F;
 }
 
 	}

@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:orange_sandstone_face"
+    }
+  },
+  "result": {
+    "item": "terra:orange_sandstone_glyph",
+    "count": 4
+  }
+}
