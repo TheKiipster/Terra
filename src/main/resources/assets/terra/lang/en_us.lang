@@ -79,3 +79,11 @@ item.ore_overworldci_anthracite.name=Anthracite Coal
 item.ore_overworldci_bituminous.name=Bituminous Coal
 item.ore_overworldci_lignite.name=Lignite Coal
 item.ore_overworldci_peat.name=Peat Coal
+
+tile.basalt_stone.name=Basalt
+tile.blackdiorite_stone.name=Black Diorite
+tile.imperialquartzite_stone.name=Imperial Quartzite
+tile.pinkquartzite_stone.name=Pink Quartzite
+tile.redquartzite_stone.name=Red Quartzite
+
+tile.grey_deadbush.name=Grey Deadbush

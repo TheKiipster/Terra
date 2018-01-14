@@ -12,7 +12,7 @@ public class ItemAnthraciteCoal extends Item implements IHasModel
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.TERRATAB);
+		setCreativeTab(Main.TERRATABGEOLOGY);
 		
 		ItemInit.ITEMS.add(this);
 	}

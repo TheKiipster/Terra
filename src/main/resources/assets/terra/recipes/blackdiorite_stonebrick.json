@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:blackdiorite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:blackdiorite_stonebrick",
+    "count": 4
+  }
+}

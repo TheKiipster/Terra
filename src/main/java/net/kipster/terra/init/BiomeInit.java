@@ -11,43 +11,8 @@ import com.google.common.collect.ImmutableSet;
 
 import net.kipster.terra.Config;
 import net.kipster.terra.Config;
-import net.kipster.terra.world.biomes.BiomeAlps;
-import net.kipster.terra.world.biomes.BiomeBlackBeach;
-import net.kipster.terra.world.biomes.BiomeBlackDesert;
-import net.kipster.terra.world.biomes.BiomeColdPlateau;
-import net.kipster.terra.world.biomes.BiomeDryPlateau;
-import net.kipster.terra.world.biomes.BiomeDunes;
-import net.kipster.terra.world.biomes.BiomeFens;
-import net.kipster.terra.world.biomes.BiomeFrozenLake;
-import net.kipster.terra.world.biomes.BiomeFrozenPlateau;
-import net.kipster.terra.world.biomes.BiomeGlacier;
-import net.kipster.terra.world.biomes.BiomeGrassland;
-import net.kipster.terra.world.biomes.BiomeGreenBeach;
-import net.kipster.terra.world.biomes.BiomeGreenExtremeHills;
-import net.kipster.terra.world.biomes.BiomeGreenHills;
-import net.kipster.terra.world.biomes.BiomeGreenPlateau;
-import net.kipster.terra.world.biomes.BiomeHighlands;
-import net.kipster.terra.world.biomes.BiomeLake;
-import net.kipster.terra.world.biomes.BiomeLushForest;
-import net.kipster.terra.world.biomes.BiomeMeadow;
-import net.kipster.terra.world.biomes.BiomeOrangeBeach;
-import net.kipster.terra.world.biomes.BiomePinelands;
-import net.kipster.terra.world.biomes.BiomePinkBeach;
-import net.kipster.terra.world.biomes.BiomePlateau;
-import net.kipster.terra.world.biomes.BiomePraire;
-import net.kipster.terra.world.biomes.BiomePurpleBeach;
-import net.kipster.terra.world.biomes.BiomeRainforest;
-import net.kipster.terra.world.biomes.BiomeRedBeach;
-import net.kipster.terra.world.biomes.BiomeRedPlateau;
-import net.kipster.terra.world.biomes.BiomeRockland;
-import net.kipster.terra.world.biomes.BiomeSahel;
-import net.kipster.terra.world.biomes.BiomeShrubland;
-import net.kipster.terra.world.biomes.BiomeSteppe;
-import net.kipster.terra.world.biomes.BiomeTundra;
-import net.kipster.terra.world.biomes.BiomeTundraSpikes;
-import net.kipster.terra.world.biomes.BiomeWhiteBeach;
-import net.kipster.terra.world.biomes.BiomeWhiteDesert;
-import net.kipster.terra.world.biomes.BiomeWoodlands;
+import net.kipster.terra.world.biomes.*;
+
 import net.minecraft.init.Biomes;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
@@ -99,6 +64,10 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome ORANGEBEACH = new BiomeOrangeBeach();
 	public static final Biome BLACKDESERT = new BiomeBlackDesert();
 	public static final Biome WHITEBEACH = new BiomeWhiteBeach();
+	public static final Biome BLUEMOUNTAIN = new BiomeBlueMountains();
+	public static final Biome REDMOUNTAIN = new BiomeRedMountains();
+	public static final Biome GREYMOUNTAIN = new BiomeGreyMountains();
+	public static final Biome BADLANDS = new BiomeBadlands();
 	
 	
 
@@ -123,6 +92,7 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(ROCKLAND, "Rockland", 4, Config.disableRockland, BiomeType.WARM, Type.RARE, Type.DEAD, Type.DRY, Type.WASTELAND);
 		initBiome(SAHEL, "Sahel", 6, Config.disableSahel, BiomeType.DESERT, Type.HOT, Type.SAVANNA, Type.SANDY);
 		initBiome(DUNES, "Dunes", 6, Config.disableDunes, BiomeType.DESERT, Type.SANDY, Type.SPARSE);
+		initBiome(REDMOUNTAIN, "Red_Mountain", 4, Config.disableDunes, BiomeType.DESERT, Type.SANDY, Type.SPARSE, Type.MOUNTAIN);
 		initBiome(ALPS, "Alps", 3, Config.disableAlps, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY);
 		initBiome(HIGHLANDS, "Highlands", 4, Config.disableHighlands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
 		initBiome(PINELANDS, "Pinelands", 3, Config.disablePinelands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
@@ -141,7 +111,11 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(WHITEBEACH, "White_Beach", 2, Config.disableWhiteBeach, BiomeType.WARM, Type.BEACH, Type.WATER);
 		initBiome(ORANGEBEACH, "Orange_Beach", 2, Config.disableOrangeBeach, BiomeType.WARM, Type.BEACH, Type.WATER);
 		initBiome(BLACKDESERT, "Black_Desert", 1, Config.disableBlackDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.DRY, Type.SPARSE);
-
+		initBiome(BLUEMOUNTAIN, "Blue_Mountain", 4, Config.disableAlps, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY, Type.MOUNTAIN);
+		initBiome(GREYMOUNTAIN, "Grey_Mountain",  6, Config.disablePlateau,BiomeType.WARM, Type.MOUNTAIN, Type.SPARSE);
+		initBiome(BADLANDS, "Badlands",  6, Config.disablePlateau,BiomeType.WARM, Type.HILLS, Type.SPARSE, Type.SAVANNA);
+		
+		
 
 
 	}

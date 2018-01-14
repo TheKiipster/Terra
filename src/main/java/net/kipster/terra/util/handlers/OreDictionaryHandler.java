@@ -83,8 +83,76 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("sandstone", BlockInit.ORANGE_SANDSTONE_GLYPH);
 		OreDictionary.registerOre("sandstone", BlockInit.CONTINENTAL_SANDSTONE_FACE);
 		OreDictionary.registerOre("sandstone", BlockInit.CONTINENTAL_SANDSTONE_GLYPH);
+		OreDictionary.registerOre("deadbush", BlockInit.GREYDEADBUSH);
+		OreDictionary.registerOre("ingotBrickNether", ItemInit.TRIGLICITE_BRICK);
+		OreDictionary.registerOre("ingotBrickNether", ItemInit.ALIKITE_BRICK);
+		OreDictionary.registerOre("ingotBrickNether", ItemInit.KRUNDALTITE_BRICK);
 		
-
+		
+		//Stones
+		OreDictionary.registerOre("stone", BlockInit.BASALT_STONE);
+		OreDictionary.registerOre("stone", BlockInit.BLACKDIORITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.IMPERIALQUARTZITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.PINKQUARTZITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.REDQUARTZITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.BLUESCHIST_STONE);
+		OreDictionary.registerOre("stone", BlockInit.CHALK_STONE);
+		OreDictionary.registerOre("stone", BlockInit.GREENSCHIST_STONE);
+		OreDictionary.registerOre("stone", BlockInit.GABBRO_STONE);
+		OreDictionary.registerOre("stone", BlockInit.KIMBERLITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.GNEISS_STONE);
+		OreDictionary.registerOre("stone", BlockInit.LIMESTONE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.MARBLE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.MIGMATITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.PUMICE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.RHYOLITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.SCORIA_STONE);
+		OreDictionary.registerOre("stone", BlockInit.SLATE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.SOAPSTONE_STONE);
+		
+		//Cobblestone
+		OreDictionary.registerOre("cobblestone", BlockInit.BASALT_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.BLACKDIORITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.IMPERIALQUARTZITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.REDQUARTZITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.PINKQUARTZITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.BLUESCHIST_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.CHALK_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.GREENSCHIST_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.GABBRO_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.KIMBERLITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.GNEISS_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.LIMESTONE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.MARBLE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.MIGMATITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.PUMICE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.RHYOLITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.SCORIA_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.SLATE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.SOAPSTONE_COBBLESTONE);
+		
+		//Stonebrick
+		OreDictionary.registerOre("stonebrick", BlockInit.BASALT_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.BLACKDIORITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.IMPERIALQUARTZITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.PINKQUARTZITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.REDQUARTZITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.BLUESCHIST_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.CHALK_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.GREENSCHIST_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.GABBRO_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.KIMBERLITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.GNEISS_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.LIMESTONE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.MARBLE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.MIGMATITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.PUMICE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.RHYOLITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.SCORIA_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.SLATE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.SOAPSTONE_STONEBRICK);
+		
+		
 
 	}
 

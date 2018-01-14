@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "terra:blocks/magachite_pillar_top",
+        "side": "terra:blocks/magachite_pillar"
+    }
+}

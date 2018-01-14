@@ -28,7 +28,7 @@ public class BlockSand extends BlockFalling implements IHasModel
 		setSoundType(SoundType.SAND);
 		setRegistryName(name);
 		setHardness(0.8F);
-		setCreativeTab(Main.TERRATAB);
+		setCreativeTab(Main.TERRATABMISC);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -42,6 +42,6 @@ public class BlockSand extends BlockFalling implements IHasModel
 	@Override
 	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction, IPlantable plantable)
 	{
-		return plantable.getPlantType(world, pos) == EnumPlantType.Desert;
+		return plantable.getPlantType(world, pos) == EnumPlantType.Desert  || state.getBlock() == BlockInit.GREYDEADBUSH;
 }
 	}

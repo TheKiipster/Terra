@@ -24,7 +24,7 @@ public class BlockMagnetiteOre extends Block implements IHasModel
 		setSoundType(SoundType.STONE);
 		setHardness(3F);
 		setHarvestLevel("pickaxe", 1);
-		setCreativeTab(Main.TERRATAB);
+		setCreativeTab(Main.TERRATABGEOLOGY);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

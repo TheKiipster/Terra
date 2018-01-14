@@ -5,6 +5,7 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.WorldGenGreyDeadBush;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.monster.EntityHusk;
@@ -33,6 +34,7 @@ import net.minecraftforge.common.BiomeManager;
 
 public class BiomeBlackDesert extends Biome
 {
+	 public static final WorldGenerator GREY_DEADBUSH_FEATURE = new WorldGenGreyDeadBush();
 	 private static final WorldGenSavannaTree SAVANNA_TREE = new WorldGenSavannaTree(false);
 	 
 	public BiomeBlackDesert() 
@@ -44,8 +46,7 @@ public class BiomeBlackDesert extends Biome
 		this.decorator.generateFalls = false;
 		this.decorator.treesPerChunk = -999;
 		this.decorator.flowersPerChunk = -999;
-        this.decorator.grassPerChunk = 2;
-        this.decorator.deadBushPerChunk = 20;
+        this.decorator.grassPerChunk = 4;
         this.decorator.reedsPerChunk = 2;
         this.decorator.cactiPerChunk = 1;
         
@@ -83,11 +84,10 @@ public class BiomeBlackDesert extends Biome
     {
         return (WorldGenAbstractTree)(rand.nextInt(5) > 0 ? SAVANNA_TREE : TREE_FEATURE);
     }
-	
-	public WorldGenerator getRandomWorldGenForGrass(Random rand)
-    {
-        return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
-    }
+	 @Override
+	    public WorldGenerator getRandomWorldGenForGrass(Random rand) {
+	        return GREY_DEADBUSH_FEATURE;
+	}
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {
@@ -144,5 +144,6 @@ public int getModdedBiomeGrassColor(int original) {
 public int getModdedBiomeFoliageColor(int original) {
     return 0x52503F;
 }
+
 
 	}

@@ -27,6 +27,11 @@ public static void registerFurnaceRecipes() {
 	GameRegistry.addSmelting(BlockInit.ORE_OVERWORLDI_SIDERITE, new ItemStack(Items.IRON_INGOT), 1F);
 	GameRegistry.addSmelting(BlockInit.ORE_OVERWORLDI_TACONITE, new ItemStack(Items.IRON_INGOT), 1F);
 	GameRegistry.addSmelting(BlockInit.ORE_OVERWORLDI_BANDED, new ItemStack(Items.IRON_INGOT), 1F);
+	GameRegistry.addSmelting(BlockInit.BASALT_COBBLESTONE, new ItemStack(BlockInit.BASALT_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.BLACKDIORITE_COBBLESTONE, new ItemStack(BlockInit.BLACKDIORITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.IMPERIALQUARTZITE_COBBLESTONE, new ItemStack(BlockInit.IMPERIALQUARTZITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.PINKQUARTZITE_COBBLESTONE, new ItemStack(BlockInit.PINKQUARTZITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.REDQUARTZITE_COBBLESTONE, new ItemStack(BlockInit.REDQUARTZITE_STONE), 1F);
 	
 	System.out.println("Furnace Recipes Registered");
 }

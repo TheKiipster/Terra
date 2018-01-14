@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:imperialquartzite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:imperialquartzite_stonebrick",
+    "count": 4
+  }
+}

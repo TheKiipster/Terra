@@ -23,7 +23,7 @@ public class BlockAnthraciteBlock extends Block implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.STONE);
 		setHardness(3F);
-		setCreativeTab(Main.TERRATAB);
+		setCreativeTab(Main.TERRATABGEOLOGY);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

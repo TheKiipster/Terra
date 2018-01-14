@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-     "item": "terra:ore_overworldci_anthracite"
+     "item": "terra:terra:basalt_stone"
     }
   },
   "result": {
-    "item": "terra:ore_overworldcb_anthracite",
+    "item": "terra:basalt_polished",
     "count": 1
     }
 }

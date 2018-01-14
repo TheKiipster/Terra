@@ -28,7 +28,13 @@ public class Main {
 	@SidedProxy(serverSide = "net.kipster.terra.proxy.CommonProxy", clientSide = "net.kipster.terra.proxy.ClientProxy")
 	public static CommonProxy proxy;
 	
-	public static final CreativeTabs TERRATAB = new TerraTab("terratab");
+
+	public static final CreativeTabs TERRATABMISC = new TerraTabMisc("terratabmisc");
+	public static final CreativeTabs TERRATABGEOLOGY = new TerraTabGeology("terratabgeology");
+	public static final CreativeTabs TERRATABPLANTS = new TerraTabPlants("terratabplants");
+	
+	
+	
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:basalt_stone"
+    }
+  },
+  "result": {
+    "item": "terra:basalt_stonebrick",
+    "count": 4
+  }
+}

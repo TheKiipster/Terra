@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:redquartzite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:redquartzite_stonebrick",
+    "count": 4
+  }
+}

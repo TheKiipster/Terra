@@ -2,5 +2,5 @@
     "parent": "block/cube_all",
     "textures": {
         "all": "terra:blocks/black_sand"
-    }
+}
 }

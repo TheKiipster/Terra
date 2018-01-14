@@ -1,5 +1,6 @@
 package net.kipster.terra.world.biomes;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -20,6 +21,8 @@ import net.kipster.terra.world.biomes.BiomeAlps.EmeraldGenerator;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockSilverfish;
 import net.minecraft.block.BlockTallGrass;
+import net.minecraft.entity.monster.EntitySkeleton;
+import net.minecraft.entity.monster.EntityStray;
 import net.minecraft.entity.passive.EntityLlama;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
@@ -50,7 +53,7 @@ public class BiomeAlps extends Biome
 	public BiomeAlps() 
 	{
 		
-		super(new BiomeProperties("Alps").setBaseHeight(3.0F).setHeightVariation(0.7F).setTemperature(-3F).setRainfall(1F));
+		super(new BiomeProperties("Alps").setBaseHeight(3.2F).setHeightVariation(0.75F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
 		
 		
 		topBlock = Blocks.SNOW.getDefaultState();
@@ -64,6 +67,20 @@ public class BiomeAlps extends Biome
 	    this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 		 this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityLlama.class, 5, 4, 6));
 		 this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
+		 Iterator<Biome.SpawnListEntry> iterator = this.spawnableMonsterList.iterator();
+
+	        while (iterator.hasNext())
+	        {
+	            Biome.SpawnListEntry biome$spawnlistentry = iterator.next();
+
+	            if (biome$spawnlistentry.entityClass == EntitySkeleton.class)
+	            {
+	                iterator.remove();
+	            }
+	        }
+
+	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySkeleton.class, 20, 4, 4));
+	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityStray.class, 80, 4, 4));
 	}
 
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)

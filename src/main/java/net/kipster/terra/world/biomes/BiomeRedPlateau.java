@@ -8,6 +8,7 @@ import net.kipster.terra.init.BlockInit;
 import net.minecraft.block.BlockColored;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockSand;
+import net.minecraft.block.BlockStainedHardenedClay;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.monster.EntityHusk;
 import net.minecraft.entity.monster.EntityZombie;
@@ -28,10 +29,9 @@ import net.minecraftforge.common.BiomeManager;
 
 public class BiomeRedPlateau extends Biome 
 {	
-	
-    protected static final IBlockState RED_SAND = Blocks.SAND.getDefaultState().withProperty(BlockSand.VARIANT, BlockSand.EnumType.RED_SAND);
-	  protected static final IBlockState STAINED_HARDENED_CLAY = Blocks.STAINED_HARDENED_CLAY.getDefaultState();
-	    protected static final IBlockState RED_STAINED_HARDENED_CLAY = STAINED_HARDENED_CLAY.withProperty(BlockColored.COLOR, EnumDyeColor.RED);
+
+    protected static final IBlockState STAINED_HARDENED_CLAY = Blocks.STAINED_HARDENED_CLAY.getDefaultState().withProperty(BlockColored.COLOR, EnumDyeColor.RED);
+
 	
 	public BiomeRedPlateau() 
 	{
@@ -70,8 +70,8 @@ public class BiomeRedPlateau extends Biome
             this.topBlock = BlockInit.IRON_SAND.getDefaultState();
             this.fillerBlock = BlockInit.IRON_SAND.getDefaultState();  } 
         else {
-            this.topBlock = Blocks.STAINED_HARDENED_CLAY.getDefaultState();
-            this.fillerBlock = Blocks.STAINED_HARDENED_CLAY.getDefaultState();
+            this.topBlock = STAINED_HARDENED_CLAY;
+            this.fillerBlock = STAINED_HARDENED_CLAY;
         }
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);

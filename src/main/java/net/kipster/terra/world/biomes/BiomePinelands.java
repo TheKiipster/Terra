@@ -47,7 +47,7 @@ public class BiomePinelands extends Biome
 	public BiomePinelands() 
 	{
 		
-		super(new BiomeProperties("Pinelands").setBaseHeight(0.7F).setHeightVariation(0.3F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Pinelands").setBaseHeight(0.84F).setHeightVariation(0.5F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.PINELANDS , true);
 		

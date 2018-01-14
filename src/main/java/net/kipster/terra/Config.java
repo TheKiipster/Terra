@@ -51,18 +51,23 @@ public class Config {
  	 public static boolean disableOrangeBeach = false;
 
  	 //Ores
- 	public static int anthracitePerChunk = 16;
-	public static int bituminousPerChunk = 16;
-	public static int lignitePerChunk = 16;
-	public static int peatPerChunk = 16;
-	public static int hematitePerChunk = 13;
-	public static int magnetitePerChunk = 13;
-	public static int limonitePerChunk = 13;
-	public static int goethitePerChunk = 13;
-	public static int ankeritePerChunk = 13;
-	public static int bandedPerChunk = 13;
-	public static int sideritePerChunk = 13;
-	public static int taconitePerChunk = 13;
+ 	public static int anthracitePerChunk = 12;
+	public static int bituminousPerChunk = 12;
+	public static int lignitePerChunk = 12;
+	public static int peatPerChunk = 12;
+	public static int hematitePerChunk = 12;
+	public static int magnetitePerChunk = 12;
+	public static int limonitePerChunk = 12;
+	public static int goethitePerChunk = 12;
+	public static int ankeritePerChunk = 12;
+	public static int bandedPerChunk = 12;
+	public static int sideritePerChunk = 12;
+	public static int taconitePerChunk = 12;
+	public static int basaltPerChunk = 7;
+	public static int blackdioritePerChunk = 7;
+	public static int imperialquartzitePerChunk = 7;
+	public static int pinkquartzitePerChunk = 7;
+	public static int redquartzitePerChunk = 7;
 	
 
     public static void readConfig() {
@@ -134,7 +139,11 @@ public class Config {
         bandedPerChunk = cfg.getInt("bandedPerChunk", CATEGORY_ORES, bandedPerChunk, 0, 100, "Banded Per Chunk");
         sideritePerChunk = cfg.getInt("sideritePerChunk", CATEGORY_ORES, sideritePerChunk, 0, 100, "Siderite Per Chunk");
         taconitePerChunk = cfg.getInt("taconitePerChunk", CATEGORY_ORES, taconitePerChunk, 0, 100, "Taconite Per Chunk");
-       
+        basaltPerChunk = cfg.getInt("basaltPerChunk", CATEGORY_ORES, basaltPerChunk, 0, 100, "Basalt Per Chunk");
+        blackdioritePerChunk = cfg.getInt("blackdioritePerChunk", CATEGORY_ORES, blackdioritePerChunk, 0, 100, "Black Diorite Per Chunk");
+        imperialquartzitePerChunk = cfg.getInt("imperialquartzitePerChunk", CATEGORY_ORES, imperialquartzitePerChunk, 0, 100, "Imperial Quartzite Per Chunk");
+        pinkquartzitePerChunk = cfg.getInt("pinkquartzitePerChunk", CATEGORY_ORES, pinkquartzitePerChunk, 0, 100, "Pink Quartzite Per Chunk");
+        redquartzitePerChunk = cfg.getInt("redquartzitePerChunk", CATEGORY_ORES, redquartzitePerChunk, 0, 100, "Red Quartzite Per Chunk");
         
         
     }

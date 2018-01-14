@@ -16,6 +16,7 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.passive.EntityParrot;
@@ -28,10 +29,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeBeach;
+import net.minecraft.world.biome.BiomeForest;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenBirchTree;
+import net.minecraft.world.gen.feature.WorldGenCanopyTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga1;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
@@ -45,7 +48,10 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeWoodlands extends Biome
 {	
 	private final WorldGenTaiga2 spruceGenerator = new WorldGenTaiga2(false);
-	
+    protected static final WorldGenBirchTree SUPER_BIRCH_TREE = new WorldGenBirchTree(false, true);
+    protected static final WorldGenBirchTree BIRCH_TREE = new WorldGenBirchTree(false, false);
+    protected static final WorldGenCanopyTree ROOF_TREE = new WorldGenCanopyTree(false);
+	 
 	public BiomeWoodlands() 
 	{
 		
@@ -67,7 +73,18 @@ public class BiomeWoodlands extends Biome
 
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
 	{
+		  if (rand.nextInt(3) > 0)
+	        {
 	    return (WorldGenAbstractTree)(rand.nextInt(3) > 0 ? this.spruceGenerator : super.getRandomTreeFeature(rand));
+	        }
+	    else if (rand.nextInt(5) != 0)
+        {
+            return (WorldGenAbstractTree)(rand.nextInt(10) == 0 ? BIG_TREE_FEATURE : TREE_FEATURE);
+        }
+        else
+        {
+            return BIRCH_TREE;
+        }
 	        }
 	
 	public WorldGenerator getRandomWorldGenForGrass(Random rand)
