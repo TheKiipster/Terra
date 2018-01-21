@@ -7,6 +7,7 @@ import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.init.ItemInit;
 import net.kipster.terra.util.interfaces.IHasModel;
+import net.kipster.terra.world.gen.WorldGenCustomTrees;
 import net.kipster.terra.world.gen.WorldGenOres;
 import net.kipster.terra.world.gen.WorldGenRocks;
 import net.minecraft.block.Block;
@@ -63,9 +64,10 @@ public class RegistryHandler
 		 File directory = e.getModConfigurationDirectory();
 	        config = new Configuration(new File(directory.getPath(), "terra.cfg"));
 	        Config.readConfig();
-	        GameRegistry.registerWorldGenerator(new WorldGenOres(), 10);
-	        GameRegistry.registerWorldGenerator(new WorldGenRocks(), 10);
-	     
+	        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
+	        GameRegistry.registerWorldGenerator(new WorldGenRocks(), 0);
+	        GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 4);
+	        
 		BiomeInit.initSubBiomes();
 		BiomeInit.registerBiomes();
 		

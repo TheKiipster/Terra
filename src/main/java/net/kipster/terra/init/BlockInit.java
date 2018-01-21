@@ -101,8 +101,12 @@ public class BlockInit
 	public static final Block SOLITUDITE_PILLAR = new BlockNewNetherGemPillar("solitudite_pillar", Material.ROCK);
 	public static final Block KAMBORADOITE_PILLAR = new BlockNewNetherGemPillar("kamboradoite_pillar", Material.ROCK);
 	
+	public  static final Block PLANKS = new BlockPlank("planks");
+	public static final Block LOGS = new BlockLogs("log");
+	public static final Block LEAVES = new BlockLeaf("leaves");
+	public static final Block SAPLINGS = new BlockSaplings("sapling");
 	
-	
+	//Flora
 	
 	
 	

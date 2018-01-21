@@ -1,0 +1,8 @@
+
+{
+    "variants": 
+    {
+        "variant=cherry": { "model": "terra:planks_cherry" },
+         "variant=bluespruce": { "model": "terra:planks_bluespruce" }
+    }
+}

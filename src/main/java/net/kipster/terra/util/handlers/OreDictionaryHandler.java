@@ -87,6 +87,16 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("ingotBrickNether", ItemInit.TRIGLICITE_BRICK);
 		OreDictionary.registerOre("ingotBrickNether", ItemInit.ALIKITE_BRICK);
 		OreDictionary.registerOre("ingotBrickNether", ItemInit.KRUNDALTITE_BRICK);
+		OreDictionary.registerOre("plankWood", new ItemStack(BlockInit.PLANKS, 1, 0));
+		OreDictionary.registerOre("plankWood", new ItemStack(BlockInit.PLANKS, 1, 1));
+		OreDictionary.registerOre("treeWood", new ItemStack(BlockInit.LOGS, 1, 0));
+		OreDictionary.registerOre("treeWood", new ItemStack(BlockInit.LOGS, 1, 1));
+		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.SAPLINGS, 1, 0));
+		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.SAPLINGS, 1, 1));
+		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.SAPLINGS, 1, 2));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.LEAVES, 1, 0));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.LEAVES, 1, 1));
+		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.LEAVES, 1, 2));
 		
 		
 		//Stones

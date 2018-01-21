@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "axis=y,variant=cherry": { "model": "terra:log_cherry" },
+        "axis=z,variant=cherry": { "model": "terra:log_cherry", "x": 90 },
+        "axis=x,variant=cherry": { "model": "terra:log_cherry", "x": 90, "y": 90 },
+        "axis=none,variant=cherry": { "model": "terra:log_cherry" },
+        
+         "axis=y,variant=bluespruce": { "model": "terra:log_bluespruce" },
+        "axis=z,variant=bluespruce": { "model": "terra:log_bluespruce", "x": 90 },
+        "axis=x,variant=bluespruce": { "model": "terra:log_bluespruce", "x": 90, "y": 90 },
+        "axis=none,variant=bluespruce": { "model": "terra:log_bluespruce" }
+    }
+}

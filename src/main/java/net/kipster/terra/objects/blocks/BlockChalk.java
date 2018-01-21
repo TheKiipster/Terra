@@ -34,7 +34,7 @@ public class BlockChalk extends Block implements IHasModel
 
 	     {
 
-	         return Item.getItemFromBlock(BlockInit.BASALT_COBBLESTONE);
+	         return Item.getItemFromBlock(BlockInit.CHALK_COBBLESTONE);
 
 	     }
 

@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "check_decay=true,decayable=true,variant=cherry_white": { "model": "terra:leaves_cherry_white" },
+        "check_decay=true,decayable=false,variant=cherry_white": { "model": "terra:leaves_cherry_white" },
+        "check_decay=false,decayable=true,variant=cherry_white": { "model": "terra:leaves_cherry_white" },
+        "check_decay=false,decayable=false,variant=cherry_white": { "model": "terra:leaves_cherry_white" },
+        
+         "check_decay=true,decayable=true,variant=bluespruce": { "model": "terra:leaves_bluespruce" },
+        "check_decay=true,decayable=false,variant=bluespruce": { "model": "terra:leaves_bluespruce" },
+        "check_decay=false,decayable=true,variant=bluespruce": { "model": "terra:leaves_bluespruce" },
+        "check_decay=false,decayable=false,variant=bluespruce": { "model": "terra:leaves_bluespruce" },
+        
+        "check_decay=true,decayable=true,variant=cherry_purple": { "model": "terra:leaves_cherry_purple" },
+        "check_decay=true,decayable=false,variant=cherry_purple": { "model": "terra:leaves_cherry_purple" },
+        "check_decay=false,decayable=true,variant=cherry_purple": { "model": "terra:leaves_cherry_purple" },
+        "check_decay=false,decayable=false,variant=cherry_purple": { "model": "terra:leaves_cherry_purple" }
+    }
+}

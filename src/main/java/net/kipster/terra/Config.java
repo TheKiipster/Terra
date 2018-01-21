@@ -49,26 +49,35 @@ public class Config {
  	 public static boolean disableWhiteBeach = false;
  	 public static boolean disableGreenBeach = false;
  	 public static boolean disableOrangeBeach = false;
+ 	public static boolean disableRedMountains = false;
+ 	public static boolean disableBlueMountains = false;
+ 	public static boolean disableGreyMountains = false;
+ 	public static boolean disableBadlands = false;
+ 	public static boolean disableOvergrownPlains = false;
+ 	public static boolean disableLushSwamp = false;
+ 	public static boolean disableThicket = false;
+ 	public static boolean disableBlossomWoods = false;
+ 	public static boolean disableBlueTaiga = false;
 
  	 //Ores
- 	public static int anthracitePerChunk = 12;
-	public static int bituminousPerChunk = 12;
-	public static int lignitePerChunk = 12;
-	public static int peatPerChunk = 12;
-	public static int hematitePerChunk = 12;
-	public static int magnetitePerChunk = 12;
-	public static int limonitePerChunk = 12;
-	public static int goethitePerChunk = 12;
-	public static int ankeritePerChunk = 12;
-	public static int bandedPerChunk = 12;
-	public static int sideritePerChunk = 12;
-	public static int taconitePerChunk = 12;
-	public static int basaltPerChunk = 7;
-	public static int blackdioritePerChunk = 7;
-	public static int imperialquartzitePerChunk = 7;
-	public static int pinkquartzitePerChunk = 7;
-	public static int redquartzitePerChunk = 7;
-	
+ 	public static int anthracitePerChunk = 8;
+	public static int bituminousPerChunk = 8;
+	public static int lignitePerChunk = 8;
+	public static int peatPerChunk = 8;
+	public static int hematitePerChunk = 5;
+	public static int magnetitePerChunk = 5;
+	public static int limonitePerChunk = 5;
+	public static int goethitePerChunk = 5;
+	public static int ankeritePerChunk = 5;
+	public static int bandedPerChunk = 5;
+	public static int sideritePerChunk = 5;
+	public static int taconitePerChunk = 5;	
+	public static int danlveyitePerChunk = 25;
+	public static int solituditePerChunk = 25;	
+	public static int thenalitePerChunk = 25;	
+	public static int kamboradoitePerChunk = 25;	
+	public static int magachitePerChunk = 25;	
+	public static int meliscitePerChunk = 25;	
 
     public static void readConfig() {
         Configuration cfg = RegistryHandler.config;
@@ -123,9 +132,19 @@ public class Config {
 		disablePinelands = cfg.get(CATEGORY_BIOMES, "disablePinelands", disablePinelands).getBoolean();
 		disableLushForest = cfg.get(CATEGORY_BIOMES, "disableLushForest", disableLushForest).getBoolean();
 		disableRainforest = cfg.get(CATEGORY_BIOMES, "disableRainforest", disableRainforest).getBoolean();
+		disableRedMountains = cfg.get(CATEGORY_BIOMES, "disableRedMountains", disableRedMountains).getBoolean();
+		disableBlueMountains = cfg.get(CATEGORY_BIOMES, "disableBlueMountains", disableBlueMountains).getBoolean();
+		disableGreyMountains = cfg.get(CATEGORY_BIOMES, "disableGreyMountains", disableGreyMountains).getBoolean();
+		disableBadlands = cfg.get(CATEGORY_BIOMES, "disableBadlands", disableBadlands).getBoolean();
+		disableThicket = cfg.get(CATEGORY_BIOMES, "disableThicket", disableThicket).getBoolean();
+		disableOvergrownPlains = cfg.get(CATEGORY_BIOMES, "disableOvergrownPlains", disableOvergrownPlains).getBoolean();
+		disableLushSwamp = cfg.get(CATEGORY_BIOMES, "disableLushSwamp", disableLushSwamp).getBoolean();
+		disableBlossomWoods = cfg.get(CATEGORY_BIOMES, "disableBlossomWoods", disableBlossomWoods).getBoolean();
 		disableWoodlands = cfg.get(CATEGORY_BIOMES, "disableWoodlands", disableWoodlands).getBoolean();
+		disableBlueTaiga = cfg.get(CATEGORY_BIOMES, "disableBlueTaiga", disableBlueTaiga).getBoolean();
     }
     private static void initOreConfig(Configuration cfg) {
+    	
         cfg.addCustomCategoryComment(CATEGORY_ORES, "Ore configuration");
         anthracitePerChunk = cfg.getInt("anthracitePerChunk", CATEGORY_ORES, anthracitePerChunk, 0, 100, "Anthracite Per Chunk");
         bituminousPerChunk = cfg.getInt("bituminousPerChunk", CATEGORY_ORES, bituminousPerChunk, 0, 100, "Bituminous Per Chunk");
@@ -139,11 +158,12 @@ public class Config {
         bandedPerChunk = cfg.getInt("bandedPerChunk", CATEGORY_ORES, bandedPerChunk, 0, 100, "Banded Per Chunk");
         sideritePerChunk = cfg.getInt("sideritePerChunk", CATEGORY_ORES, sideritePerChunk, 0, 100, "Siderite Per Chunk");
         taconitePerChunk = cfg.getInt("taconitePerChunk", CATEGORY_ORES, taconitePerChunk, 0, 100, "Taconite Per Chunk");
-        basaltPerChunk = cfg.getInt("basaltPerChunk", CATEGORY_ORES, basaltPerChunk, 0, 100, "Basalt Per Chunk");
-        blackdioritePerChunk = cfg.getInt("blackdioritePerChunk", CATEGORY_ORES, blackdioritePerChunk, 0, 100, "Black Diorite Per Chunk");
-        imperialquartzitePerChunk = cfg.getInt("imperialquartzitePerChunk", CATEGORY_ORES, imperialquartzitePerChunk, 0, 100, "Imperial Quartzite Per Chunk");
-        pinkquartzitePerChunk = cfg.getInt("pinkquartzitePerChunk", CATEGORY_ORES, pinkquartzitePerChunk, 0, 100, "Pink Quartzite Per Chunk");
-        redquartzitePerChunk = cfg.getInt("redquartzitePerChunk", CATEGORY_ORES, redquartzitePerChunk, 0, 100, "Red Quartzite Per Chunk");
+        danlveyitePerChunk = cfg.getInt("danlveyitePerChunk", CATEGORY_ORES, danlveyitePerChunk, 0, 100, "Danlveyite Per Chunk");
+        solituditePerChunk = cfg.getInt("solituditePerChunk", CATEGORY_ORES, solituditePerChunk, 0, 100, "Solitudite Per Chunk");
+        thenalitePerChunk = cfg.getInt("thenalitePerChunk", CATEGORY_ORES, thenalitePerChunk, 0, 100, "Thenalite Per Chunk");
+        kamboradoitePerChunk = cfg.getInt("kamboradoitePerChunk", CATEGORY_ORES, kamboradoitePerChunk, 0, 100, "Kamboradoite Per Chunk");
+        magachitePerChunk = cfg.getInt("magachitePerChunk", CATEGORY_ORES, magachitePerChunk, 0, 100, "Magachite Per Chunk");
+        meliscitePerChunk = cfg.getInt("meliscitePerChunk", CATEGORY_ORES, meliscitePerChunk, 0, 100, "Meliscite Per Chunk");
         
         
     }

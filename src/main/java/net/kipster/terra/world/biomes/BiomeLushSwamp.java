@@ -16,11 +16,16 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.generators.WorldGenTreeSwamp;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockTallGrass;
-import net.minecraft.entity.passive.EntityParrot;
-import net.minecraft.entity.passive.EntityWolf;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.monster.EntitySlime;
+import net.minecraft.entity.passive.EntityDonkey;
+import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -29,7 +34,9 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeBeach;
+import net.minecraft.world.biome.BiomeForest;
 import net.minecraft.world.biome.BiomeProvider;
+import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -40,26 +47,33 @@ import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class BiomeLushForest extends Biome
+public class BiomeLushSwamp extends Biome
 {	
+	protected static final IBlockState WATER_LILY = Blocks.WATERLILY.getDefaultState();
+
+	protected static final WorldGenAbstractTree TREE = new WorldGenTreeSwamp();
 	
-	public BiomeLushForest() 
+	public BiomeLushSwamp() 
 	{
 		
-		super(new BiomeProperties("Lush Forest").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.5F).setRainfall(0.3F));
+		super(new BiomeProperties("Lush Swamp").setBaseHeight(-0.2F).setHeightVariation(0.1F).setTemperature(0.8F).setRainfall(0.9F).setWaterColor(14745518));
 		
-		BiomeManager.addVillageBiome(BiomeInit.LUSHFOREST , true);
+		BiomeManager.addVillageBiome(BiomeInit.LUSH_SWAMP , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 8;
-		
-		 this.decorator.flowersPerChunk = 25;
-	        this.decorator.grassPerChunk = 29;
-	        
-	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
-	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityParrot.class, 40, 1, 2));
+	        this.decorator.treesPerChunk = 4;
+	        this.decorator.flowersPerChunk = 20;
+	        this.decorator.deadBushPerChunk = 1;
+	        this.decorator.mushroomsPerChunk = 8;
+	        this.decorator.reedsPerChunk = 10;
+	        this.decorator.clayPerChunk = 1;
+	        this.decorator.waterlilyPerChunk = 4;
+	        this.decorator.sandPatchesPerChunk = 0;
+	        this.decorator.gravelPatchesPerChunk = 0;
+	        this.decorator.grassPerChunk = 5;
+	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));
 	        this.flowers.clear();
             for (BlockFlower.EnumFlowerType type : BlockFlower.EnumFlowerType.values())
             {
@@ -74,6 +88,12 @@ public class BiomeLushForest extends Biome
 	            BlockFlower.EnumFlowerType blockflower$enumflowertype = BlockFlower.EnumFlowerType.values()[(int)(d0 * (double)BlockFlower.EnumFlowerType.values().length)];
 	            return blockflower$enumflowertype == BlockFlower.EnumFlowerType.BLUE_ORCHID ? BlockFlower.EnumFlowerType.POPPY : blockflower$enumflowertype;
 	        }
+
+		@Override
+		public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+		{
+			return TREE;
+	}
 	
 	public WorldGenerator getRandomWorldGenForGrass(Random rand)
     {
@@ -135,12 +155,43 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
     }
     super.decorate(worldIn, rand, pos);
         }
+
+public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal)
+{
+    double d0 = GRASS_COLOR_NOISE.getValue((double)x * 0.25D, (double)z * 0.25D);
+
+    if (d0 > 0.0D)
+    {
+        int i = x & 15;
+        int j = z & 15;
+
+        for (int k = 255; k >= 0; --k)
+        {
+            if (chunkPrimerIn.getBlockState(j, k, i).getMaterial() != Material.AIR)
+            {
+                if (k == 62 && chunkPrimerIn.getBlockState(j, k, i).getBlock() != Blocks.WATER)
+                {
+                    chunkPrimerIn.setBlockState(j, k, i, WATER);
+
+                    if (d0 < 0.12D)
+                    {
+                        chunkPrimerIn.setBlockState(j, k + 1, i, WATER_LILY);
+                    }
+                }
+
+                break;
+            }
+        }
+    }
+
+    this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
+}
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
-	    return 0x91D432;
+	    return 0x71D81D;
 	}
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
-	    return 0x91D432;
+	    return 0x71D81D;
 	}
 }

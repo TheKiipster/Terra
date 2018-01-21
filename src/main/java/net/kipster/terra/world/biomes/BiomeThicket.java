@@ -18,8 +18,8 @@ import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
+import net.minecraft.block.BlockStone;
 import net.minecraft.block.BlockTallGrass;
-import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -31,7 +31,6 @@ import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
@@ -39,17 +38,17 @@ import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class BiomePinelands extends Biome
+public class BiomeThicket extends Biome
 {
 	
-	private final WorldGenTaiga2 spruceGenerator = new WorldGenTaiga2(false);
+	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(Blocks.LEAVES, Blocks.LOG, 0, 0, false);
 	
-	public BiomePinelands() 
+	public BiomeThicket() 
 	{
 		
-		super(new BiomeProperties("Pinelands").setBaseHeight(0.84F).setHeightVariation(0.5F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Highlands").setBaseHeight(0.84F).setHeightVariation(0.5F).setTemperature(0.8F).setRainfall(0.4F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.PINELANDS , true);
+		BiomeManager.addVillageBiome(BiomeInit.HIGHLANDS , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
@@ -57,13 +56,13 @@ public class BiomePinelands extends Biome
 		this.decorator.treesPerChunk = 3;
 		this.decorator.grassPerChunk = 12;
 		this.decorator.flowersPerChunk = 6;
-		
-		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 4, 2, 3));
-	}
 
-	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
-	{
-	    return (WorldGenAbstractTree)(rand.nextInt(3) > 0 ? this.spruceGenerator : super.getRandomTreeFeature(rand));
+
+	}
+		@Override
+		public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+		{
+			return TREE;
 	}
 
 		public WorldGenerator getRandomWorldGenForGrass(Random rand)
@@ -88,10 +87,10 @@ public class BiomePinelands extends Biome
 	        }
 		@Override
 		public int getModdedBiomeGrassColor(int original) {
-		    return 0x9BAC4F;
+		    return 0x71A559;
 		}
 		@Override
 		public int getModdedBiomeFoliageColor(int original) {
-		    return 0x9BAC4F;
+		    return 0x71A559;
 		}
 	}

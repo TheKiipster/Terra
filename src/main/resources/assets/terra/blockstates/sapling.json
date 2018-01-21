@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "stage=0,variant=cherry_white": { "model": "terra:sapling_cherry_white" },
+        "stage=1,variant=cherry_white": { "model": "terra:sapling_cherry_white" },
+        
+        "stage=0,variant=cherry_purple": { "model": "terra:sapling_cherry_purple" },
+        "stage=1,variant=cherry_purple": { "model": "terra:sapling_cherry_purple" },
+        
+        "stage=0,variant=bluespruce": { "model": "terra:sapling_bluespruce" },
+        "stage=1,variant=bluespruce": { "model": "terra:sapling_bluespruce" }
+    }
+}

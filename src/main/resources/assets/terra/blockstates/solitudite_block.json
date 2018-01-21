@@ -1,6 +1,6 @@
 
 {
     "variants": {
-        "normal": { "model": "terra:denlveyite_block" }
+        "normal": { "model": "terra:solitudite_block" }
     }
 }
