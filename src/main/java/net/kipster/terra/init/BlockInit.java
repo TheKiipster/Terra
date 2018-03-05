@@ -101,14 +101,48 @@ public class BlockInit
 	public static final Block SOLITUDITE_PILLAR = new BlockNewNetherGemPillar("solitudite_pillar", Material.ROCK);
 	public static final Block KAMBORADOITE_PILLAR = new BlockNewNetherGemPillar("kamboradoite_pillar", Material.ROCK);
 	
-	public  static final Block PLANKS = new BlockPlank("planks");
-	public static final Block LOGS = new BlockLogs("log");
-	public static final Block LEAVES = new BlockLeaf("leaves");
-	public static final Block SAPLINGS = new BlockSaplings("sapling");
+	//Logs
+	public static final Block CHERRYLOG = new BlockLogCherry("cherry_log", Material.WOOD);
+	public static final Block BLUESPRUCELOG = new BlockLogBlueSpruce("bluespruce_log", Material.WOOD);
+	public static final Block BLACKSPRUCELOG = new BlockLogBlackSpruce("blackspruce_log", Material.WOOD);
+	public static final Block WHITESPRUCELOG = new BlockLogWhiteSpruce("whitespruce_log", Material.WOOD);
+	public static final Block REDSPRUCELOG = new BlockLogRedSpruce("redspruce_log", Material.WOOD);
+	public static final Block ELMLOG = new BlockLogRedSpruce("elm_log", Material.WOOD);
+	public static final Block PALMLOG = new BlockLogRedSpruce("palm_log", Material.WOOD);
+	public static final Block MAHOGANYLOG = new BlockLogRedSpruce("mahogany_log", Material.WOOD);
 	
-	//Flora
+	//Leaves
+	public static final Block CHERRYLEAVESWHITE = new BlockLeavesCherryWhite("cherry_leaves_white", Material.LEAVES);
+	public static final Block CHERRYLEAVESPURPLE = new BlockLeavesCherryPurple("cherry_leaves_purple", Material.LEAVES);
+	public static final Block BLUESPRUCELEAVES = new BlockLeavesBlueSpruce("bluespruce_leaves", Material.LEAVES);
+	public static final Block BLACKSPRUCELEAVES = new BlockLeavesBlackSpruce("blackspruce_leaves", Material.LEAVES);
+	public static final Block REDSPRUCELEAVES = new BlockLeavesRedSpruce("redspruce_leaves", Material.LEAVES);
+	public static final Block WHITESPRUCELEAVES = new BlockLeavesWhiteSpruce("whitespruce_leaves", Material.LEAVES);
+	public static final Block ELMLEAVES = new BlockLeavesElm("elm_leaves", Material.LEAVES);
+	public static final Block PALMLEAVES = new BlockLeavesPalm("palm_leaves", Material.LEAVES);
+	public static final Block MAHOGANYLEAVES = new BlockLeavesMahogany("mahogany_leaves", Material.LEAVES);
 	
+	//Saplings
+	public static final Block CHERRYSAPLINGWHITE = new BlockSaplingCherryWhite("cherry_sapling_white", Material.LEAVES);
+	public static final Block CHERRYSAPLINGPURPLE = new BlockSaplingCherryPurple("cherry_sapling_purple", Material.LEAVES);
+	public static final Block BLUESPRUCESAPLING = new BlockSaplingBlueSpruce("bluespruce_sapling", Material.LEAVES);
+	public static final Block BLACKSPRUCESAPLING = new BlockSaplingBlackSpruce("blackspruce_sapling", Material.LEAVES);
+	public static final Block REDSPRUCESAPLING = new BlockSaplingRedSpruce("redspruce_sapling", Material.LEAVES);
+	public static final Block WHITESPRUCESAPLING = new BlockSaplingWhiteSpruce("whitespruce_sapling", Material.LEAVES);
+	public static final Block ELMSAPLING = new BlockSaplingElm("elm_sapling", Material.LEAVES);
+	public static final Block PALMSAPLING = new BlockSaplingPalm("palm_sapling", Material.LEAVES);
+	public static final Block MAHOGANYSAPLING = new BlockSaplingMahogany("mahogany_sapling", Material.LEAVES);
 	
+	//Planks
+	public static final Block CHERRYPLANKS = new BlockPlanksCherry("cherry_planks", Material.WOOD);
+	public static final Block BLUESPRUCEPLANKS = new BlockPlanksBlueSpruce("bluespruce_planks", Material.WOOD);
+	public static final Block WHITESPRUCEPLANKS = new BlockPlanksWhiteSpruce("whitespruce_planks", Material.WOOD);
+	public static final Block BLACKSPRUCEPLANKS = new BlockPlanksBlackSpruce("blackspruce_planks", Material.WOOD);
+	public static final Block REDSPRUCEPLANKS = new BlockPlanksRedSpruce("redspruce_planks", Material.WOOD);
+	public static final Block ELMPLANKS = new BlockPlanksElm("elm_planks", Material.WOOD);
+	public static final Block PALMPLANKS = new BlockPlanksPalm("palm_planks", Material.WOOD);
+	public static final Block MAHOGANYPLANKS = new BlockPlanksMahogany("mahogany_planks", Material.WOOD);
+
 	
 	//Stone
 	public static final Block BASALT_STONE = new BlockBasalt("basalt_stone", Material.ROCK);

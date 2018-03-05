@@ -1,0 +1,8 @@
+    {
+        "variants": {
+            "axis=y": { "model": "terra:blackspruce_log" },
+            "axis=z": { "model": "terra:blackspruce_log", "x": 90 },
+            "axis=x": { "model": "terra:blackspruce_log", "x": 90, "y": 90 },
+            "axis=none,variant=cherry": { "model": "terra:blackspruce_log" }
+        }
+    }

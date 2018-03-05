@@ -1,0 +1,7 @@
+
+{
+    "parent": "block/cross",
+    "textures": {
+        "all": "terra:blocks/sapling_palm"
+    }
+}

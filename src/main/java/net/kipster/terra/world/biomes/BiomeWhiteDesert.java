@@ -5,6 +5,7 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.generators.WorldGenTreePalm;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.monster.EntityHusk;
@@ -33,7 +34,7 @@ import net.minecraftforge.common.BiomeManager;
 
 public class BiomeWhiteDesert extends Biome
 {
-	 private static final WorldGenSavannaTree SAVANNA_TREE = new WorldGenSavannaTree(false);
+	 private static final WorldGenTreePalm PALM = new WorldGenTreePalm(false);
 	 
 	public BiomeWhiteDesert() 
 	{
@@ -86,7 +87,7 @@ public class BiomeWhiteDesert extends Biome
 }
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
     {
-        return (WorldGenAbstractTree)(rand.nextInt(5) > 0 ? SAVANNA_TREE : TREE_FEATURE);
+        return (WorldGenAbstractTree)(rand.nextInt(5) > 0 ? PALM : TREE_FEATURE);
     }
 	
 	public WorldGenerator getRandomWorldGenForGrass(Random rand)

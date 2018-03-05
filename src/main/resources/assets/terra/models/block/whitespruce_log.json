@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "terra:blocks/log_spruce_top_white",
+        "side": "terra:blocks/log_spruce_white"
+    }
+}

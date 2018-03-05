@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:palm_sapling",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{ "model": "terra:palm_sapling" }],
+        "stage=1":[{ "model": "terra:palm_sapling" }]
+    }
+}

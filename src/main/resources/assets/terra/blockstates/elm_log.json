@@ -1,0 +1,8 @@
+    {
+        "variants": {
+            "axis=y": { "model": "terra:elm_log" },
+            "axis=z": { "model": "terra:elm_log", "x": 90 },
+            "axis=x": { "model": "terra:elm_log", "x": 90, "y": 90 },
+            "axis=none,variant=cherry": { "model": "terra:elm_log" }
+        }
+    }

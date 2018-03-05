@@ -1,0 +1,8 @@
+    {
+        "variants": {
+            "axis=y": { "model": "terra:mahogany_log" },
+            "axis=z": { "model": "terra:mahogany_log", "x": 90 },
+            "axis=x": { "model": "terra:mahogany_log", "x": 90, "y": 90 },
+            "axis=none,variant=cherry": { "model": "terra:mahogany_log" }
+        }
+    }

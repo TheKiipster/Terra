@@ -3,10 +3,7 @@ package net.kipster.terra.world.gen.generators;
 import java.util.Random;
 
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.objects.blocks.BlockLeaf;
-import net.kipster.terra.objects.blocks.BlockLogs;
-import net.kipster.terra.util.handlers.EnumLeafHandler;
-import net.kipster.terra.util.handlers.EnumWoodHandler;
+import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockOldLeaf;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -16,8 +13,8 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 public class WorldGenTreeCherryPurple2 extends WorldGenAbstractTree
 {
-	public static final IBlockState LOG = BlockInit.LOGS.getDefaultState().withProperty(BlockLogs.VARIANT, EnumWoodHandler.EnumType.CHERRY);
-	public static final IBlockState LEAF = BlockInit.LEAVES.getDefaultState().withProperty(BlockLeaf.VARIANT, EnumLeafHandler.EnumType.PURPLECHERRY).withProperty(BlockLeaf.CHECK_DECAY, Boolean.valueOf(false));
+	public static final IBlockState LOG = BlockInit.CHERRYLOG.getDefaultState();
+	public static final IBlockState LEAF = BlockInit.CHERRYLEAVESPURPLE.getDefaultState().withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
     private final boolean useExtraRandomHeight;
 
     public WorldGenTreeCherryPurple2(boolean notify, boolean useExtraRandomHeightIn)

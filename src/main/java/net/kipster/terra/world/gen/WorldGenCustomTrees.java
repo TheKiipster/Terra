@@ -6,6 +6,7 @@ import java.util.Random;
 
 import net.kipster.terra.world.biomes.BiomeBlossomWoods;
 import net.kipster.terra.world.gen.generators.*;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -21,6 +22,11 @@ public class WorldGenCustomTrees implements IWorldGenerator
 	private final WorldGenerator WHITECHERRY= new WorldGenTreeCherryWhite(false, false);
 	private final WorldGenerator PURPLECHERRY = new WorldGenTreeCherryPurple(false);
 	private final WorldGenerator BLUESPRUCE = new WorldGenTreeBlueSpruce(false);
+	private final WorldGenerator REDSPRUCE = new WorldGenTreeRedSpruce(false);
+	private final WorldGenerator BLACKSPRUCE = new WorldGenTreeBlackSpruce(false);
+	private final WorldGenerator WHITESPRUCE = new WorldGenTreeWhiteSpruce(false);
+	private final WorldGenerator MAHOGANY = new WorldGenTreeMahogany(false, false);
+	private final WorldGenerator ELM = new WorldGenTreeElm(false);
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
@@ -28,12 +34,14 @@ public class WorldGenCustomTrees implements IWorldGenerator
 		switch(world.provider.getDimension())
 		{
 		case 1:
-			
 			break;
 			
 		case 0:
 			
-
+			runGenerator(BLACKSPRUCE, world, random, chunkX, chunkZ, 3, -1, 0, BiomeTaiga.class);
+			runGenerator(WHITESPRUCE, world, random, chunkX, chunkZ, 3, -1, 0, BiomeTaiga.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 3, -1, 0, BiomeJungle.class);
+			runGenerator(ELM, world, random, chunkX, chunkZ, 3, -1, 0, BiomeForest.class);
 		
 			break;
 			

@@ -87,18 +87,28 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("ingotBrickNether", ItemInit.TRIGLICITE_BRICK);
 		OreDictionary.registerOre("ingotBrickNether", ItemInit.ALIKITE_BRICK);
 		OreDictionary.registerOre("ingotBrickNether", ItemInit.KRUNDALTITE_BRICK);
-		OreDictionary.registerOre("plankWood", new ItemStack(BlockInit.PLANKS, 1, 0));
-		OreDictionary.registerOre("plankWood", new ItemStack(BlockInit.PLANKS, 1, 1));
-		OreDictionary.registerOre("treeWood", new ItemStack(BlockInit.LOGS, 1, 0));
-		OreDictionary.registerOre("treeWood", new ItemStack(BlockInit.LOGS, 1, 1));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.SAPLINGS, 1, 0));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.SAPLINGS, 1, 1));
-		OreDictionary.registerOre("treeSapling", new ItemStack(BlockInit.SAPLINGS, 1, 2));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.LEAVES, 1, 0));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.LEAVES, 1, 1));
-		OreDictionary.registerOre("treeLeaves", new ItemStack(BlockInit.LEAVES, 1, 2));
-		
-		
+		OreDictionary.registerOre("plankWood", BlockInit.BLACKSPRUCEPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.BLUESPRUCEPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.REDSPRUCEPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.CHERRYPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.WHITESPRUCEPLANKS);
+		OreDictionary.registerOre("treeWood", BlockInit.BLACKSPRUCELOG);
+		OreDictionary.registerOre("treeWood", BlockInit.BLUESPRUCELOG);
+		OreDictionary.registerOre("treeWood", BlockInit.REDSPRUCELOG);
+		OreDictionary.registerOre("treeWood", BlockInit.CHERRYLOG);
+		OreDictionary.registerOre("treeWood", BlockInit.WHITESPRUCELOG);
+		OreDictionary.registerOre("treeLeaves", BlockInit.BLACKSPRUCELEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.BLUESPRUCELEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.REDSPRUCELEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.CHERRYLEAVESWHITE);
+		OreDictionary.registerOre("treeLeaves", BlockInit.CHERRYLEAVESPURPLE);
+		OreDictionary.registerOre("treeLeaves", BlockInit.WHITESPRUCELEAVES);
+		OreDictionary.registerOre("treeSapling", BlockInit.BLACKSPRUCESAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.BLUESPRUCESAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.REDSPRUCESAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.CHERRYSAPLINGWHITE);
+		OreDictionary.registerOre("treeSapling", BlockInit.CHERRYSAPLINGPURPLE);
+		OreDictionary.registerOre("treeSapling", BlockInit.WHITESPRUCESAPLING);
 		//Stones
 		OreDictionary.registerOre("stone", BlockInit.BASALT_STONE);
 		OreDictionary.registerOre("stone", BlockInit.BLACKDIORITE_STONE);

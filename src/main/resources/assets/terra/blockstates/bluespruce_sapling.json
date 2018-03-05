@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:bluespruce_sapling",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{"model": "terra:bluespruce_sapling" }],
+        "stage=1":[{ "model": "terra:bluespruce_sapling"}]
+    }
+}

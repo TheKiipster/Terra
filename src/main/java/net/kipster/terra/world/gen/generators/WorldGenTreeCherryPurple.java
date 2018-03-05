@@ -6,10 +6,8 @@ import java.util.Random;
 import com.google.common.collect.Lists;
 
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.objects.blocks.BlockLeaf;
-import net.kipster.terra.objects.blocks.BlockLogs;
-import net.kipster.terra.util.handlers.EnumLeafHandler;
-import net.kipster.terra.util.handlers.EnumWoodHandler;
+import net.kipster.terra.objects.blocks.BlockLeavesCherryPurple;
+import net.kipster.terra.objects.blocks.BlockLogCherry;
 import com.google.common.collect.Lists;
 import java.util.List;
 import java.util.Random;
@@ -172,7 +170,7 @@ public class WorldGenTreeCherryPurple extends WorldGenAbstractTree
     {
         for (int i = 0; i < this.leafDistanceLimit; ++i)
         {
-            this.crosSection(pos.up(i), this.leafSize(i), BlockInit.LEAVES.getDefaultState().withProperty(BlockLeaf.VARIANT, EnumLeafHandler.EnumType.PURPLECHERRY).withProperty(BlockLeaf.CHECK_DECAY, Boolean.valueOf(false)));
+            this.crosSection(pos.up(i), this.leafSize(i), BlockInit.CHERRYLEAVESPURPLE.getDefaultState().withProperty(BlockLeavesCherryPurple.CHECK_DECAY, Boolean.valueOf(false)));
         }
     }
 
@@ -188,7 +186,7 @@ public class WorldGenTreeCherryPurple extends WorldGenAbstractTree
         {
             BlockPos blockpos1 = p_175937_1_.add((double)(0.5F + (float)j * f), (double)(0.5F + (float)j * f1), (double)(0.5F + (float)j * f2));
             BlockLog.EnumAxis blocklog$enumaxis = this.getLogAxis(p_175937_1_, blockpos1);
-            this.setBlockAndNotifyAdequately(this.world, blockpos1, p_175937_3_.getDefaultState().withProperty(BlockLogs.LOG_AXIS, blocklog$enumaxis));
+            this.setBlockAndNotifyAdequately(this.world, blockpos1, p_175937_3_.getDefaultState().withProperty(BlockLogCherry.LOG_AXIS, blocklog$enumaxis));
         }
     }
 
@@ -260,7 +258,7 @@ public class WorldGenTreeCherryPurple extends WorldGenAbstractTree
     {
         BlockPos blockpos = this.basePos;
         BlockPos blockpos1 = this.basePos.up(this.height);
-        Block block = BlockInit.LOGS;
+        Block block = BlockInit.CHERRYLOG;
         this.limb(blockpos, blockpos1, block);
 
         if (this.trunkSize == 2)
@@ -283,7 +281,7 @@ public class WorldGenTreeCherryPurple extends WorldGenAbstractTree
 
             if (!blockpos.equals(worldgenbigtree$foliagecoordinates) && this.leafNodeNeedsBase(i - this.basePos.getY()))
             {
-                this.limb(blockpos, worldgenbigtree$foliagecoordinates, BlockInit.LOGS);
+                this.limb(blockpos, worldgenbigtree$foliagecoordinates, BlockInit.CHERRYLOG);
             }
         }
     }

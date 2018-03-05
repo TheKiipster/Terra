@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:cherry_sapling_purple",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{"model": "terra:cherry_sapling_purple" }],
+        "stage=1":[{"model": "terra:cherry_sapling_purple" }]
+    }
+}

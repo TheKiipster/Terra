@@ -66,7 +66,7 @@ public class RegistryHandler
 	        Config.readConfig();
 	        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 	        GameRegistry.registerWorldGenerator(new WorldGenRocks(), 0);
-	        GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 4);
+	        GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
 	        
 		BiomeInit.initSubBiomes();
 		BiomeInit.registerBiomes();

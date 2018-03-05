@@ -73,7 +73,11 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome THICKET = new BiomeThicket();
 	public static final Biome BLOSSOM_WOODS = new BiomeBlossomWoods();
 	public static final Biome BLUE_TAIGA = new BiomeBlueTaiga();
-	
+	public static final Biome CRIMSON_WOODS = new BiomeCrimsonWoods();
+	public static final Biome COLD_DESERT = new BiomeColdDesert();
+	public static final Biome SILKGLADES = new BiomeSilkglades();
+	public static final Biome MYSTIC_WOODS = new BiomeMysticWoods();
+	public static final Biome SPRUCE_WOODS = new BiomeSpruceWoods();
 	
 	
 
@@ -125,6 +129,11 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(THICKET, "Thicket",  6, Config.disableThicket,BiomeType.WARM, Type.PLAINS, Type.DENSE, Type.SAVANNA);
 		initBiome(BLOSSOM_WOODS, "Blossom_Woods",  6, Config.disableBlossomWoods,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
 		initBiome(BLUE_TAIGA, "Blue_Taiga",  6, Config.disableBlueTaiga,BiomeType.COOL, Type.CONIFEROUS, Type.COLD, Type.SNOWY);
+		initBiome(SILKGLADES, "Silkglades", 10, Config.disablePraire, BiomeType.WARM, Type.FOREST, Type.DRY);
+		initBiome(CRIMSON_WOODS, "Crimson_Woods", 5, Config.disablePraire, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(MYSTIC_WOODS, "Mystic_Woods", 10, Config.disablePraire, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(COLD_DESERT, "Cold_Desert", 10, Config.disablePraire, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
+		initBiome(SPRUCE_WOODS, "Spruce_Woods", 5, Config.disableWoodlands, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
 		
 		
 
