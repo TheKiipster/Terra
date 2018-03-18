@@ -7,7 +7,7 @@
     "variants": {
         "normal": [{ }],
         "inventory": [{ }],
-        "stage=0":[{"model": "terra:cherry_sapling_white" }],
-        "stage=1":[{ "model": "terra:cherry_sapling_white"}]
+        "stage=0":[{ "model": "terra:cherry_sapling_white"}],
+        "stage=1":[{"model": "terra:cherry_sapling_white" }]
     }
 }

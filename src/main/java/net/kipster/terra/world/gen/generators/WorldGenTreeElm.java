@@ -284,7 +284,7 @@ public class WorldGenTreeElm extends WorldGenAbstractTree
 
             if (!blockpos.equals(worldgenbigtree$foliagecoordinates) && this.leafNodeNeedsBase(i - this.basePos.getY()))
             {
-                this.limb(blockpos, worldgenbigtree$foliagecoordinates, BlockInit.CHERRYLOG);
+                this.limb(blockpos, worldgenbigtree$foliagecoordinates, BlockInit.ELMLOG);
             }
         }
     }

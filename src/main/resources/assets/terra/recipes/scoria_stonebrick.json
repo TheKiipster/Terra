@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:scoria_stone"
+    }
+  },
+  "result": {
+    "item": "terra:scoria_stonebrick",
+    "count": 4
+  }
+}

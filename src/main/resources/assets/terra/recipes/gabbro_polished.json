@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+     "item": "terra:gabbro_stone"
+    }
+  },
+  "result": {
+    "item": "terra:gabbro_polished",
+    "count": 9
+    }
+}

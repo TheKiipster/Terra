@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:kimberlite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:kimberlite_stonebrick",
+    "count": 4
+  }
+}

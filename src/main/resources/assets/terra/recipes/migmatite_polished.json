@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+     "item": "terra:migmatite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:migmatite_polished",
+    "count": 9
+    }
+}

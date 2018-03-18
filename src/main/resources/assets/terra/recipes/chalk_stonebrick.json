@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:chalk_stone"
+    }
+  },
+  "result": {
+    "item": "terra:chalk_stonebrick",
+    "count": 4
+  }
+}

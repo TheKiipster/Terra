@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:thenalite_block"
+    }
+  },
+  "result": {
+    "item": "terra:thenalite_pillar",
+    "count": 4
+  }
+}

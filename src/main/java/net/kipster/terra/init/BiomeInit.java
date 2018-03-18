@@ -122,18 +122,18 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(ORANGEBEACH, "Orange_Beach", 2, Config.disableOrangeBeach, BiomeType.WARM, Type.BEACH, Type.WATER);
 		initBiome(BLACKDESERT, "Black_Desert", 1, Config.disableBlackDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.DRY, Type.SPARSE);
 		initBiome(BLUEMOUNTAIN, "Blue_Mountain", 4, Config.disableBlueMountains, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY, Type.MOUNTAIN);
-		initBiome(GREYMOUNTAIN, "Grey_Mountain",  6, Config.disableGreyMountains,BiomeType.WARM, Type.MOUNTAIN, Type.SPARSE);
-		initBiome(BADLANDS, "Badlands",  6, Config.disableBadlands,BiomeType.WARM, Type.HILLS, Type.SPARSE, Type.SAVANNA);
-		initBiome(OVERGROWN_PLAINS, "Overgrown_Plain",  6, Config.disableOvergrownPlains,BiomeType.WARM, Type.PLAINS, Type.JUNGLE, Type.LUSH);
-		initBiome(LUSH_SWAMP, "Lush_Swamp",  6, Config.disableLushSwamp,BiomeType.WARM, Type.SWAMP, Type.LUSH, Type.WET);
-		initBiome(THICKET, "Thicket",  6, Config.disableThicket,BiomeType.WARM, Type.PLAINS, Type.DENSE, Type.SAVANNA);
+		initBiome(GREYMOUNTAIN, "Grey_Mountain",  4, Config.disableGreyMountains,BiomeType.WARM, Type.MOUNTAIN, Type.SPARSE);
+		initBiome(BADLANDS, "Badlands",  5, Config.disableBadlands,BiomeType.WARM, Type.HILLS, Type.SPARSE, Type.SAVANNA);
+		initBiome(OVERGROWN_PLAINS, "Overgrown_Plain",  2, Config.disableOvergrownPlains,BiomeType.WARM, Type.PLAINS, Type.JUNGLE, Type.LUSH);
+		initBiome(LUSH_SWAMP, "Lush_Swamp",  5, Config.disableLushSwamp,BiomeType.WARM, Type.SWAMP, Type.LUSH, Type.WET);
+		initBiome(THICKET, "Thicket",  4, Config.disableThicket,BiomeType.WARM, Type.PLAINS, Type.DENSE, Type.SAVANNA);
 		initBiome(BLOSSOM_WOODS, "Blossom_Woods",  6, Config.disableBlossomWoods,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
-		initBiome(BLUE_TAIGA, "Blue_Taiga",  6, Config.disableBlueTaiga,BiomeType.COOL, Type.CONIFEROUS, Type.COLD, Type.SNOWY);
-		initBiome(SILKGLADES, "Silkglades", 10, Config.disablePraire, BiomeType.WARM, Type.FOREST, Type.DRY);
-		initBiome(CRIMSON_WOODS, "Crimson_Woods", 5, Config.disablePraire, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
-		initBiome(MYSTIC_WOODS, "Mystic_Woods", 10, Config.disablePraire, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
-		initBiome(COLD_DESERT, "Cold_Desert", 10, Config.disablePraire, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
-		initBiome(SPRUCE_WOODS, "Spruce_Woods", 5, Config.disableWoodlands, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
+		initBiome(BLUE_TAIGA, "Blue_Taiga",  4, Config.disableBlueTaiga,BiomeType.COOL, Type.CONIFEROUS, Type.COLD, Type.SNOWY);
+		initBiome(SILKGLADES, "Silkglades", 2, Config.disableSilkglades, BiomeType.WARM, Type.FOREST, Type.DRY);
+		initBiome(CRIMSON_WOODS, "Crimson_Woods", 2, Config.disableCrimsonWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(MYSTIC_WOODS, "Mystic_Woods", 2, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(COLD_DESERT, "Cold_Desert", 3, Config.disableColdDesert, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
+		initBiome(SPRUCE_WOODS, "Spruce_Woods", 4, Config.disableSpruceWoods, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
 		
 		
 
@@ -159,6 +159,7 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	        setSubBiome(Biomes.SAVANNA, Biomes.SAVANNA_PLATEAU);
 	        setSubBiome(Biomes.MESA_ROCK, Biomes.MESA);
 	        setSubBiome(Biomes.OCEAN, Biomes.DEEP_OCEAN);
+	        setSubBiome(Biomes.BEACH, BiomeInit.WHITEBEACH);
 	         setSubBiome(Biomes.DESERT, BiomeInit.WHITEDESERT);
 	         setSubBiome(BiomeInit.HIGHLANDS, BiomeInit.LAKE);
 	         setSubBiome(BiomeInit.PINELANDS, BiomeInit.LAKE);

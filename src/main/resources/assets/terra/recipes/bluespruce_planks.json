@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:bluespruce_log"
+    }
+  ],
+  "result": {
+    "item": "terra:bluespruce_planks",
+    "count": 4
+  }
+}

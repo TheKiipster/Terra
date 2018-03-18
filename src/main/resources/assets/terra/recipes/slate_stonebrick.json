@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:slate_stone"
+    }
+  },
+  "result": {
+    "item": "terra:slate_stonebrick",
+    "count": 4
+  }
+}

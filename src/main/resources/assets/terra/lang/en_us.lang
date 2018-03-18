@@ -1,4 +1,6 @@
-itemGroup.terratab=Terra
+itemGroup.terratabgeology=Terra Geology
+itemGroup.terratabmisc=Terra Misc
+itemGroup.terratabplants=Terra Plants
 
 tile.black_sand.name=Black Sand
 tile.black_sandstone.name=Black Sandstone
@@ -85,5 +87,159 @@ tile.blackdiorite_stone.name=Black Diorite
 tile.imperialquartzite_stone.name=Imperial Quartzite
 tile.pinkquartzite_stone.name=Pink Quartzite
 tile.redquartzite_stone.name=Red Quartzite
+tile.chalk_stone.name=Chalk
+tile.blueschist_stone.name=Blue Schist
+tile.greenschist_stone.name=Green Schist
+tile.gabbro_stone.name=Gabbro
+tile.gneiss_stone.name=Gneiss
+tile.kimberlite_stone_stone.name=Kimberlite
+tile.limestone_stone.name=Limestone
+tile.marble_stone.name=Marble
+tile.migmatite_stone.name=Migmatite
+tile.pumice_stone.name=Pumice
+tile.rhyolite_stone.name=Rhyolite
+tile.scoria_stone.name=Scoria
+tile.slate_stone.name=Slate
+tile.soapstone_stone.name=Soapstone
+
+tile.basalt_cobblestone.name=Basalt Cobblestone
+tile.blackdiorite_cobblestone.name=Black Diorite Cobblestone
+tile.imperialquartzite_cobblestone.name=Imperial Quartzite Cobblestone
+tile.pinkquartzite_cobblestone.name=Pink Quartzite Cobblestone
+tile.redquartzite_cobblestone.name=Red Quartzite Cobblestone
+tile.chalk_cobblestone.name=Chalk Cobblestone
+tile.blueschist_cobblestone.name=Blue Schist Cobblestone
+tile.greenschist_cobblestone.name=Green Schist Cobblestone
+tile.gabbro_cobblestone.name=Gabbro Cobblestone
+tile.gneiss_cobblestone.name=Gneiss Cobblestone
+tile.kimberlite_cobblestone_cobblestone.name=Kimberlite Cobblestone
+tile.limestone_cobblestone.name=Limestone Cobblestone
+tile.marble_cobblestone.name=Marble Cobblestone
+tile.migmatite_cobblestone.name=Migmatite Cobblestone
+tile.pumice_cobblestone.name=Pumice Cobblestone
+tile.rhyolite_cobblestone.name=Rhyolite Cobblestone
+tile.scoria_cobblestone.name=Scoria Cobblestone
+tile.slate_cobblestone.name=Slate Cobblestone
+tile.soapstone_cobblestone.name=Soapstone Cobblestone
+
+tile.basalt_stonebrick.name=Basalt Stonebricks
+tile.blackdiorite_stonebrick.name=Black Diorite Stonebricks
+tile.imperialquartzite_stonebrick.name=Imperial Quartzite Stonebricks
+tile.pinkquartzite_stonebrick.name=Pink Quartzite Stonebricks
+tile.redquartzite_stonebrick.name=Red Quartzite Stonebricks
+tile.chalk_stonebrick.name=Chalk Stonebricks
+tile.blueschist_stonebrick.name=Blue Schist Stonebricks
+tile.greenschist_stonebrick.name=Green Schist Stonebricks
+tile.gabbro_stonebrick.name=Gabbro Stonebricks
+tile.gneiss_stonebrick.name=Gneiss Stonebricks
+tile.kimberlite_stonebrick_stonebrick.name=Kimberlite Stonebricks
+tile.limestone_stonebrick.name=Limestone Stonebricks
+tile.marble_stonebrick.name=Marble Stonebricks
+tile.migmatite_stonebrick.name=Migmatite Stonebricks
+tile.pumice_stonebrick.name=Pumice Stonebricks
+tile.rhyolite_stonebrick.name=Rhyolite Stonebricks
+tile.scoria_stonebrick.name=Scoria Stonebricks
+tile.slate_stonebrick.name=Slate Stonebricks
+tile.soapstone_stonebrick.name=Soapstone Stonebricks
+
+tile.basalt_polished.name=Polished Basalt 
+tile.blackdiorite_polished.name=Polished Black Diorite 
+tile.imperialquartzite_polished.name=Polished Imperial Quartzite 
+tile.pinkquartzite_polished.name=Polished Pink Quartzite 
+tile.redquartzite_polished.name=Polished Red Quartzite 
+tile.chalk_polished.name=Polished Chalk 
+tile.blueschist_polished.name=Polished Blue Schist 
+tile.greenschist_polished.name=Polished Green Schist 
+tile.gabbro_polished.name=Polished Gabbro 
+tile.gneiss_polished.name=Polished Gneiss 
+tile.kimberlite_polished_polished.name=Polished Kimberlite 
+tile.limestone_polished.name=Polished Limestone 
+tile.marble_polished.name=Polished Marble 
+tile.migmatite_polished.name=Polished Migmatite 
+tile.pumice_polished.name=Polished Pumice 
+tile.rhyolite_polished.name=Polished Rhyolite 
+tile.scoria_polished.name=Polished Scoria 
+tile.slate_polished.name=Polished Slate 
+tile.soapstone_polished.name=Polished Soapstone 
+
+tile.cherry_log.name=Cherry Log 
+tile.bluespruce_log.name=Blue Spruce Log 
+tile.blackspruce_log.name=Black Spruce Log 
+tile.whitespruce_log.name=White Spruce Log 
+tile.redspruce_log.name=Red Spruce Log 
+tile.elm_log.name=Elm Log 
+tile.palm_log.name=Palm Log 
+tile.mahogany_log.name=Mahogany Log 
+
+tile.cherry_leaves_white.name=Cherry Leaves 
+tile.cherry_leaves_purple.name=Cherry Leaves 
+tile.bluespruce_leaves.name=Blue Spruce Leaves 
+tile.redspruce_leaves.name=Red Spruce Leaves 
+tile.blackspruce_leaves.name=Black Spruce Leaves 
+tile.whitespruce_leaves.name=White Spruce Leaves 
+tile.palm_leaves.name=Palm Leaves 
+tile.elm_leaves.name=Elm Leaves 
+tile.mahogany_leaves.name=Mahogany Leaves 
+
+tile.cherry_sapling_white.name=Cherry Sapling 
+tile.cherry_sapling_purple.name=Cherry Sapling 
+tile.bluespruce_sapling.name=Blue Spruce Sapling 
+tile.redspruce_sapling.name=Red Spruce Sapling 
+tile.blackspruce_sapling.name=Black Spruce Sapling 
+tile.whitespruce_sapling.name=White Spruce Sapling 
+tile.palm_sapling.name=Palm Sapling 
+tile.elm_sapling.name=Elm Sapling 
+tile.mahogany_sapling.name=Mahogany Sapling 
+
+tile.cherry_planks.name=Cherry Planks 
+tile.bluespruce_planks.name=Blue Spruce Planks 
+tile.blackspruce_planks.name=Black Spruce Planks 
+tile.whitespruce_planks.name=White Spruce Planks 
+tile.redspruce_planks.name=Red Spruce Planks 
+tile.elm_planks.name=Elm Planks 
+tile.palm_planks.name=Palm Planks 
+tile.mahogany_planks.name=Mahogany Planks 
+
+tile.alikite.name=Alikite
+tile.triglicite.name=Triglicite
+tile.krundaltite.name=Krundaltite
+tile.alikite_bricks.name=Alikite Bricks
+tile.triglicite_bricks.name=Triglicite Bricks
+tile.krundaltite_bricks.name=Krundaltite Bricks
+item.alikite_brick.name=Alikite Brick
+item.triglicite_brick.name=Triglicite
+item.krundaltite_brick.name=Krundaltite
+
+item.danlveyite_gem.name=Danlveyite
+item.kamboradoite_gem.name=Kamboradoite
+item.magachite_gem.name=Magachite
+item.meliscite_gem.name=Meliscite
+item.solitudite_gem.name=Solitudite
+item.thenalite_gem.name=Thenalite
+tile.danlveyite.name=Danlveyite Ore
+tile.kamboradoite.name=Kamboradoite Ore
+tile.magachite.name=Magachite Ore
+tile.meliscite.name=Meliscite Ore
+tile.solitudite.name=Solitudite Ore
+tile.thenalite.name=Thenalite Ore
+tile.danlveyite_block.name=Danlveyite Block
+tile.kamboradoite_block.name=Kamboradoite Block
+tile.magachite_block.name=Magachite Block
+tile.meliscite_block.name=Meliscite Block
+tile.solitudite_block.name=Solitudite Block
+tile.thenalite_block.name=Thenalite Block
+tile.danlveyite_pillar.name=Danlveyite Pillar
+tile.kamboradoite_pillar.name=Kamboradoite Pillar
+tile.magachite_pillar.name=Magachite Pillar
+tile.meliscite_pillar.name=Meliscite Pillar
+tile.solitudite_pillar.name=Solitudite Pillar
+tile.thenalite_pillar.name=Thenalite Pillar
+
+
+
+
+
+
+
 
 tile.grey_deadbush.name=Grey Deadbush

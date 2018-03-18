@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+     "item": "terra:greenschist_stone"
+    }
+  },
+  "result": {
+    "item": "terra:greenschist_polished",
+    "count": 9
+    }
+}

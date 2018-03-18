@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:triglicite_brick"
+    }
+  },
+  "result": {
+    "item": "terra:triglicite_bricks",
+    "count": 4
+  }
+}

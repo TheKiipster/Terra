@@ -1,0 +1,17 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:pumice_stone"
+    }
+  },
+  "result": {
+    "item": "terra:pumice_stonebrick",
+    "count": 4
+  }
+}

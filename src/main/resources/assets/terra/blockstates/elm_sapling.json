@@ -7,7 +7,7 @@
     "variants": {
         "normal": [{ }],
         "inventory": [{ }],
-        "stage=0":[{ "model": "terra:elm_sapling" }],
-        "stage=1":[{ "model": "terra:elm_sapling" }]
+        "stage=0":[{ "model": "terra:elm_sapling"}],
+        "stage=1":[{"model": "terra:elm_sapling" }]
     }
 }

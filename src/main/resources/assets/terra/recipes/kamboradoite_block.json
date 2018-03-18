@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:kambordoite_gem"
+    }
+  },
+  "result": {
+    "item": "terra:kambordoite_block",
+    "count": 4
+  }
+}

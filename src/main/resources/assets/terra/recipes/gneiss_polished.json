@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+     "item": "terra:gneiss_stone"
+    }
+  },
+  "result": {
+    "item": "terra:gneiss_polished",
+    "count": 9
+    }
+}

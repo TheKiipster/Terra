@@ -109,6 +109,21 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("treeSapling", BlockInit.CHERRYSAPLINGWHITE);
 		OreDictionary.registerOre("treeSapling", BlockInit.CHERRYSAPLINGPURPLE);
 		OreDictionary.registerOre("treeSapling", BlockInit.WHITESPRUCESAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.ELMSAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.MAHOGANYSAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.PALMSAPLING);
+		OreDictionary.registerOre("treeLeaves", BlockInit.ELMLEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.MAHOGANYLEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.PALMLEAVES);
+		OreDictionary.registerOre("treeWood", BlockInit.ELMLOG);
+		OreDictionary.registerOre("treeWood", BlockInit.MAHOGANYLOG);
+		OreDictionary.registerOre("treeWood", BlockInit.PALMLOG);
+		OreDictionary.registerOre("plankWood", BlockInit.ELMPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.MAHOGANYPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.PALMPLANKS);
+		
+		
+		
 		//Stones
 		OreDictionary.registerOre("stone", BlockInit.BASALT_STONE);
 		OreDictionary.registerOre("stone", BlockInit.BLACKDIORITE_STONE);
