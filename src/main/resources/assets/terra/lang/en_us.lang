@@ -171,7 +171,12 @@ tile.elm_log.name=Elm Log
 tile.palm_log.name=Palm Log 
 tile.mahogany_log.name=Mahogany Log 
 
-tile.cherry_leaves_white.name=Cherry Leaves 
+tile.jacaranda_leaves_magenta.name=Jacaranda Leaves
+tile.jacaranda_leaves_purple.name=Jacaranda Leaves
+tile.paulownia_leaves_gree.name=Paulownia Leaves
+tile.paulownia_leaves_white.name=Paulownia Leaves
+tile.paulownia_leaves_blue.name=Paulownia Leaves
+tile.cherry_leaves_white.name=Cherry Leaves
 tile.cherry_leaves_purple.name=Cherry Leaves 
 tile.bluespruce_leaves.name=Blue Spruce Leaves 
 tile.redspruce_leaves.name=Red Spruce Leaves 
@@ -181,6 +186,11 @@ tile.palm_leaves.name=Palm Leaves
 tile.elm_leaves.name=Elm Leaves 
 tile.mahogany_leaves.name=Mahogany Leaves 
 
+tile.jacaranda_sapling_magenta.name=Jacaranda Sapling
+tile.jacaranda_sapling_purple.name=Jacaranda Sapling
+tile.paulownia_sapling_gree.name=Paulownia Sapling
+tile.paulownia_sapling_white.name=Paulownia Sapling
+tile.paulownia_sapling_blue.name=Paulownia Sapling
 tile.cherry_sapling_white.name=Cherry Sapling 
 tile.cherry_sapling_purple.name=Cherry Sapling 
 tile.bluespruce_sapling.name=Blue Spruce Sapling 
