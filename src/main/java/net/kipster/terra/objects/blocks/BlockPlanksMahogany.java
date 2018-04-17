@@ -23,7 +23,9 @@ public class BlockPlanksMahogany extends Block implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.WOOD);
 		setCreativeTab(Main.TERRATABPLANTS);
-		
+		setHarvestLevel("axe", 0);
+	    setHardness(2.0F);
+	    
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}

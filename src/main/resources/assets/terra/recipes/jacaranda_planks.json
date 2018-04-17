@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:jacaranda_log"
+    }
+  ],
+  "result": {
+    "item": "terra:jacaranda_planks",
+    "count": 4
+  }
+}

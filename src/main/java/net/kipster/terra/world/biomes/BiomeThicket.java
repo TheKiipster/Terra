@@ -46,24 +46,24 @@ public class BiomeThicket extends Biome
 	public BiomeThicket() 
 	{
 		
-		super(new BiomeProperties("Highlands").setBaseHeight(0.84F).setHeightVariation(0.5F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Thicket").setBaseHeight(0.192F).setHeightVariation(0.085F).setTemperature(1F).setRainfall(0.2F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.HIGHLANDS , true);
+		BiomeManager.addVillageBiome(BiomeInit.THICKET , true);
 		
-	topBlock = Blocks.GRASS.getDefaultState();
+	 topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 3;
-		this.decorator.grassPerChunk = 12;
-		this.decorator.flowersPerChunk = 6;
+		this.decorator.treesPerChunk = 13;
+		this.decorator.grassPerChunk = 10;
+		this.decorator.deadBushPerChunk = 6;
 
 
 	}
 		@Override
-		public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
-		{
-			return TREE;
-	}
+		public WorldGenAbstractTree getRandomTreeFeature(Random rand)
+	    {
+	        return SWAMP_FEATURE;
+	    }
 
 		public WorldGenerator getRandomWorldGenForGrass(Random rand)
 	    {
@@ -87,10 +87,10 @@ public class BiomeThicket extends Biome
 	        }
 		@Override
 		public int getModdedBiomeGrassColor(int original) {
-		    return 0x71A559;
+		    return 0xA19D4D;
 		}
 		@Override
 		public int getModdedBiomeFoliageColor(int original) {
-		    return 0x71A559;
+		    return 0xA19D4D;
 		}
 	}

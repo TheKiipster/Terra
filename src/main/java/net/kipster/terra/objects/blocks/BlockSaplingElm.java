@@ -12,6 +12,7 @@ import net.kipster.terra.util.interfaces.IHasModel;
 import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce;
 import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
 import net.kipster.terra.world.gen.generators.WorldGenTreeElm;
+import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaWhite2;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;

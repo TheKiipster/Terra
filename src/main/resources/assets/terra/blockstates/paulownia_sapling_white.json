@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:paulownia_sapling_white",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{ "model": "terra:paulownia_sapling_white" }],
+        "stage=1":[{ "model": "terra:paulownia_sapling_white" }]
+    }
+}

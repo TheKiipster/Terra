@@ -1,0 +1,17 @@
+{
+    "multipart": [
+        {   "apply": { "model": "terra:paulownia_fencepost" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "terra:paulownia_fenceside", "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "terra:paulownia_fenceside", "y": 90, "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "terra:paulownia_fenceside", "y": 180, "uvlock": true }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "terra:paulownia_fenceside", "y": 270, "uvlock": true }
+        }
+    ]
+}

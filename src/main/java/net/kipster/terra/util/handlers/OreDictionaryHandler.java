@@ -121,7 +121,24 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("plankWood", BlockInit.ELMPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.MAHOGANYPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.PALMPLANKS);
-		
+		OreDictionary.registerOre("plankWood", BlockInit.EBONYPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.JACARANDAPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.PAULOWNIAPLANKS);
+		OreDictionary.registerOre("treeWood", BlockInit.EBONYLOG);
+		OreDictionary.registerOre("treeWood", BlockInit.JACARANDALOG);
+		OreDictionary.registerOre("treeWood", BlockInit.PAULOWNIALOG);
+		OreDictionary.registerOre("treeLeaves", BlockInit.EBONYLEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.PAULOWNIASAPLINGWHITE);
+		OreDictionary.registerOre("treeLeaves", BlockInit.PAULOWNIALEAVESBLUE);
+		OreDictionary.registerOre("treeLeaves", BlockInit.PAULOWNIALEAVESGREEN);
+		OreDictionary.registerOre("treeLeaves", BlockInit.JACARANDALEAVESMAGENTA);
+		OreDictionary.registerOre("treeLeaves", BlockInit.JACARANDALEAVESPURPLE);
+		OreDictionary.registerOre("treeSapling", BlockInit.EBONYSAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.JACARANDASAPLINGMAGENTA);
+		OreDictionary.registerOre("treeSapling", BlockInit.JACARANDASAPLINGPURPLE);
+		OreDictionary.registerOre("treeSapling", BlockInit.PAULOWNIASAPLINGWHITE);
+		OreDictionary.registerOre("treeSapling", BlockInit.PAULOWNIASAPLINGBLUE);
+		OreDictionary.registerOre("treeSapling", BlockInit.PAULOWNIASAPLINGGREEN);
 		
 		
 		//Stones

@@ -16,6 +16,7 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.passive.EntityDonkey;
@@ -41,7 +42,7 @@ import net.minecraftforge.fml.relauncher.Side;
 
 public class BiomePraire extends Biome
 {	
-	
+	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(BlockInit.EBONYLEAVES, BlockInit.EBONYLOG, 0, 0, false);
 	public BiomePraire() 
 	{
 		
@@ -65,6 +66,11 @@ public class BiomePraire extends Biome
     {
         return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
     }
+	@Override
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+	{
+		return TREE;
+}
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {

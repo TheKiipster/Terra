@@ -39,7 +39,7 @@ public class BiomeBlossomWoods extends Biome
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		 this.decorator.treesPerChunk = 10;
+		 this.decorator.treesPerChunk = 8;
 	        this.decorator.grassPerChunk = 6;
 	        this.decorator.flowersPerChunk = 10;
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));

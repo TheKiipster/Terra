@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "terra:bluespruce_planks"
+    }
+  },
+  "result": {
+    "item": "terra:bluespruce_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "terra:cherry_planks"
+    }
+  },
+  "result": {
+    "item": "terra:cherry_fence",
+    "count": 3
+  }
+}

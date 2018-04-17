@@ -49,7 +49,7 @@ public class WorldGenTreeMahogany extends WorldGenHugeTrees
                 {
                     k = position.getX() + (int)(1.5F + MathHelper.cos(f) * (float)i1);
                     l = position.getZ() + (int)(1.5F + MathHelper.sin(f) * (float)i1);
-                    this.setBlockAndNotifyAdequately(worldIn, new BlockPos(k, j - 3 + i1 / 2, l), BlockInit.MAHOGANYLEAVES);
+                    this.setBlockAndNotifyAdequately(worldIn, new BlockPos(k, j - 3 + i1 / 2, l), this.woodMetadata);
                 }
 
                 int j2 = 1 + rand.nextInt(2);
@@ -123,11 +123,6 @@ public class WorldGenTreeMahogany extends WorldGenHugeTrees
             return true;
         }
     }
-
-    private void setBlockAndNotifyAdequately(World worldIn, BlockPos pos, Block block) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	private void placeVine(World p_181632_1_, Random p_181632_2_, BlockPos p_181632_3_, PropertyBool p_181632_4_)
     {

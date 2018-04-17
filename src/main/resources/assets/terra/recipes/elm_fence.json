@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "terra:elm_planks"
+    }
+  },
+  "result": {
+    "item": "terra:elm_fence",
+    "count": 3
+  }
+}

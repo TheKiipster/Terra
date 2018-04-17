@@ -68,6 +68,8 @@ public class RegistryHandler
 	        GameRegistry.registerWorldGenerator(new WorldGenRocks(), 0);
 	        GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
 	        
+	        
+	        
 		BiomeInit.initSubBiomes();
 		BiomeInit.registerBiomes();
 		

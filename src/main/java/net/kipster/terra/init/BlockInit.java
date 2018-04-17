@@ -5,6 +5,7 @@ import java.util.List;
 
 import net.kipster.terra.objects.blocks.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
 import net.minecraft.block.material.Material;
 
 public class BlockInit
@@ -110,6 +111,9 @@ public class BlockInit
 	public static final Block ELMLOG = new BlockLogRedSpruce("elm_log", Material.WOOD);
 	public static final Block PALMLOG = new BlockLogRedSpruce("palm_log", Material.WOOD);
 	public static final Block MAHOGANYLOG = new BlockLogRedSpruce("mahogany_log", Material.WOOD);
+	public static final Block EBONYLOG = new BlockLogEbony("ebony_log", Material.WOOD);
+	public static final Block PAULOWNIALOG = new BlockLogPaulownia("paulownia_log", Material.WOOD);
+	public static final Block JACARANDALOG = new BlockLogJacaranda("jacaranda_log", Material.WOOD);
 	
 	//Leaves
 	public static final Block CHERRYLEAVESWHITE = new BlockLeavesCherryWhite("cherry_leaves_white", Material.LEAVES);
@@ -121,6 +125,17 @@ public class BlockInit
 	public static final Block ELMLEAVES = new BlockLeavesElm("elm_leaves", Material.LEAVES);
 	public static final Block PALMLEAVES = new BlockLeavesPalm("palm_leaves", Material.LEAVES);
 	public static final Block MAHOGANYLEAVES = new BlockLeavesMahogany("mahogany_leaves", Material.LEAVES);
+	public static final Block EBONYLEAVES = new BlockLeavesEbony("ebony_leaves", Material.LEAVES);
+	public static final Block JACARANDALEAVESPURPLE = new BlockLeavesJacarandaPurple("jacaranda_leaves_purple", Material.LEAVES);
+	public static final Block JACARANDALEAVESMAGENTA = new BlockLeavesJacarandaMagenta("jacaranda_leaves_magenta", Material.LEAVES);
+	public static final Block PAULOWNIALEAVESGREEN = new BlockLeavesPaulowniaGreen("paulownia_leaves_green", Material.LEAVES);
+	public static final Block PAULOWNIALEAVESWHITE = new BlockLeavesPaulowniaWhite("paulownia_leaves_white", Material.LEAVES);
+	public static final Block PAULOWNIALEAVESBLUE = new BlockLeavesPaulowniaBlue("paulownia_leaves_blue", Material.LEAVES);
+	
+	
+	
+	
+	
 	
 	//Saplings
 	public static final Block CHERRYSAPLINGWHITE = new BlockSaplingCherryWhite("cherry_sapling_white", Material.LEAVES);
@@ -132,6 +147,37 @@ public class BlockInit
 	public static final Block ELMSAPLING = new BlockSaplingElm("elm_sapling", Material.LEAVES);
 	public static final Block PALMSAPLING = new BlockSaplingPalm("palm_sapling", Material.LEAVES);
 	public static final Block MAHOGANYSAPLING = new BlockSaplingMahogany("mahogany_sapling", Material.LEAVES);
+	public static final Block EBONYSAPLING = new BlockSaplingEbony("ebony_sapling", Material.LEAVES);
+	public static final Block JACARANDASAPLINGPURPLE = new BlockSaplingJacarandaPurple("jacaranda_sapling_purple", Material.LEAVES);
+	public static final Block JACARANDASAPLINGMAGENTA = new BlockSaplingJacarandaMagenta("jacaranda_sapling_magenta", Material.LEAVES);
+	public static final Block PAULOWNIASAPLINGGREEN = new BlockSaplingPaulowniaGreen("paulownia_sapling_green", Material.LEAVES);
+	public static final Block PAULOWNIASAPLINGWHITE = new BlockSaplingPaulowniaWhite("paulownia_sapling_white", Material.LEAVES);
+	public static final Block PAULOWNIASAPLINGBLUE = new BlockSaplingPaulowniaBlue("paulownia_sapling_blue", Material.LEAVES);
+
+	//Other
+	public static final Block CHERRYFENCE = new BlockTerraFence("cherry_fence", Material.WOOD);
+	public static final Block CHERRYFENCEGATE = new BlockTerraFenceGate("cherry_fencegate", Material.WOOD);
+	public static final Block BLUESPRUCEFENCE = new BlockTerraFence("bluespruce_fence", Material.WOOD);
+	public static final Block BLUESPRUCEFENCEGATE = new BlockTerraFenceGate("bluespruce_fencegate", Material.WOOD);
+	public static final Block BLACKSPRUCEFENCE = new BlockTerraFence("blackspruce_fence", Material.WOOD);
+	public static final Block BLACKSPRUCEFENCEGATE = new BlockTerraFenceGate("blackspruce_fencegate", Material.WOOD);
+	public static final Block WHITESPRUCEFENCE = new BlockTerraFence("whitespruce_fence", Material.WOOD);
+	public static final Block WHITESPRUCEFENCEGATE = new BlockTerraFenceGate("whitespruce_fencegate", Material.WOOD);
+	public static final Block REDSPRUCEFENCE = new BlockTerraFence("redspruce_fence", Material.WOOD);
+	public static final Block REDSPRUCEFENCEGATE = new BlockTerraFenceGate("redspruce_fencegate", Material.WOOD);
+	public static final Block EBONYFENCE = new BlockTerraFence("ebony_fence", Material.WOOD);
+	public static final Block EBONYFENCEGATE = new BlockTerraFenceGate("ebony_fencegate", Material.WOOD);
+	public static final Block ELMFENCE = new BlockTerraFence("elm_fence", Material.WOOD);
+	public static final Block ELMFENCEGATE = new BlockTerraFenceGate("elm_fencegate", Material.WOOD);
+	public static final Block PALMFENCE = new BlockTerraFence("palm_fence", Material.WOOD);
+	public static final Block PALMFENCEGATE = new BlockTerraFenceGate("palm_fencegate", Material.WOOD);
+	public static final Block JACARANDAFENCE = new BlockTerraFence("jacaranda_fence", Material.WOOD);
+	public static final Block JACARANDAFENCEGATE = new BlockTerraFenceGate("jacaranda_fencegate", Material.WOOD);
+	public static final Block MAHOGANYFENCE = new BlockTerraFence("mahogany_fence", Material.WOOD);
+	public static final Block MAHOGANYFENCEGATE = new BlockTerraFenceGate("mahogany_fencegate", Material.WOOD);
+	public static final Block PAULOWNIAFENCE = new BlockTerraFence("paulownia_fence", Material.WOOD);
+	public static final Block PAULOWNIAFENCEGATE = new BlockTerraFenceGate("paulownia_fencegate", Material.WOOD);
+	
 	
 	//Planks
 	public static final Block CHERRYPLANKS = new BlockPlanksCherry("cherry_planks", Material.WOOD);
@@ -142,7 +188,11 @@ public class BlockInit
 	public static final Block ELMPLANKS = new BlockPlanksElm("elm_planks", Material.WOOD);
 	public static final Block PALMPLANKS = new BlockPlanksPalm("palm_planks", Material.WOOD);
 	public static final Block MAHOGANYPLANKS = new BlockPlanksMahogany("mahogany_planks", Material.WOOD);
-
+	public static final Block EBONYPLANKS = new BlockPlanksEbony("ebony_planks", Material.WOOD);
+	public static final Block PAULOWNIAPLANKS = new BlockPlanksPaulownia("paulownia_planks", Material.WOOD);
+	public static final Block JACARANDAPLANKS = new BlockPlanksJacaranda("jacaranda_planks", Material.WOOD);
+	
+	
 	
 	//Stone
 	public static final Block BASALT_STONE = new BlockBasalt("basalt_stone", Material.ROCK);

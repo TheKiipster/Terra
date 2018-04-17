@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:hyacinth",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{ "model": "terra:hyacinth" }],
+        "stage=1":[{ "model": "terra:hyacinth" }]
+    }
+}

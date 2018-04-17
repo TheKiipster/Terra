@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:jacaranda_sapling_magenta",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{ "model": "terra:jacaranda_sapling_magenta" }],
+        "stage=1":[{ "model": "terra:jacaranda_sapling_magenta" }]
+    }
+}

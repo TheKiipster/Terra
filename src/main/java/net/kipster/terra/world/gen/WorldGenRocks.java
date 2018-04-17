@@ -139,17 +139,17 @@ public class WorldGenRocks implements IWorldGenerator
 			for(int i = 0; i < Config.alikitePerChunk; i++)
 			{
 				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(71), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.ALIKITE.getDefaultState(), 32, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
+				new WorldGenMinable(BlockInit.ALIKITE.getDefaultState(), 50, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.triglicitePerChunk; i++)
 			{
 				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(71), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.TRIGLICITE.getDefaultState(), 32, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
+				new WorldGenMinable(BlockInit.TRIGLICITE.getDefaultState(), 50, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.krundaltitePerChunk; i++)
 			{
 				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(71), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.KRUNDALTITE.getDefaultState(), 32, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
+				new WorldGenMinable(BlockInit.KRUNDALTITE.getDefaultState(), 50, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
 			}
 		}
 	}

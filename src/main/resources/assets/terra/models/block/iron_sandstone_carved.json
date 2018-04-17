@@ -3,6 +3,6 @@
     "textures": {
         "bottom": "terra:blocks/iron_sandstone_bottom",
         "top": "terra:blocks/iron_sandstone_top",
-        "side": "terra:blocks/iron_sandstone_smooth"
+        "side": "terra:blocks/iron_sandstone_carved"
     }
 }

@@ -16,8 +16,15 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce;
+import net.kipster.terra.world.gen.generators.WorldGenTreeJacarandaPurple;
+import net.kipster.terra.world.gen.generators.WorldGenTreeMystic;
+import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaBlue;
+import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreen;
+import net.kipster.terra.world.gen.generators.WorldGenTreeSwampDark;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntityPig;
@@ -33,6 +40,7 @@ import net.minecraft.world.biome.BiomeBeach;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenBlockBlob;
 import net.minecraft.world.gen.feature.WorldGenMelon;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
@@ -46,6 +54,9 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeRainforest extends Biome
 {	
 	
+	 protected static final IBlockState WATER_LILY = Blocks.WATERLILY.getDefaultState();
+		 protected static final WorldGenTreePaulowniaGreen PAUL_GREEN = new WorldGenTreePaulowniaGreen(false, false);
+		 protected static final WorldGenAbstractTree JAC_PURPLE = new WorldGenTreeJacarandaPurple(false, false);
 	public BiomeRainforest() 
 	{
 		
@@ -53,12 +64,13 @@ public class BiomeRainforest extends Biome
 		
 		BiomeManager.addVillageBiome(BiomeInit.RAINFOREST , true);
 		
-	topBlock = Blocks.GRASS.getDefaultState();
+	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 12;
+		this.decorator.treesPerChunk = 10;
 		 this.decorator.flowersPerChunk = 12;
 	        this.decorator.grassPerChunk = 15;
+	        this.decorator.extraTreeChance = 5;
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class, 4, 4, 4));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityOcelot.class, 2, 1, 1));
@@ -69,6 +81,17 @@ public class BiomeRainforest extends Biome
 	public WorldGenerator getRandomWorldGenForGrass(Random rand)
     {
         return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
+    }
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
+    {
+	if (rand.nextInt(3) > 0)
+	{
+		  return JAC_PURPLE;
+	}
+	else
+	{
+	  return (WorldGenAbstractTree)(rand.nextInt(3) == 0 ? PAUL_GREEN : PAUL_GREEN);
+}
     }
 
 public void decorate(World worldIn, Random rand, BlockPos pos)

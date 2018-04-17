@@ -1,6 +1,6 @@
 
 {
     "variants": {
-        "normal": { "model": "terra:pumice_stone" }
+        "normal": { "model": "terra:pumice_polished" }
     }
 }

@@ -83,13 +83,12 @@ public class BiomeMysticWoods extends Biome
         this.decorator.treesPerChunk = 9;
         this.decorator.grassPerChunk = 7;
         this.decorator.mushroomsPerChunk = 7;
+        this.decorator.flowersPerChunk = 7;
         this.decorator.bigMushroomsPerChunk= 5;
         this.decorator.waterlilyPerChunk = 4;
     }
-	 public BlockFlower.EnumFlowerType pickRandomFlower(Random rand, BlockPos pos)
-	    {
-	        return BlockFlower.EnumFlowerType.BLUE_ORCHID;
-	    }
+
+	 
 	 public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal)
 	    {
 	        double d0 = GRASS_COLOR_NOISE.getValue((double)x * 0.25D, (double)z * 0.25D);
@@ -170,6 +169,7 @@ public class BiomeMysticWoods extends Biome
 
         super.decorate(worldIn, rand, pos);
     }
+
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
 	    return 0x1eccc7;
@@ -178,10 +178,5 @@ public class BiomeMysticWoods extends Biome
 	public int getModdedBiomeFoliageColor(int original) {
 	    return 0x1eccc7;
 	}
-
-    @Override
-    public void addDefaultFlowers()
-    {
-        addFlower(Blocks.RED_FLOWER.getDefaultState().withProperty(Blocks.RED_FLOWER.getTypeProperty(), BlockFlower.EnumFlowerType.BLUE_ORCHID), 10);
-    }
+    
 }

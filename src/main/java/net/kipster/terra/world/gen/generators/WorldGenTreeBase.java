@@ -142,54 +142,8 @@ public abstract class WorldGenTreeBase extends WorldGenAbstractTree
     		}
     		return new int[]{locX, locY-length, locZ+length*direction};
     	}
-    }
+    	}
 
-	protected void generateSequoiaBranch(double length, int xo, int zo, int h){
-		for(int i = 0; i < length; i++){
-			int j = i - 3;
-			
-			setBlockLog(new BlockPos(xo+i, h, zo), 4);
-			if(length > 3 && j > 0 && i < length - 1){
-				setBlockLog(new BlockPos(xo+i, h, zo+j), 8);
-				setBlockLog(new BlockPos(xo+i, h, zo-j), 8);
-			}
-			
-			setBlockLog(new BlockPos(xo, h, zo+i), 8);
-			if(length > 3 && j > 0 && i < length - 1){
-				setBlockLog(new BlockPos(xo+j, h, zo+i), 4);
-				setBlockLog(new BlockPos(xo-j, h, zo+i), 4);
-			}
-			
-			setBlockLog(new BlockPos(xo-i, h, zo), 4);
-			if(length > 3 && j > 0 && i < length - 1){
-				setBlockLog(new BlockPos(xo-i, h, zo+j), 8);
-				setBlockLog(new BlockPos(xo-i, h, zo-j), 8);
-			}
-			
-			setBlockLog(new BlockPos(xo, h, zo-i), 8);
-			if(length > 3 && j > 0 && i < length - 1){
-				setBlockLog(new BlockPos(xo+j, h, zo-i), 4);
-				setBlockLog(new BlockPos(xo-j, h, zo-i), 4);
-			}
-			
-
-			if(i == length - 2){
-				double lr = 3.5;
-			
-				generateLeafLayerCircleNoise(lr, xo+i, zo, h+1);
-				generateLeafLayerCircleNoise(lr, xo-i, zo, h+1);
-				generateLeafLayerCircleNoise(lr, xo, zo+i, h+1);
-				generateLeafLayerCircleNoise(lr, xo, zo-i, h+1);
-				lr--;
-				generateLeafLayerCircleNoise(lr, xo+i, zo, h+2);
-				generateLeafLayerCircleNoise(lr, xo-i, zo, h+2);
-				generateLeafLayerCircleNoise(lr, xo, zo+i, h+2);
-				generateLeafLayerCircleNoise(lr, xo, zo-i, h+2);
-			}
-		}
-    	
-    }
-    
     
     protected void setBlockLeaf(BlockPos pos){
     	try{

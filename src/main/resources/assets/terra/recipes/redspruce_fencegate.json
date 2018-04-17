@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "terra:redspruce_planks"
+    }
+  },
+  "result": {
+    "item": "terra:redspruce_fencegate"
+  }
+}

@@ -18,6 +18,7 @@ import com.google.gson.GsonBuilder;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.generators.WorldGenTreeEbony;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockStone;
 import net.minecraft.block.BlockTallGrass;
@@ -51,9 +52,9 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeBadlands extends Biome
 {
 	
-	 protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
+	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
 	
-	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(Blocks.LEAVES, Blocks.LOG, 0, 0, false);
+	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(BlockInit.EBONYLEAVES, BlockInit.EBONYLOG, 0, 0, false);
 	
 	public BiomeBadlands() 
 	{
@@ -62,7 +63,7 @@ public class BiomeBadlands extends Biome
 		
 		BiomeManager.addVillageBiome(BiomeInit.BADLANDS , true);
 		
-	topBlock = Blocks.GRASS.getDefaultState();
+	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
 		this.decorator.treesPerChunk = 2;

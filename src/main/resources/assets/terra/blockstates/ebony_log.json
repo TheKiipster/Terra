@@ -1,0 +1,8 @@
+    {
+        "variants": {
+            "axis=y": { "model": "terra:ebony_log" },
+            "axis=z": { "model": "terra:ebony_log", "x": 90 },
+            "axis=x": { "model": "terra:ebony_log", "x": 90, "y": 90 },
+            "axis=none,variant=ebony": { "model": "terra:ebony_log" }
+        }
+    }

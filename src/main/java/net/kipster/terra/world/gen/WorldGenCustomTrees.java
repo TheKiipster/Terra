@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-import net.kipster.terra.world.biomes.BiomeBlossomWoods;
+import net.kipster.terra.init.BiomeInit;
+import net.kipster.terra.world.biomes.*;
 import net.kipster.terra.world.gen.generators.*;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -26,26 +27,29 @@ public class WorldGenCustomTrees implements IWorldGenerator
 	private final WorldGenerator BLACKSPRUCE = new WorldGenTreeBlackSpruce(false);
 	private final WorldGenerator WHITESPRUCE = new WorldGenTreeWhiteSpruce(false);
 	private final WorldGenerator MAHOGANY = new WorldGenTreeMahogany(false, false);
-	private final WorldGenerator ELM = new WorldGenTreeElm(false);
+	//private final WorldGenerator ELM = new WorldGenTreeElm(false);
+	private final WorldGenerator EBONY = new WorldGenTreeEbony();
+	private final WorldGenerator JACARANDAPURPLE = new WorldGenTreeJacarandaPurple(false, false);
+	private final WorldGenerator JACARANDAMAGENTA = new WorldGenTreeJacarandaMagenta(false, false);
+	private final WorldGenerator PAULOWNIAGREEN = new WorldGenTreePaulowniaGreen(false, false);
+	private final WorldGenerator PAULOWNIABLUE = new WorldGenTreePaulowniaBlue(false, false);
+	private final WorldGenerator PAULOWNIAWHITE = new WorldGenTreePaulowniaWhite(false, false);
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
 	{
 		switch(world.provider.getDimension())
 		{
-		case 1:
-			break;
-			
 		case 0:
 			
-			runGenerator(BLACKSPRUCE, world, random, chunkX, chunkZ, 3, -1, 0, BiomeTaiga.class);
-			runGenerator(WHITESPRUCE, world, random, chunkX, chunkZ, 3, -1, 0, BiomeTaiga.class);
-			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 3, -1, 0, BiomeJungle.class);
-			runGenerator(ELM, world, random, chunkX, chunkZ, 3, -1, 0, BiomeForest.class);
-		
-			break;
-			
-		case -1:
+			runGenerator(BLACKSPRUCE, world, random, chunkX, chunkZ, 1, -1, 0, BiomeTaiga.class);
+			runGenerator(WHITESPRUCE, world, random, chunkX, chunkZ, 1, -1, 0, BiomeTaiga.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungle.class);
+			runGenerator(PAULOWNIAGREEN, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungle.class);
+			runGenerator(PAULOWNIAWHITE, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMysticWoods.class);
+			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMysticWoods.class);
+			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungle.class);
+			//runGenerator(ELM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeForest.class);
 			
 		}
 	}

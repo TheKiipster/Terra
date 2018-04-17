@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:ebony_log"
+    }
+  ],
+  "result": {
+    "item": "terra:ebony_planks",
+    "count": 4
+  }
+}

@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "terra:kambordoite_block"
+      "item": "terra:kamboradoite_block"
     }
   },
   "result": {
-    "item": "terra:kambordoite_pillar",
+    "item": "terra:kamboradoite_pillar",
     "count": 4
   }
 }

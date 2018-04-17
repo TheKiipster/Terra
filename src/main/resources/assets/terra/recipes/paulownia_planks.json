@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:paulownia_log"
+    }
+  ],
+  "result": {
+    "item": "terra:paulownia_planks",
+    "count": 4
+  }
+}

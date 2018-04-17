@@ -1,6 +1,6 @@
 
 {
     "variants": {
-        "normal": { "model": "terra:migmatite_stone" }
+        "normal": { "model": "terra:migmatite_stonebrick" }
     }
 }

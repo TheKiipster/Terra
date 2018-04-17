@@ -105,9 +105,9 @@ public class Config {
 	public static int slatePerChunk = 5;	
 	public static int scoriaPerChunk = 5;	
 	public static int soapstonePerChunk = 5;	
-	public static int alikitePerChunk = 5;	
-	public static int krundaltitePerChunk = 5;	
-	public static int triglicitePerChunk = 5;	
+	public static int alikitePerChunk = 12;	
+	public static int krundaltitePerChunk = 12;	
+	public static int triglicitePerChunk = 12;	
 
     public static void readConfig() {
         Configuration cfg = RegistryHandler.config;

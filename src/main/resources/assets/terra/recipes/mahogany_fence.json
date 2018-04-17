@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "terra:mahogany_planks"
+    }
+  },
+  "result": {
+    "item": "terra:mahogany_fence",
+    "count": 3
+  }
+}

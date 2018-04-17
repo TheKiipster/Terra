@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "terra:blocks/log_jacaranda_top",
+        "side": "terra:blocks/log_jacaranda"
+    }
+}

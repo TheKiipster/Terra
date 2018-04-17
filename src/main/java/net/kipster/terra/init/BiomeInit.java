@@ -78,6 +78,7 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome SILKGLADES = new BiomeSilkglades();
 	public static final Biome MYSTIC_WOODS = new BiomeMysticWoods();
 	public static final Biome SPRUCE_WOODS = new BiomeSpruceWoods();
+	public static final Biome SEMI_ARID_DESERT = new BiomeSemiAridDesert();
 	
 	
 
@@ -132,9 +133,9 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(SILKGLADES, "Silkglades", 2, Config.disableSilkglades, BiomeType.WARM, Type.FOREST, Type.DRY);
 		initBiome(CRIMSON_WOODS, "Crimson_Woods", 2, Config.disableCrimsonWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
 		initBiome(MYSTIC_WOODS, "Mystic_Woods", 2, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
-		initBiome(COLD_DESERT, "Cold_Desert", 3, Config.disableColdDesert, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
+		initBiome(COLD_DESERT, "Cold_Desert", 10, Config.disableColdDesert, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
 		initBiome(SPRUCE_WOODS, "Spruce_Woods", 4, Config.disableSpruceWoods, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
-		
+		initBiome(SEMI_ARID_DESERT, "Semi_Arid_Desert", 10, Config.disableBlackDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
 		
 
 
