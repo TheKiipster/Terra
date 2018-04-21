@@ -176,7 +176,7 @@ tile.paulownia_log.name=Paulownia Log
 
 tile.jacaranda_leaves_magenta.name=Jacaranda Leaves
 tile.jacaranda_leaves_purple.name=Jacaranda Leaves
-tile.paulownia_leaves_gree.name=Paulownia Leaves
+tile.paulownia_leaves_green.name=Paulownia Leaves
 tile.paulownia_leaves_white.name=Paulownia Leaves
 tile.paulownia_leaves_blue.name=Paulownia Leaves
 tile.cherry_leaves_white.name=Cherry Leaves
@@ -194,7 +194,7 @@ tile.paulownia_leaves.name=Paulownia Leaves
 
 tile.jacaranda_sapling_magenta.name=Jacaranda Sapling
 tile.jacaranda_sapling_purple.name=Jacaranda Sapling
-tile.paulownia_sapling_gree.name=Paulownia Sapling
+tile.paulownia_sapling_green.name=Paulownia Sapling
 tile.paulownia_sapling_white.name=Paulownia Sapling
 tile.paulownia_sapling_blue.name=Paulownia Sapling
 tile.cherry_sapling_white.name=Cherry Sapling 
