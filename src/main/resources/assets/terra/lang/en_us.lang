@@ -279,7 +279,18 @@ tile.meliscite_pillar.name=Meliscite Pillar
 tile.solitudite_pillar.name=Solitudite Pillar
 tile.thenalite_pillar.name=Thenalite Pillar
 
+<<<<<<< HEAD
 tile.grey_deadbush.name=Grey Deadbush
 tile.klelda.name=Klelda
 tile.anthrosium.name=Anthrosium
 tile.bellium.name=Bellium
+=======
+
+
+
+
+
+
+
+tile.grey_deadbush.name=Grey Deadbush
+>>>>>>> 216ea7dbfeed69005b3ec85f682d7401a97feff0
