@@ -17,9 +17,12 @@ import com.google.gson.GsonBuilder;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockStone;
 import net.minecraft.block.BlockTallGrass;
+import net.minecraft.entity.passive.EntityRabbit;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -28,6 +31,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeBeach;
 import net.minecraft.world.biome.BiomeProvider;
+import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -50,14 +54,27 @@ public class BiomeThicket extends Biome
 		
 		BiomeManager.addVillageBiome(BiomeInit.THICKET , true);
 		
-	 topBlock = Blocks.GRASS.getDefaultState();
+	 topBlock = Blocks.DIRT.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 13;
-		this.decorator.grassPerChunk = 10;
-		this.decorator.deadBushPerChunk = 6;
+		this.decorator.treesPerChunk = 20;
+		this.decorator.grassPerChunk = 2;
+		this.decorator.deadBushPerChunk = 1;
 
+		 this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
+	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
 
+	}
+	@Override
+    public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
+        if (noiseVal > 1.0D) {
+            this.topBlock = Blocks.DIRT.getDefaultState().withProperty(BlockDirt.VARIANT, BlockDirt.DirtType.COARSE_DIRT);
+            this.fillerBlock = Blocks.DIRT.getDefaultState();  } 
+        else {
+         this.topBlock = Blocks.DIRT.getDefaultState();
+            this.fillerBlock = Blocks.DIRT.getDefaultState();
+        }
+        this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 	}
 		@Override
 		public WorldGenAbstractTree getRandomTreeFeature(Random rand)
@@ -87,10 +104,10 @@ public class BiomeThicket extends Biome
 	        }
 		@Override
 		public int getModdedBiomeGrassColor(int original) {
-		    return 0xA19D4D;
+		    return 0x8bb658;
 		}
 		@Override
 		public int getModdedBiomeFoliageColor(int original) {
-		    return 0xA19D4D;
+		    return 0x8bb658;
 		}
 	}

@@ -27,6 +27,7 @@ import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -36,8 +37,9 @@ public class BiomeWhiteBeach extends BiomeBeach{
 	public BiomeWhiteBeach() 
 	{
 		
-		super(new BiomeProperties("White Beach").setBaseHeight(-0.45F).setHeightVariation(0.016F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("White Beach").setBaseHeight(-0.45F).setHeightVariation(0.017F).setTemperature(0.8F).setRainfall(0.4F));
 		
+		BiomeManager.addVillageBiome(BiomeInit.WHITEBEACH , false);
 		
 	topBlock = BlockInit.WHITE_SAND.getDefaultState();
 		fillerBlock = BlockInit.WHITE_SAND.getDefaultState();

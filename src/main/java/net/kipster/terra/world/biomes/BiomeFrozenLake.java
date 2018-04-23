@@ -32,6 +32,7 @@ import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -44,6 +45,7 @@ public class BiomeFrozenLake extends Biome
 		
 		super(new BiomeProperties("Frozen Lake").setBaseHeight(-0.6F).setHeightVariation(0.16F).setTemperature(-2).setRainfall(0.4F).setSnowEnabled().setWaterColor(2320566));
 		
+		BiomeManager.addVillageBiome(BiomeInit.FROZENLAKE , false);
 		
 		topBlock = Blocks.DIRT.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

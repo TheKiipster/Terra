@@ -34,6 +34,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -46,6 +47,7 @@ public class BiomeColdDesert extends Biome
 		
 		super(new BiomeProperties("Cold Desert").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(-2F).setRainfall(0.4F).setSnowEnabled());
 
+		BiomeManager.addVillageBiome(BiomeInit.COLD_DESERT , false);
 		
 		 this.spawnableCreatureList.clear();
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityPolarBear.class, 5, 4, 6));

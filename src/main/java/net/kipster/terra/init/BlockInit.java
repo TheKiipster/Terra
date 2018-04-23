@@ -256,29 +256,12 @@ public class BlockInit
 	public static final Block SCORIA_STONEBRICK = new BlockNewRocks("scoria_stonebrick", Material.ROCK);
 	public static final Block SLATE_STONEBRICK = new BlockNewRocks("slate_stonebrick", Material.ROCK);
 	public static final Block SOAPSTONE_STONEBRICK = new BlockNewRocks("soapstone_stonebrick", Material.ROCK);
-	
-	//Polished
-	public static final Block BASALT_POLISHED = new BlockNewRocks("basalt_polished", Material.ROCK);
-	public static final Block BLACKDIORITE_POLISHED = new BlockNewRocks("blackdiorite_polished", Material.ROCK);
-	public static final Block IMPERIALQUARTZITE_POLISHED = new BlockNewRocks("imperialquartzite_polished", Material.ROCK);
-	public static final Block PINKQUARTZITE_POLISHED = new BlockNewRocks("pinkquartzite_polished", Material.ROCK);
-	public static final Block REDQUARTZITE_POLISHED = new BlockNewRocks("redquartzite_polished", Material.ROCK);
-	public static final Block CHALK_POLISHED = new BlockNewRocks("chalk_polished", Material.ROCK);
-	public static final Block BLUESCHIST_POLISHED = new BlockNewRocks("blueschist_polished", Material.ROCK);
-	public static final Block GREENSCHIST_POLISHED = new BlockNewRocks("greenschist_polished", Material.ROCK);
-	public static final Block GABBRO_POLISHED = new BlockNewRocks("gabbro_polished", Material.ROCK);
-	public static final Block GNEISS_POLISHED = new BlockNewRocks("gneiss_polished", Material.ROCK);
-	public static final Block KIMBERLITE_POLISHED = new BlockNewRocks("kimberlite_polished", Material.ROCK);
-	public static final Block LIMESTONE_POLISHED = new BlockNewRocks("limestone_polished", Material.ROCK);
-	public static final Block MARBLE_POLISHED = new BlockNewRocks("marble_polished", Material.ROCK);
-	public static final Block MIGMATITE_POLISHED = new BlockNewRocks("migmatite_polished", Material.ROCK);
-	public static final Block PUMICE_POLISHED = new BlockNewRocks("pumice_polished", Material.ROCK);
-	public static final Block RHYOLITE_POLISHED = new BlockNewRocks("rhyolite_polished", Material.ROCK);
-	public static final Block SCORIA_POLISHED = new BlockNewRocks("scoria_polished", Material.ROCK);
-	public static final Block SLATE_POLISHED = new BlockNewRocks("slate_polished", Material.ROCK);
-	public static final Block SOAPSTONE_POLISHED = new BlockNewRocks("soapstone_polished", Material.ROCK);
-	
-	
+
+	//Misc
+	public static final Block ANTHROSIUM = new BlockAnthrosium("anthrosium", Material.GROUND);
+	public static final Block BELLIUM = new BlockBellium("bellium", Material.GROUND);
+	public static final BlockMushrooms KLELDA = new BlockMushrooms("klelda", Material.PLANTS);
+	public static final BlockMushrooms SAJERRY = new BlockMushrooms("sajerry", Material.PLANTS);
 	
 
 	}

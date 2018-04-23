@@ -44,6 +44,7 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -58,6 +59,8 @@ public class BiomeBlueMountains extends Biome
 	{
 		
 		super(new BiomeProperties("Blue Mountains").setBaseHeight(3.6F).setHeightVariation(0.70F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
+		
+		BiomeManager.addVillageBiome(BiomeInit.BLUEMOUNTAIN , false);
 		
 		this.decorator.generateFalls = true;
 		this.decorator.treesPerChunk = 2;

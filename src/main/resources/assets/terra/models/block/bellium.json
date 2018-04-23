@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "blocks/dirt",
+        "top": "terra:blocks/bellium_top",
+        "side": "terra:blocks/bellium_side"
+    }
+}

@@ -27,6 +27,7 @@ import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -36,8 +37,9 @@ public class BiomePurpleBeach extends BiomeBeach{
 	public BiomePurpleBeach() 
 	{
 		
-		super(new BiomeProperties("Purple Beach").setBaseHeight(-0.45F).setHeightVariation(0.016F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Purple Beach").setBaseHeight(-0.45F).setHeightVariation(0.017F).setTemperature(0.8F).setRainfall(0.4F));
 		
+		BiomeManager.addVillageBiome(BiomeInit.PURPLEBEACH , false);
 		
 	topBlock = BlockInit.PURPLE_SAND.getDefaultState();
 		fillerBlock = BlockInit.PURPLE_SAND.getDefaultState();

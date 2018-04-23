@@ -23,6 +23,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenBlockBlob;
 import net.minecraft.world.gen.feature.WorldGenDesertWells;
 import net.minecraft.world.gen.feature.WorldGenFossils;
 import net.minecraft.world.gen.feature.WorldGenMelon;
@@ -31,17 +32,18 @@ import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenVines;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 
 public class BiomeSemiAridDesert extends Biome
 {
-	 
+	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
 	public BiomeSemiAridDesert() 
 	{
-		super(new BiomeProperties("Semiarid Desert").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(1.8F).setRainfall(0.9F));
+		super(new BiomeProperties("Semiarid Desert").setBaseHeight(0.120F).setHeightVariation(0.028F).setTemperature(1.8F).setRainfall(0.9F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.SEMI_ARID_DESERT , true);
 		
-		this.decorator.generateFalls = false;
+		this.decorator.generateFalls = true;
 		this.decorator.flowersPerChunk = -999;
         this.decorator.grassPerChunk = 4;
         this.decorator.cactiPerChunk = 2;
@@ -97,6 +99,15 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
         if (rand.nextInt(64) == 0)
         {
             (new WorldGenFossils()).generate(worldIn, rand, pos);
+        }
+        if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.ROCK)) {
+            int boulderChance = rand.nextInt(5);
+            if (boulderChance == 0) {
+                int k6 = rand.nextInt(16) + 8;
+                int l = rand.nextInt(16) + 8;
+                BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+                COBBLESTONE_BOULDER_FEATURE.generate(worldIn, rand, blockpos);
+            }
         }
 
     super.decorate(worldIn, rand, pos);

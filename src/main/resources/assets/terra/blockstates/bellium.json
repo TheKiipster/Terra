@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "snowy=false": { "model": "terra:bellium" },
+        "snowy=true": { "model": "grass_snowed" }
+    }
+}

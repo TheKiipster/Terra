@@ -9,6 +9,7 @@ import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.init.ItemInit;
 import net.kipster.terra.objects.blocks.item.ItemBlockVariants;
 import net.kipster.terra.util.interfaces.IHasModel;
+import net.kipster.terra.world.gen.generators.WorldGenEllm;
 import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce;
 import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
 import net.kipster.terra.world.gen.generators.WorldGenTreeElm;
@@ -72,7 +73,7 @@ public class BlockSaplingElm extends BlockBush implements IHasModel, IGrowable
     public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) return;
-        WorldGenerator worldgenerator = new WorldGenTreeElm(false);
+        WorldGenerator worldgenerator = new WorldGenEllm(false, false);
 
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
 

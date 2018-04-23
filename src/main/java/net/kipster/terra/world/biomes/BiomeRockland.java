@@ -3,6 +3,8 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
+import net.kipster.terra.init.BlockInit;
+import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockSilverfish;
 import net.minecraft.block.BlockTallGrass;
@@ -13,20 +15,25 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenBlockBlob;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 
 public class BiomeRockland extends Biome 
 {
+	
+	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
 	private final WorldGenerator silverfishSpawner = new WorldGenMinable(Blocks.MONSTER_EGG.getDefaultState().withProperty(BlockSilverfish.VARIANT, BlockSilverfish.EnumType.STONE), 9);
     
 public BiomeRockland() 
 {
-	super(new BiomeProperties("Rockland").setBaseHeight(1.0F).setHeightVariation(0.5F).setTemperature(0.2F).setRainfall(0.3F));
+	super(new BiomeProperties("Rockland").setBaseHeight(3.7F).setHeightVariation(0.6F).setTemperature(0.2F).setRainfall(0.3F));
 	
 	BiomeManager.addVillageBiome(BiomeInit.ROCKLAND , true);
 	
@@ -39,6 +46,21 @@ public BiomeRockland()
     this.decorator.grassPerChunk = 2;
     this.spawnableCreatureList.clear();
  
+}
+@Override
+public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
+    if (noiseVal > 1.9D) {
+        this.topBlock = Blocks.COBBLESTONE.getDefaultState();
+        this.fillerBlock = Blocks.COBBLESTONE.getDefaultState();  } 
+    else if (noiseVal > 1D) {
+            this.topBlock = Blocks.GRAVEL.getDefaultState();
+            this.fillerBlock = Blocks.GRAVEL.getDefaultState();  } 
+        else {
+     this.topBlock = Blocks.STONE.getDefaultState();
+        this.fillerBlock = Blocks.STONE.getDefaultState();
+    }
+
+    this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 }
 
 public WorldGenerator getRandomWorldGenForGrass(Random rand)
@@ -63,8 +85,18 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
         if (net.minecraftforge.event.terraingen.TerrainGen.generateOre(worldIn, rand, silverfishSpawner, pos.add(j1, k1, l1), net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType.SILVERFISH))
         this.silverfishSpawner.generate(worldIn, rand, pos.add(k1, l1, i2));
     }
+    if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.ROCK)) {
+        int boulderChance = rand.nextInt(5);
+        if (boulderChance == 0) {
+            int k6 = rand.nextInt(16) + 8;
+            int l = rand.nextInt(16) + 8;
+            BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+            COBBLESTONE_BOULDER_FEATURE.generate(worldIn, rand, blockpos);
+        }
+    }
     net.minecraftforge.common.MinecraftForge.ORE_GEN_BUS.post(new net.minecraftforge.event.terraingen.OreGenEvent.Post(worldIn, rand, pos));
 }
+
 
 
 

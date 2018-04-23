@@ -40,6 +40,7 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -53,11 +54,12 @@ public class BiomeAlps extends Biome
 	public BiomeAlps() 
 	{
 		
-		super(new BiomeProperties("Alps").setBaseHeight(3.2F).setHeightVariation(0.75F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
+		super(new BiomeProperties("Alps").setBaseHeight(3.7F).setHeightVariation(0.8F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
 		
-		
+		BiomeManager.addVillageBiome(BiomeInit.ALPS , false);
 		topBlock = Blocks.SNOW.getDefaultState();
 		fillerBlock = Blocks.SNOW.getDefaultState();
+		
 		
 		this.decorator.generateFalls = false;
 		this.decorator.treesPerChunk = 4;

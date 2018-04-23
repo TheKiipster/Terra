@@ -27,7 +27,7 @@ public class WorldGenCustomTrees implements IWorldGenerator
 	private final WorldGenerator BLACKSPRUCE = new WorldGenTreeBlackSpruce(false);
 	private final WorldGenerator WHITESPRUCE = new WorldGenTreeWhiteSpruce(false);
 	private final WorldGenerator MAHOGANY = new WorldGenTreeMahogany(false, false);
-	//private final WorldGenerator ELM = new WorldGenTreeElm(false);
+	private final WorldGenerator ELM = new WorldGenEllm(false, false);
 	private final WorldGenerator EBONY = new WorldGenTreeEbony();
 	private final WorldGenerator JACARANDAPURPLE = new WorldGenTreeJacarandaPurple(false, false);
 	private final WorldGenerator JACARANDAMAGENTA = new WorldGenTreeJacarandaMagenta(false, false);
@@ -49,7 +49,7 @@ public class WorldGenCustomTrees implements IWorldGenerator
 			runGenerator(PAULOWNIAWHITE, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMysticWoods.class);
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMysticWoods.class);
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungle.class);
-			//runGenerator(ELM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeForest.class);
+			runGenerator(ELM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeForest.class);
 			
 		}
 	}
