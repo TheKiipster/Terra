@@ -11,9 +11,4 @@ public class TerraTabPlants extends CreativeTabs
 	public TerraTabPlants(String label) { super("terratabplants"); }
 	public ItemStack getTabIconItem() { return new ItemStack(Blocks.RED_FLOWER);}
 
-		@Override
-public boolean hasSearchBar() {
-	return true;
-}
-
 }

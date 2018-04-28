@@ -37,7 +37,7 @@ public class BiomeOrangeBeach extends BiomeBeach{
 	public BiomeOrangeBeach() 
 	{
 		
-		super(new BiomeProperties("Orange Beach").setBaseHeight(-0.45F).setHeightVariation(0.017F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Orange Beach").setBaseHeight(-0.35F).setHeightVariation(0.022F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.ORANGEBEACH , false);
 		

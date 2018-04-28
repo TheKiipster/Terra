@@ -14,21 +14,20 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockPeatBlock extends Block implements IHasModel
+public class BlockMetamorphicRocks extends Block implements IHasModel
 {
-	public BlockPeatBlock(String name, Material material) 
+	public BlockMetamorphicRocks(String name, Material material) 
 	{
 		super(Material.ROCK);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.STONE);
-		setHardness(3F);
-		setCreativeTab(Main.TERRATABMISC);
+		setHardness(0.8F);
+		setCreativeTab(Main.TERRATABMETAMORPHIC);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
-	
 	
 	@Override
 	public void registerModels() 

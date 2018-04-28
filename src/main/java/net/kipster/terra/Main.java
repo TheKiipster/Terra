@@ -30,8 +30,10 @@ public class Main {
 	
 
 	public static final CreativeTabs TERRATABMISC = new TerraTabMisc("terratabmisc");
-	public static final CreativeTabs TERRATABGEOLOGY = new TerraTabGeology("terratabgeology");
 	public static final CreativeTabs TERRATABPLANTS = new TerraTabPlants("terratabplants");
+	public static final CreativeTabs TERRATABIGNEOUS = new TerraTabIgneous("terratabigneous");
+	public static final CreativeTabs TERRATABSEDIMENTARY = new TerraTabSedimentary("terratabsedimentary");
+	public static final CreativeTabs TERRATABMETAMORPHIC = new TerraTabMetamorphic("terratabmetamorphic");
 	
 	
 	

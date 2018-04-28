@@ -58,7 +58,7 @@ public class BiomeRedMountains extends Biome
 	public BiomeRedMountains() 
 	{
 		
-		super(new BiomeProperties("Red Mountains").setBaseHeight(3.6F).setHeightVariation(0.70F).setTemperature(1.7F).setRainfall(0F).setRainDisabled());
+		super(new BiomeProperties("Red Mountains").setBaseHeight(3.8F).setHeightVariation(0.78F).setTemperature(1.7F).setRainfall(0F).setRainDisabled());
 
 		BiomeManager.addVillageBiome(BiomeInit.REDMOUNTAIN , false);
 		

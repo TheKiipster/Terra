@@ -86,6 +86,7 @@ public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimer
 	                COBBLESTONE_BOULDER_FEATURE.generate(worldIn, rand, blockpos);
 	            }
 	        }
+		  
 	super.decorate(worldIn, rand, pos);
 		
 	}
@@ -103,7 +104,7 @@ public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimer
 	            net.minecraft.block.state.IBlockState state = worldIn.getBlockState(blockpos);
 	            if (state.getBlock().isReplaceableOreGen(state, worldIn, blockpos, net.minecraft.block.state.pattern.BlockMatcher.forBlock(Blocks.STONE)))
 	            {
-	                worldIn.setBlockState(blockpos, Blocks.EMERALD_ORE.getDefaultState(), 16 | 3);
+	                worldIn.setBlockState(blockpos, Blocks.GOLD_ORE.getDefaultState(), 16 | 3);
 	            }
 	        }
 	        return true;
@@ -118,4 +119,6 @@ public int getModdedBiomeGrassColor(int original) {
 public int getModdedBiomeFoliageColor(int original) {
     return 10387789;
 }
+
+
 }

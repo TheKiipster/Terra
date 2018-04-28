@@ -12,7 +12,7 @@ public class ItemPeatCoal extends Item implements IHasModel
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.TERRATABGEOLOGY);
+		setCreativeTab(Main.TERRATABMISC);
 		
 		ItemInit.ITEMS.add(this);
 	}

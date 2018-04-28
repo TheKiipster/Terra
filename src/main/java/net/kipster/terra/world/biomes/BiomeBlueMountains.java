@@ -58,7 +58,7 @@ public class BiomeBlueMountains extends Biome
 	public BiomeBlueMountains() 
 	{
 		
-		super(new BiomeProperties("Blue Mountains").setBaseHeight(3.6F).setHeightVariation(0.70F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
+		super(new BiomeProperties("Blue Mountains").setBaseHeight(3.8F).setHeightVariation(0.78F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
 		
 		BiomeManager.addVillageBiome(BiomeInit.BLUEMOUNTAIN , false);
 		

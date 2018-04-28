@@ -26,109 +26,220 @@ public class WorldGenRocks implements IWorldGenerator
 		case 0://Overworld
 			for(int i = 0; i < Config.basaltPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.BASALT_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.BASALT_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.blackdioritePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.BLACKDIORITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.BLACKDIORITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.chalkPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.CHALK_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.CHALK_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.blueschistPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.BLUESCHIST_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.BLUESCHIST_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.gabbroPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.GABBRO_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.GABBRO_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.limestonePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.LIMESTONE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.LIMESTONE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.gneissPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.GNEISS_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.GNEISS_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.greenschistPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.GREENSCHIST_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.GREENSCHIST_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.imperialquartzitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.IMPERIALQUARTZITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.IMPERIALQUARTZITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 		  	}
 			
 			for(int i = 0; i < Config.kimberlitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.KIMBERLITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.KIMBERLITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 		    }
 			
 			for(int i = 0; i < Config.marblePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.MARBLE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.MARBLE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			for(int i = 0; i < Config.migmatitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.MIGMATITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.MIGMATITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.pinkquartzitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.PINKQUARTZITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.PINKQUARTZITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.pumicePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.PUMICE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.PUMICE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.redquartzitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.REDQUARTZITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.REDQUARTZITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.rhyolitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.RHYOLITE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.RHYOLITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.slatePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.SLATE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.SLATE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.scoriaPerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.SCORIA_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.SCORIA_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.soapstonePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
-				new WorldGenMinable(BlockInit.SOAPSTONE_STONE.getDefaultState(), 60, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.SOAPSTONE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			
+			break;
+			
+		case 6://Mining Dim
+			for(int i = 0; i < Config.basaltPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.BASALT_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.blackdioritePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.BLACKDIORITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.chalkPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.CHALK_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.blueschistPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.BLUESCHIST_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.gabbroPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.GABBRO_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.limestonePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.LIMESTONE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.gneissPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.GNEISS_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.greenschistPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.GREENSCHIST_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.imperialquartzitePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.IMPERIALQUARTZITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+		  	}
+			
+			for(int i = 0; i < Config.kimberlitePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.KIMBERLITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+		    }
+			
+			for(int i = 0; i < Config.marblePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.MARBLE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			
+			for(int i = 0; i < Config.migmatitePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.MIGMATITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.pinkquartzitePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.PINKQUARTZITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.pumicePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.PUMICE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.redquartzitePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.REDQUARTZITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.rhyolitePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.RHYOLITE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.slatePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.SLATE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.scoriaPerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.SCORIA_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
+			}
+			for(int i = 0; i < Config.soapstonePerChunk; i++)
+			{
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
+				new WorldGenMinable(BlockInit.SOAPSTONE_STONE.getDefaultState(), 45, BlockMatcher.forBlock(Blocks.STONE)).generate(world, random, pos);
 			}
 			
 			
@@ -138,17 +249,17 @@ public class WorldGenRocks implements IWorldGenerator
 		case-1://Nether
 			for(int i = 0; i < Config.alikitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
 				new WorldGenMinable(BlockInit.ALIKITE.getDefaultState(), 50, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.triglicitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
 				new WorldGenMinable(BlockInit.TRIGLICITE.getDefaultState(), 50, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
 			}
 			for(int i = 0; i < Config.krundaltitePerChunk; i++)
 			{
-				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(303), (chunkZ*16) + random.nextInt(16));
+				BlockPos pos = new BlockPos(chunkX*16 + random.nextInt(16), random.nextInt(256), (chunkZ*16) + random.nextInt(16));
 				new WorldGenMinable(BlockInit.KRUNDALTITE.getDefaultState(), 50, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, random, pos);
 			}
 		}

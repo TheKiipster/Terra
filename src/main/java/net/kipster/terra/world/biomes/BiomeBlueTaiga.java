@@ -86,7 +86,7 @@ public class BiomeBlueTaiga extends Biome
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
     {
         
-            return (WorldGenAbstractTree)(rand.nextInt(3) == 0 ? BLUE_SPRUCE : SPRUCE_GENERATOR);
+            return (WorldGenAbstractTree)(rand.nextInt(3) == 0 ? SPRUCE_GENERATOR : BLUE_SPRUCE);
         
     }
 

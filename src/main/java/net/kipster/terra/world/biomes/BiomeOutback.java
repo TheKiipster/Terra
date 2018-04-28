@@ -48,6 +48,7 @@ public class BiomeOutback extends Biome
         this.decorator.grassPerChunk = 3;
         this.decorator.cactiPerChunk = 3;
         this.decorator.deadBushPerChunk = 6;
+        this.decorator.treesPerChunk = 3;
         this.decorator.extraTreeChance = 1;
         
         this.spawnableCreatureList.clear();

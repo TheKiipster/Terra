@@ -100,7 +100,7 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
 
 
 
-private static class EmeraldGenerator extends WorldGenerator
+public static class EmeraldGenerator extends WorldGenerator
 {
     @Override
     public boolean generate(World worldIn, Random rand, BlockPos pos)

@@ -3,6 +3,7 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
+import net.kipster.terra.world.biomes.BiomeGrassland.EmeraldGenerator;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockLeaves;
@@ -169,6 +170,11 @@ public class BiomeFungalJungle extends Biome
 
         this.addDoublePlants(worldIn, rand, pos, i1);
         }
+        net.minecraftforge.common.MinecraftForge.ORE_GEN_BUS.post(new net.minecraftforge.event.terraingen.OreGenEvent.Pre(worldIn, rand, pos));
+        WorldGenerator emeralds = new EmeraldGenerator();
+        if (net.minecraftforge.event.terraingen.TerrainGen.generateOre(worldIn, rand, emeralds, pos, net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType.EMERALD))
+            emeralds.generate(worldIn, rand, pos);
+        net.minecraftforge.common.MinecraftForge.ORE_GEN_BUS.post(new net.minecraftforge.event.terraingen.OreGenEvent.Post(worldIn, rand, pos));
         }
     
     private static class EmeraldGenerator extends WorldGenerator

@@ -23,7 +23,7 @@ public class BlockBituminousBlock extends Block implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.STONE);
 		setHardness(3F);
-		setCreativeTab(Main.TERRATABGEOLOGY);
+		setCreativeTab(Main.TERRATABMISC);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

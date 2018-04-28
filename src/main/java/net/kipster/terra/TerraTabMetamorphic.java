@@ -6,9 +6,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
-public class TerraTabMisc extends CreativeTabs
+public class TerraTabMetamorphic extends CreativeTabs
 {
-	public TerraTabMisc(String label) { super("terratabmisc"); }
-	public ItemStack getTabIconItem() { return new ItemStack(BlockInit.OLIVINE_SANDSTONE_GLYPH);}
+	public TerraTabMetamorphic(String label) { super("terratabmetamorphic"); }
+	public ItemStack getTabIconItem() { return new ItemStack(BlockInit.MARBLE_STONE);}
 
 }

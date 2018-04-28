@@ -68,7 +68,7 @@ public class BiomeSilkglades extends Biome
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
-	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 2, 2, 3));
+	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 4, 4, 4));
 	}
 
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
