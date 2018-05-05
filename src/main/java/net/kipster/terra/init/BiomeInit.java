@@ -90,6 +90,9 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome BLUE_MUSHROOM_PLAINS = new BiomeBlueMushroomPlains();
 	public static final Biome PINK_MUSHROOM_PLAINS = new BiomePinkMushroomPlains();
 	public static final Biome FUNGAL_JUNGLE = new BiomeFungalJungle();
+	public static final Biome JUNGLE_ARCHIPELAGO = new BiomeJungleArchipelago();
+	public static final Biome AEGEAN_ARCHIPELAGO = new BiomeAegeanArchipelago();
+	public static final Biome SALT_LAKE = new BiomeSaltLake();
 	
 	public static void registerBiomes()
 	{
@@ -144,17 +147,19 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(MYSTIC_WOODS, "Mystic_Woods", 3, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
 		initBiome(COLD_DESERT, "Cold_Desert", 5, Config.disableColdDesert, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
 		initBiome(SPRUCE_WOODS, "Spruce_Woods", 5, Config.disableSpruceWoods, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
-		initBiome(SEMI_ARID_DESERT, "Semi_Arid_Desert", 5, Config.disableBlackDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
-		initBiome(OUTBACK, "Outback", 5, Config.disableBlackDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
-		initBiome(COLD_FOREST, "Cold_Forest", 5, Config.disableBlackDesert, BiomeType.ICY, Type.COLD, Type.FOREST);
-		initBiome(COLD_BIRCH_FOREST, "Cold_Birch_Forest", 4, Config.disableBlackDesert, BiomeType.ICY, Type.COLD, Type.FOREST);
-		initBiome(COLD_ROOFED_FOREST, "Cold_Roofed_Forest", 4, Config.disableBlackDesert, BiomeType.ICY, Type.COLD, Type.FOREST);
-		initBiome(COLD_MEGA_TAIGA, "Cold_Mega_Taiga", 4, Config.disableBlackDesert, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
-		initBiome(COLD_MEGA_SPRUCE_TAIGA, "Cold_Mega_Spruce_Taiga", 4, Config.disableBlackDesert, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
-		initBiome(BLUE_MUSHROOM_PLAINS, "Blue_Mushroom_Plains", 1, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.PLAINS, Type.MUSHROOM);
-		initBiome(PINK_MUSHROOM_PLAINS, "Pink_Mushroom_Plains", 1, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.PLAINS, Type.MUSHROOM);
-		initBiome(FUNGAL_JUNGLE, "Fungal_Jungle",  3, Config.disableGreenPlateau,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.MUSHROOM);
-
+		initBiome(SEMI_ARID_DESERT, "Semi_Arid_Desert", 5, Config.disableSemiAridDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
+		initBiome(OUTBACK, "Outback", 5, Config.disableOutback, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
+		initBiome(COLD_FOREST, "Cold_Forest", 5, Config.disableColdForest, BiomeType.ICY, Type.COLD, Type.FOREST);
+		initBiome(COLD_BIRCH_FOREST, "Cold_Birch_Forest", 4, Config.disableColdBirchForest, BiomeType.ICY, Type.COLD, Type.FOREST);
+		initBiome(COLD_ROOFED_FOREST, "Cold_Roofed_Forest", 4, Config.disableColdRoofedForest, BiomeType.ICY, Type.COLD, Type.FOREST);
+		initBiome(COLD_MEGA_TAIGA, "Cold_Mega_Taiga", 4, Config.disableColdMegaTaiga, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
+		initBiome(COLD_MEGA_SPRUCE_TAIGA, "Cold_Mega_Spruce_Taiga", 4, Config.disableColdMegaSpruceTaiga, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
+		initBiome(BLUE_MUSHROOM_PLAINS, "Blue_Mushroom_Plains", 1, Config.disableBlueMushroomPlains, BiomeType.WARM, Type.MAGICAL, Type.PLAINS, Type.MUSHROOM);
+		initBiome(PINK_MUSHROOM_PLAINS, "Pink_Mushroom_Plains", 1, Config.disablePinkMushroomPlains, BiomeType.WARM, Type.MAGICAL, Type.PLAINS, Type.MUSHROOM);
+		initBiome(FUNGAL_JUNGLE, "Fungal_Jungle",  3, Config.disableFungalJungle,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.MUSHROOM);
+		initBiome(JUNGLE_ARCHIPELAGO, "Jungle_Archipelago",  3, Config.disableJungleArchipelago,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.WATER, Type.OCEAN, Type.RIVER, Type.WET);
+		initBiome(SALT_LAKE, "Salt_Lake",  4, Config.disableSaltLake,BiomeType.WARM, Type.WATER, Type.DEAD);
+		initBiome(AEGEAN_ARCHIPELAGO, "Aegean_Archipelago",  3, Config.disableAegeanArchipelago,BiomeType.WARM, Type.LUSH, Type.HILLS, Type.WATER, Type.OCEAN, Type.RIVER, Type.WET);
 	}
 	  public static void initSubBiomes()
 	    {

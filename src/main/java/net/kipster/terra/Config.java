@@ -64,6 +64,20 @@ public class Config {
 	public static boolean disableColdDesert = false;
 	public static boolean disableMysticWoods = false;
 	public static boolean disableSpruceWoods = false;
+	public static boolean disableOutback = false;
+	public static boolean disableSemiAridDesert = false;
+	public static boolean disableColdForest = false;
+	public static boolean disableColdBirchForest = false;
+	public static boolean disableColdRoofedForest = false;
+	public static boolean disableColdMegaTaiga = false;
+	public static boolean disableColdMegaSpruceTaiga = false;
+	public static boolean disableBlueMushroomPlains = false;
+	public static boolean disablePinkMushroomPlains = false;
+	public static boolean disableFungalJungle = false;
+	public static boolean disableSaltLake = false;
+	public static boolean disableJungleArchipelago = false;
+	public static boolean disableAegeanArchipelago = false;
+	
 
  	 //Ores
  	public static int anthracitePerChunk = 8;
@@ -177,7 +191,22 @@ public class Config {
 		disableSilkglades = cfg.get(CATEGORY_BIOMES, "disableSilkglades", disableSilkglades).getBoolean();
 		disableColdDesert = cfg.get(CATEGORY_BIOMES, "disableColdDesert", disableColdDesert).getBoolean();
 		disableMysticWoods = cfg.get(CATEGORY_BIOMES, "disableMysticWoods", disableMysticWoods).getBoolean();
+		disableSemiAridDesert = cfg.get(CATEGORY_BIOMES, "disableSemiAridDesert", disableSemiAridDesert).getBoolean();
+		disableOutback = cfg.get(CATEGORY_BIOMES, "disableOutback", disableOutback).getBoolean();
+		disableSaltLake = cfg.get(CATEGORY_BIOMES, "disableSaltLake", disableSaltLake).getBoolean();
+		disableColdForest = cfg.get(CATEGORY_BIOMES, "disableColdForest", disableColdForest).getBoolean();
+		disableColdRoofedForest = cfg.get(CATEGORY_BIOMES, "disableColdRoofedForest", disableColdRoofedForest).getBoolean();
+		disableColdBirchForest = cfg.get(CATEGORY_BIOMES, "disableColdBirchForest", disableColdBirchForest).getBoolean();
+		disableColdMegaTaiga = cfg.get(CATEGORY_BIOMES, "disableColdMegaTaiga", disableColdMegaTaiga).getBoolean();
+		disableColdMegaSpruceTaiga = cfg.get(CATEGORY_BIOMES, "disableColdMegaSpruceTaiga", disableColdMegaSpruceTaiga).getBoolean();
+		disableBlueMushroomPlains = cfg.get(CATEGORY_BIOMES, "disableBlueMushroomPlains", disableBlueMushroomPlains).getBoolean();
+		disablePinkMushroomPlains = cfg.get(CATEGORY_BIOMES, "disablePinkMushroomPlains", disablePinkMushroomPlains).getBoolean();
+		disableFungalJungle = cfg.get(CATEGORY_BIOMES, "disableFungalJungle", disableFungalJungle).getBoolean();
+		disableJungleArchipelago = cfg.get(CATEGORY_BIOMES, "disableJungleArchipelago", disableJungleArchipelago).getBoolean();
+		disableAegeanArchipelago = cfg.get(CATEGORY_BIOMES, "disableAegeanArchipelago", disableAegeanArchipelago).getBoolean();
 		disableSpruceWoods = cfg.get(CATEGORY_BIOMES, "disableSpruceWoods", disableSpruceWoods).getBoolean();
+
+		
     }
     private static void initOreConfig(Configuration cfg) {
     	
