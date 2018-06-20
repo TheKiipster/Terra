@@ -19,8 +19,8 @@ import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce;
 import net.kipster.terra.world.gen.generators.WorldGenTreeJacarandaPurple;
 import net.kipster.terra.world.gen.generators.WorldGenTreeMystic;
-import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaBlue;
 import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreen;
+import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreenV;
 import net.kipster.terra.world.gen.generators.WorldGenTreeSwampDark;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
@@ -55,12 +55,12 @@ public class BiomeRainforest extends Biome
 {	
 	
 	 protected static final IBlockState WATER_LILY = Blocks.WATERLILY.getDefaultState();
-		 protected static final WorldGenTreePaulowniaGreen PAUL_GREEN = new WorldGenTreePaulowniaGreen(false, false);
+		 protected static final WorldGenTreePaulowniaGreenV PAUL_GREEN = new WorldGenTreePaulowniaGreenV();
 		 protected static final WorldGenAbstractTree JAC_PURPLE = new WorldGenTreeJacarandaPurple(false, false);
 	public BiomeRainforest() 
 	{
 		
-		super(new BiomeProperties("Rainforest").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.7F).setRainfall(1F));
+		super(new BiomeProperties("Rainforest").setBaseHeight(Biomes.JUNGLE.getBaseHeight()).setHeightVariation(Biomes.JUNGLE.getHeightVariation()).setTemperature(Biomes.JUNGLE.getDefaultTemperature()).setRainfall(Biomes.JUNGLE.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.RAINFOREST , true);
 		
@@ -128,10 +128,10 @@ EntityPig pig = new EntityPig(worldIn);
         }
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
-	    return 0x3CA529;
+	    return 0x85c140;
 	}
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
-	    return 0x3CA529;
+	    return 0x85c140;
 	}
 }

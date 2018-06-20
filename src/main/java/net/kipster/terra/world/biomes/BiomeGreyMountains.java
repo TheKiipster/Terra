@@ -58,7 +58,7 @@ public class BiomeGreyMountains extends Biome
 	public BiomeGreyMountains() 
 	{
 		
-		super(new BiomeProperties("Grey Mountains").setBaseHeight(3.8F).setHeightVariation(0.78F).setTemperature(0.5F).setRainfall(1F));
+		super(new BiomeProperties("Grey Mountains").setBaseHeight(3.8F).setHeightVariation(0.78F).setTemperature(0.95F).setRainfall(0.9F));
 		
 		this.decorator.generateFalls = true;
 		this.decorator.treesPerChunk = 2;

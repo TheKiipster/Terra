@@ -7,6 +7,7 @@ import net.kipster.terra.objects.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 
 public class BlockInit
 {
@@ -114,6 +115,9 @@ public class BlockInit
 	public static final Block EBONYLOG = new BlockLogEbony("ebony_log", Material.WOOD);
 	public static final Block PAULOWNIALOG = new BlockLogPaulownia("paulownia_log", Material.WOOD);
 	public static final Block JACARANDALOG = new BlockLogJacaranda("jacaranda_log", Material.WOOD);
+	public static final Block ASPENLOG = new BlockLogAspen("aspen_log", Material.WOOD);
+	public static final Block POPLARLOG = new BlockLogPoplar("poplar_log", Material.WOOD);
+	public static final Block MANGROVELOG = new BlockLogMangrove("mangrove_log", Material.WOOD);
 	
 	//Leaves
 	public static final Block CHERRYLEAVESWHITE = new BlockLeavesCherryWhite("cherry_leaves_white", Material.LEAVES);
@@ -131,10 +135,10 @@ public class BlockInit
 	public static final Block PAULOWNIALEAVESGREEN = new BlockLeavesPaulowniaGreen("paulownia_leaves_green", Material.LEAVES);
 	public static final Block PAULOWNIALEAVESWHITE = new BlockLeavesPaulowniaWhite("paulownia_leaves_white", Material.LEAVES);
 	public static final Block PAULOWNIALEAVESBLUE = new BlockLeavesPaulowniaBlue("paulownia_leaves_blue", Material.LEAVES);
-	
-	
-	
-	
+	public static final Block ASPENLEAVES = new BlockLeavesAspen("aspen_leaves", Material.LEAVES);
+	public static final Block POPLARLEAVES = new BlockLeavesPoplar("poplar_leaves", Material.LEAVES);
+	public static final Block YELLOWBIRCHLEAVES = new BlockLeavesYellowBirch("birch_leaves_yellow", Material.LEAVES);
+	public static final Block MANGROVELEAVES = new BlockLeavesMangrove("mangrove_leaves", Material.LEAVES);
 	
 	
 	//Saplings
@@ -153,7 +157,11 @@ public class BlockInit
 	public static final Block PAULOWNIASAPLINGGREEN = new BlockSaplingPaulowniaGreen("paulownia_sapling_green", Material.LEAVES);
 	public static final Block PAULOWNIASAPLINGWHITE = new BlockSaplingPaulowniaWhite("paulownia_sapling_white", Material.LEAVES);
 	public static final Block PAULOWNIASAPLINGBLUE = new BlockSaplingPaulowniaBlue("paulownia_sapling_blue", Material.LEAVES);
-
+	public static final Block ASPENSAPLING = new BlockSaplingAspen("aspen_sapling", Material.LEAVES);
+	public static final Block POPLARSAPLING = new BlockSaplingPoplar("poplar_sapling", Material.LEAVES);
+	public static final Block YELLOWBIRCHSAPLING = new BlockSaplingYellowBirch("birch_sapling_yellow", Material.LEAVES);
+	public static final Block MANGROVESAPLING = new BlockSaplingMangrove("mangrove_sapling", Material.LEAVES);
+	
 	//Other
 	public static final Block CHERRYFENCE = new BlockTerraFence("cherry_fence", Material.WOOD);
 	public static final Block CHERRYFENCEGATE = new BlockTerraFenceGate("cherry_fencegate", Material.WOOD);
@@ -175,10 +183,12 @@ public class BlockInit
 	public static final Block JACARANDAFENCEGATE = new BlockTerraFenceGate("jacaranda_fencegate", Material.WOOD);
 	public static final Block MAHOGANYFENCE = new BlockTerraFence("mahogany_fence", Material.WOOD);
 	public static final Block MAHOGANYFENCEGATE = new BlockTerraFenceGate("mahogany_fencegate", Material.WOOD);
-	public static final Block PAULOWNIAFENCE = new BlockTerraFence("paulownia_fence", Material.WOOD);
-	public static final Block PAULOWNIAFENCEGATE = new BlockTerraFenceGate("paulownia_fencegate", Material.WOOD);
-	
-	
+	public static final Block ASPENFENCE = new BlockTerraFence("aspen_fence", Material.WOOD);
+	public static final Block ASPENFENCEGATE = new BlockTerraFenceGate("aspen_fencegate", Material.WOOD);
+	public static final Block POPLARFENCE = new BlockTerraFence("poplar_fence", Material.WOOD);
+	public static final Block POPLARFENCEGATE = new BlockTerraFenceGate("poplar_fencegate", Material.WOOD);
+	public static final Block MANGROVEFENCE = new BlockTerraFence("mangrove_fence", Material.WOOD);
+	public static final Block MANGROVEFENCEGATE = new BlockTerraFenceGate("mangrove_fencegate", Material.WOOD);
 	//Planks
 	public static final Block CHERRYPLANKS = new BlockPlanksCherry("cherry_planks", Material.WOOD);
 	public static final Block BLUESPRUCEPLANKS = new BlockPlanksBlueSpruce("bluespruce_planks", Material.WOOD);
@@ -191,8 +201,25 @@ public class BlockInit
 	public static final Block EBONYPLANKS = new BlockPlanksEbony("ebony_planks", Material.WOOD);
 	public static final Block PAULOWNIAPLANKS = new BlockPlanksPaulownia("paulownia_planks", Material.WOOD);
 	public static final Block JACARANDAPLANKS = new BlockPlanksJacaranda("jacaranda_planks", Material.WOOD);
+	public static final Block ASPENPLANKS = new BlockPlanksAspen("aspen_planks", Material.WOOD);
+	public static final Block POPLARPLANKS = new BlockPlanksPoplar("poplar_planks", Material.WOOD);
+	public static final Block MANGROVEPLANKS = new BlockPlanksMangrove("mangrove_planks", Material.WOOD);
 	
-	
+	//Stairs
+	public static final Block CHERRYSTAIRS = new BlockStair("cherry_stairs", CHERRYPLANKS.getDefaultState());
+	public static final Block BLUESPRUCESTAIRS = new BlockStair("bluespruce_stairs", BLUESPRUCEPLANKS.getDefaultState());
+	public static final Block WHITESPRUCESTAIRS = new BlockStair("whitespruce_stairs", WHITESPRUCEPLANKS.getDefaultState());
+	public static final Block BLACKSPRUCESTAIRS = new BlockStair("blackspruce_stairs", BLACKSPRUCEPLANKS.getDefaultState());
+	public static final Block REDSPRUCESTAIRS = new BlockStair("redspruce_stairs", REDSPRUCEPLANKS.getDefaultState());
+	public static final Block ELMSTAIRS = new BlockStair("elm_stairs", ELMPLANKS.getDefaultState());
+	public static final Block PALMSTAIRS = new BlockStair("palm_stairs", PALMPLANKS.getDefaultState());
+	public static final Block MAHOGANYSTAIRS = new BlockStair("mahogany_stairs", MAHOGANYPLANKS.getDefaultState());
+	public static final Block EBONYSTAIRS = new BlockStair("ebony_stairs", EBONYPLANKS.getDefaultState());
+	public static final Block PAULOWNIASTAIRS = new BlockStair("paulownia_stairs", PAULOWNIAPLANKS.getDefaultState());
+	public static final Block JACARANDASTAIRS = new BlockStair("jacaranda_stairs", JACARANDAPLANKS.getDefaultState());
+	public static final Block ASPENSTAIRS = new BlockStair("aspen_stairs", ASPENPLANKS.getDefaultState());
+	public static final Block POPLARSTAIRS = new BlockStair("poplar_stairs", POPLARPLANKS.getDefaultState());
+	public static final Block MANGROVESTAIRS = new BlockStair("mangrove_stairs", MANGROVEPLANKS.getDefaultState());
 	
 	//Stone
 	public static final Block BASALT_STONE = new BlockBasalt("basalt_stone", Material.ROCK);
@@ -262,7 +289,7 @@ public class BlockInit
 	public static final Block BELLIUM = new BlockBellium("bellium", Material.GROUND);
 	public static final BlockMushrooms KLELDA = new BlockMushrooms("klelda", Material.PLANTS);
 	public static final BlockMushrooms SAJERRY = new BlockMushrooms("sajerry", Material.PLANTS);
-	
+	public static final Block MOSS = new BlockMoss("moss", Material.GROUND);
 
 	}
 	

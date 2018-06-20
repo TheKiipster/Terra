@@ -14,6 +14,7 @@ import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
+import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -32,7 +33,7 @@ public class BiomeBlossomWoods extends Biome
 	public BiomeBlossomWoods() 
 	{
 		
-		super(new BiomeProperties("Blossom Woods").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(0.8F).setRainfall(0.3F));
+		super(new BiomeProperties("Blossom Woods").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setRainfall(Biomes.FOREST.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.BLOSSOM_WOODS , true);
 		

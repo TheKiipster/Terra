@@ -1,0 +1,7 @@
+
+{
+    "variants": {
+        "half=bottom": { "model": "terra:cherry_slab_bottom" },
+        "half=top": { "model": "terra:cherry_slab_top" }
+    }
+}

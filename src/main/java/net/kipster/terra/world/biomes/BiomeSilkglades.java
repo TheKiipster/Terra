@@ -54,9 +54,9 @@ public class BiomeSilkglades extends Biome
 	public BiomeSilkglades() 
 	{
 		
-		super(new BiomeProperties("Silkglades").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.5F).setRainfall(0.3F));
+		super(new BiomeProperties("Silkglades").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.SILKGLADES , true);
+		BiomeManager.addVillageBiome(BiomeInit.ANCIENT_FOREST , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

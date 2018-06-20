@@ -1,0 +1,7 @@
+
+{
+    "variants": {
+        "half=bottom": { "model": "terra:mangrove_slab_bottom" },
+        "half=top": { "model": "terra:mangrove_slab_top" }
+    }
+}

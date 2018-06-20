@@ -1,0 +1,9 @@
+
+    {
+        "variants": {
+            "axis=y": { "model": "terra:aspen_log" },
+            "axis=z": { "model": "terra:aspen_log", "x": 90 },
+            "axis=x": { "model": "terra:aspen_log", "x": 90, "y": 90 },
+            "axis=none,variant=cherry": { "model": "terra:aspen_log" }
+        }
+    }

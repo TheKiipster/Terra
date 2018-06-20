@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "terra:blocks/planks_poplar",
+        "top": "terra:blocks/planks_poplar",
+        "side": "terra:blocks/planks_poplar"
+    }
+}

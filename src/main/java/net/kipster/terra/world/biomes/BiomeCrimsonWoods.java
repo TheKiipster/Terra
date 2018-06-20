@@ -16,6 +16,8 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
+import net.kipster.terra.world.gen.generators.WorldGenCrimson;
+import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockTallGrass;
@@ -46,11 +48,11 @@ import net.minecraftforge.fml.relauncher.Side;
 
 public class BiomeCrimsonWoods extends Biome
 {	
-	
+	protected static final WorldGenAbstractTree TREE = new WorldGenCrimson(false, false);
 	public BiomeCrimsonWoods() 
 	{
 		
-		super(new BiomeProperties("Crimson Woods").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.5F).setRainfall(0.3F).setWaterColor(0x9f4b4b));
+		super(new BiomeProperties("Crimson Woods").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()).setWaterColor(0x9f4b4b));
 		
 		BiomeManager.addVillageBiome(BiomeInit.CRIMSON_WOODS , true);
 		
@@ -68,6 +70,13 @@ public class BiomeCrimsonWoods extends Biome
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityEnderman.class, 2, 2, 3));  
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));
 	}
+	@Override
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+	{
+	
+        return TREE;
+    
+        }
 	public WorldGenerator getRandomWorldGenForGrass(Random rand)
     {
         return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);

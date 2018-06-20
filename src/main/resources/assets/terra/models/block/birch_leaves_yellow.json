@@ -1,0 +1,7 @@
+
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "terra:blocks/leaves_birch_yellow"
+    }
+}

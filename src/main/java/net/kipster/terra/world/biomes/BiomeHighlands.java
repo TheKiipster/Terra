@@ -46,7 +46,7 @@ public class BiomeHighlands extends Biome
 	public BiomeHighlands() 
 	{
 		
-		super(new BiomeProperties("Highlands").setBaseHeight(0.84F).setHeightVariation(0.5F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Highlands").setBaseHeight(0.87F).setHeightVariation(0.5F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.HIGHLANDS , true);
 		

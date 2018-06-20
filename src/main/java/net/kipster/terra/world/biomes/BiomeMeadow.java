@@ -48,7 +48,7 @@ public class BiomeMeadow extends Biome
 	public BiomeMeadow() 
 	{
 		
-		super(new BiomeProperties("Meadow").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(0.8F).setRainfall(0.3F));
+		super(new BiomeProperties("Meadow").setBaseHeight(0.125F).setHeightVariation(0.09F).setTemperature(0.8F).setRainfall(0.3F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.MEADOW , true);
 		

@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:birch_sapling_yellow",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{ "model": "terra:elm_sapling"}],
+        "stage=1":[{"model": "terra:elm_sapling" }]
+    }
+}

@@ -55,17 +55,19 @@ public class BiomeWoodlands extends Biome
 	public BiomeWoodlands() 
 	{
 		
-		super(new BiomeProperties("Woodlands").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.5F).setRainfall(0.3F));
+		super(new BiomeProperties("Woodlands").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.WOODLANDS , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 20;
+		this.decorator.treesPerChunk = 15;
 		
 		 this.decorator.flowersPerChunk = 3;
-	        this.decorator.grassPerChunk = 4;
+	        this.decorator.grassPerChunk = 6;
+	        this.decorator.mushroomsPerChunk = 4;
+	        this.decorator.bigMushroomsPerChunk = 1;
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
@@ -79,7 +81,7 @@ public class BiomeWoodlands extends Biome
 	        }
 	    else if (rand.nextInt(5) != 0)
         {
-            return (WorldGenAbstractTree)(rand.nextInt(10) == 0 ? BIG_TREE_FEATURE : TREE_FEATURE);
+            return (WorldGenAbstractTree)(rand.nextInt(10) == 0 ? BIG_TREE_FEATURE : ROOF_TREE);
         }
         else
         {
@@ -109,10 +111,10 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
         }
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
-	    return 0x8BB254;
+	    return 0x618545;
 	}
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
-	    return 0x8BB254;
+	    return 0x618545;
 	}
 }

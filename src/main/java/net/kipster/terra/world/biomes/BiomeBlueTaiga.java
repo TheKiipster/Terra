@@ -55,7 +55,7 @@ public class BiomeBlueTaiga extends Biome
 	public BiomeBlueTaiga() 
 	{
 		
-		super(new BiomeProperties("Blue Taiga").setBaseHeight(0.45F).setHeightVariation(0.3F).setTemperature(-0.5F).setRainfall(0.4F).setSnowEnabled());
+		super(new BiomeProperties("Blue Taiga").setBaseHeight(Biomes.TAIGA.getBaseHeight()).setHeightVariation(Biomes.TAIGA.getHeightVariation()).setTemperature(Biomes.TAIGA.getDefaultTemperature()).setRainfall(Biomes.TAIGA.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.BLUE_TAIGA , true);
 		

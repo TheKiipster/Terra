@@ -3,6 +3,8 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
+import net.kipster.terra.world.gen.generators.WorldGenTreeBlackSpruce;
+import net.kipster.terra.world.gen.generators.WorldGenTreeRedSpruce;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockSilverfish;
 import net.minecraft.block.BlockTallGrass;
@@ -24,6 +26,8 @@ public class BiomeGreenExtremeHills extends Biome
 {
 	private final WorldGenerator silverfishSpawner = new WorldGenMinable(Blocks.MONSTER_EGG.getDefaultState().withProperty(BlockSilverfish.VARIANT, BlockSilverfish.EnumType.STONE), 9);
     private final WorldGenTaiga2 spruceGenerator = new WorldGenTaiga2(false);
+    protected static final WorldGenTreeRedSpruce RED_SPRUCE = new WorldGenTreeRedSpruce(false);
+    protected static final WorldGenTreeBlackSpruce BLACK_SPRUCE = new WorldGenTreeBlackSpruce(false);
     
 public BiomeGreenExtremeHills() 
 {
@@ -46,8 +50,15 @@ public BiomeGreenExtremeHills()
 
 public WorldGenAbstractTree getRandomTreeFeature(Random rand)
 {
-    return (WorldGenAbstractTree)(rand.nextInt(3) > 0 ? this.spruceGenerator : super.getRandomTreeFeature(rand));
-}
+	if (rand.nextInt(3) != 0)
+    {
+        return (WorldGenAbstractTree)(rand.nextInt(7) == 0 ? BLACK_SPRUCE : super.getRandomTreeFeature(rand));
+    }
+	else
+    {
+        return RED_SPRUCE;
+    }
+        }
 public WorldGenerator getRandomWorldGenForGrass(Random rand)
 {
     return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
@@ -107,12 +118,12 @@ private static class EmeraldGenerator extends WorldGenerator
 }       
 @Override
 public int getModdedBiomeGrassColor(int original) {
-    return 0x409A35;
+    return 0x579c4e;
 }
 
 @Override
 public int getModdedBiomeFoliageColor(int original) {
-    return 0x409A35;
+    return 0x579c4e;
 }
 
 }

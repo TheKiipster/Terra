@@ -47,9 +47,9 @@ public class BiomeLushForest extends Biome
 	public BiomeLushForest() 
 	{
 		
-		super(new BiomeProperties("Lush Forest").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.5F).setRainfall(0.3F));
+		super(new BiomeProperties("Lush Forest").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.LUSHFOREST , true);
+		BiomeManager.addVillageBiome(BiomeInit.ANCIENT_FOREST , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

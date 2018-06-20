@@ -37,7 +37,7 @@ public class BiomeBlackBeach extends BiomeBeach{
 	public BiomeBlackBeach() 
 	{
 		
-		super(new BiomeProperties("Black Beach").setBaseHeight(-0.35F).setHeightVariation(0.022F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Black Beach").setBaseHeight(-.79F).setHeightVariation(0.23F).setTemperature(0.8F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.BLACKBEACH , false);
 	topBlock = BlockInit.BLACK_SAND.getDefaultState();

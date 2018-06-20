@@ -21,7 +21,7 @@ public class BiomeSteppe extends Biome
 {	
 	public BiomeSteppe() 
 	{
-		super(new BiomeProperties("Steppe").setBaseHeight(0.89F).setHeightVariation(0.025F).setTemperature(1.0F));
+		super(new BiomeProperties("Steppe").setBaseHeight(0.49F).setHeightVariation(0.5F).setTemperature(1.0F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.STEPPE , true);
 		

@@ -37,7 +37,7 @@ public class BiomeWhiteBeach extends BiomeBeach{
 	public BiomeWhiteBeach() 
 	{
 		
-		super(new BiomeProperties("White Beach").setBaseHeight(-0.35F).setHeightVariation(0.022F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("White Beach").setBaseHeight(-.79F).setHeightVariation(0.23F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.WHITEBEACH , false);
 		

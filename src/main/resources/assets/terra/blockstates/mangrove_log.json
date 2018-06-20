@@ -1,0 +1,8 @@
+    {
+        "variants": {
+            "axis=y": { "model": "terra:mangrove_log" },
+            "axis=z": { "model": "terra:mangrove_log", "x": 90 },
+            "axis=x": { "model": "terra:mangrove_log", "x": 90, "y": 90 },
+            "axis=none,variant=mangrove": { "model": "terra:mangrove_log" }
+        }
+    }

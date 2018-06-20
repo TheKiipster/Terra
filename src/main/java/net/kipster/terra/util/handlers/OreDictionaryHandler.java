@@ -92,11 +92,11 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("plankWood", BlockInit.REDSPRUCEPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.CHERRYPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.WHITESPRUCEPLANKS);
-		OreDictionary.registerOre("treeWood", BlockInit.BLACKSPRUCELOG);
-		OreDictionary.registerOre("treeWood", BlockInit.BLUESPRUCELOG);
-		OreDictionary.registerOre("treeWood", BlockInit.REDSPRUCELOG);
-		OreDictionary.registerOre("treeWood", BlockInit.CHERRYLOG);
-		OreDictionary.registerOre("treeWood", BlockInit.WHITESPRUCELOG);
+		OreDictionary.registerOre("logWood", BlockInit.BLACKSPRUCELOG);
+		OreDictionary.registerOre("logWood", BlockInit.BLUESPRUCELOG);
+		OreDictionary.registerOre("logWood", BlockInit.REDSPRUCELOG);
+		OreDictionary.registerOre("logWood", BlockInit.CHERRYLOG);
+		OreDictionary.registerOre("logWood", BlockInit.WHITESPRUCELOG);
 		OreDictionary.registerOre("treeLeaves", BlockInit.BLACKSPRUCELEAVES);
 		OreDictionary.registerOre("treeLeaves", BlockInit.BLUESPRUCELEAVES);
 		OreDictionary.registerOre("treeLeaves", BlockInit.REDSPRUCELEAVES);
@@ -115,18 +115,18 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("treeLeaves", BlockInit.ELMLEAVES);
 		OreDictionary.registerOre("treeLeaves", BlockInit.MAHOGANYLEAVES);
 		OreDictionary.registerOre("treeLeaves", BlockInit.PALMLEAVES);
-		OreDictionary.registerOre("treeWood", BlockInit.ELMLOG);
-		OreDictionary.registerOre("treeWood", BlockInit.MAHOGANYLOG);
-		OreDictionary.registerOre("treeWood", BlockInit.PALMLOG);
+		OreDictionary.registerOre("logWood", BlockInit.ELMLOG);
+		OreDictionary.registerOre("logWood", BlockInit.MAHOGANYLOG);
+		OreDictionary.registerOre("logWood", BlockInit.PALMLOG);
 		OreDictionary.registerOre("plankWood", BlockInit.ELMPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.MAHOGANYPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.PALMPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.EBONYPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.JACARANDAPLANKS);
 		OreDictionary.registerOre("plankWood", BlockInit.PAULOWNIAPLANKS);
-		OreDictionary.registerOre("treeWood", BlockInit.EBONYLOG);
-		OreDictionary.registerOre("treeWood", BlockInit.JACARANDALOG);
-		OreDictionary.registerOre("treeWood", BlockInit.PAULOWNIALOG);
+		OreDictionary.registerOre("logWood", BlockInit.EBONYLOG);
+		OreDictionary.registerOre("logWood", BlockInit.JACARANDALOG);
+		OreDictionary.registerOre("logWood", BlockInit.PAULOWNIALOG);
 		OreDictionary.registerOre("treeLeaves", BlockInit.EBONYLEAVES);
 		OreDictionary.registerOre("treeLeaves", BlockInit.PAULOWNIASAPLINGWHITE);
 		OreDictionary.registerOre("treeLeaves", BlockInit.PAULOWNIALEAVESBLUE);
@@ -139,6 +139,20 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("treeSapling", BlockInit.PAULOWNIASAPLINGWHITE);
 		OreDictionary.registerOre("treeSapling", BlockInit.PAULOWNIASAPLINGBLUE);
 		OreDictionary.registerOre("treeSapling", BlockInit.PAULOWNIASAPLINGGREEN);
+		OreDictionary.registerOre("logWood", BlockInit.MANGROVELOG);
+		OreDictionary.registerOre("logWood", BlockInit.ASPENLOG);
+		OreDictionary.registerOre("logWood", BlockInit.POPLARLOG);
+		OreDictionary.registerOre("treeLeaves", BlockInit.MANGROVELEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.ASPENLEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.POPLARLEAVES);
+		OreDictionary.registerOre("treeLeaves", BlockInit.YELLOWBIRCHLEAVES);
+		OreDictionary.registerOre("plankWood", BlockInit.MANGROVEPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.ASPENPLANKS);
+		OreDictionary.registerOre("plankWood", BlockInit.POPLARLEAVES);
+		OreDictionary.registerOre("treeSapling", BlockInit.ASPENSAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.POPLARSAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.YELLOWBIRCHSAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.MANGROVESAPLING);
 		
 		
 		//Stones

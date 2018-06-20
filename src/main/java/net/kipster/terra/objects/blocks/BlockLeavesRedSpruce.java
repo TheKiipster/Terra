@@ -144,24 +144,17 @@ public class BlockLeavesRedSpruce extends BlockLeaves implements IHasModel
         return null;
     }
     @Override
-	public boolean isOpaqueCube(IBlockState state) 
-	{
-		return false;
+ 	@SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer() {
+    	return Blocks.LEAVES.getBlockLayer();
 	}
-	  @SideOnly(Side.CLIENT)
-	    public BlockRenderLayer getBlockLayer() {
-	        return Minecraft.getMinecraft().gameSettings.fancyGraphics ? BlockRenderLayer.CUTOUT_MIPPED : BlockRenderLayer.SOLID;
-	}
-	 @SideOnly(Side.CLIENT)
-	    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
-	        if (!Minecraft.getMinecraft().gameSettings.fancyGraphics) {
-	            if (!(blockAccess.getBlockState(pos.offset(side)).getBlock() instanceof BlockLeaves)) {
-	                return true;
-	            }
-	            return false;
-	        }
-	        return true;
-	}
+	
+	@Override
+ 	@SideOnly(Side.CLIENT)
+	public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
+		setGraphicsLevel(!Blocks.LEAVES.isOpaqueCube(blockState));
+ 		return super.shouldSideBeRendered(blockState, blockAccess, pos, side); 
+ 	}
 	@Override
 	public void registerModels() 
 	{

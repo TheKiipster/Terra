@@ -34,6 +34,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeBeach;
 import net.minecraft.world.biome.BiomeProvider;
+import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -54,14 +55,14 @@ public class BiomeAlps extends Biome
 	public BiomeAlps() 
 	{
 		
-		super(new BiomeProperties("Alps").setBaseHeight(3.7F).setHeightVariation(0.8F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
+		super(new BiomeProperties("Alps").setBaseHeight(5F).setHeightVariation(0.8F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
 		
 		BiomeManager.addVillageBiome(BiomeInit.ALPS , false);
 		topBlock = Blocks.SNOW.getDefaultState();
 		fillerBlock = Blocks.SNOW.getDefaultState();
 		
 		
-		this.decorator.generateFalls = false;
+		this.decorator.generateFalls = true;
 		this.decorator.treesPerChunk = 4;
 		this.decorator.flowersPerChunk = 1;
 	    this.decorator.grassPerChunk = 2;
@@ -84,6 +85,18 @@ public class BiomeAlps extends Biome
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySkeleton.class, 20, 4, 4));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityStray.class, 80, 4, 4));
 	}
+	@Override
+    public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
+        if (noiseVal > 0.90D) {
+            this.topBlock = Blocks.GRASS.getDefaultState();
+            this.fillerBlock = Blocks.SNOW.getDefaultState();  } 
+        else {
+         this.topBlock = Blocks.SNOW.getDefaultState();
+            this.fillerBlock = Blocks.SNOW.getDefaultState();
+        }
+
+        this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
+}
 
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
 	{
@@ -148,12 +161,12 @@ public class BiomeAlps extends Biome
 	}       
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
-	    return 0x409A35;
+	    return 0x45a147;
 	}
 
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
-	    return 0x409A35;
+	    return 0x45a147;
 	}
 
 	}

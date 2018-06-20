@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=top": { "model": "terra:cherry_planks" },
+        "half=bottom": { "model": "terra:cherry_planks" }
+    }
+}

@@ -23,6 +23,7 @@ public class WorldGenCustomTrees implements IWorldGenerator
 	private final WorldGenerator WHITECHERRY= new WorldGenTreeCherryWhite(false, false);
 	private final WorldGenerator PURPLECHERRY = new WorldGenTreeCherryPurple(false);
 	private final WorldGenerator BLUESPRUCE = new WorldGenTreeBlueSpruce(false);
+	private final WorldGenerator BLUESPRUCE2 = new WorldGenTreeBlueSpruce2(false);
 	private final WorldGenerator REDSPRUCE = new WorldGenTreeRedSpruce(false);
 	private final WorldGenerator BLACKSPRUCE = new WorldGenTreeBlackSpruce(false);
 	private final WorldGenerator WHITESPRUCE = new WorldGenTreeWhiteSpruce(false);
@@ -34,6 +35,9 @@ public class WorldGenCustomTrees implements IWorldGenerator
 	private final WorldGenerator PAULOWNIAGREEN = new WorldGenTreePaulowniaGreen(false, false);
 	private final WorldGenerator PAULOWNIABLUE = new WorldGenTreePaulowniaBlue(false, false);
 	private final WorldGenerator PAULOWNIAWHITE = new WorldGenTreePaulowniaWhite(false, false);
+	private final WorldGenerator POPLAR = new WorldGenPoplar(false, false);
+	
+	
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
@@ -50,6 +54,7 @@ public class WorldGenCustomTrees implements IWorldGenerator
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMysticWoods.class);
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungle.class);
 			runGenerator(ELM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeForest.class);
+			runGenerator(POPLAR, world, random, chunkX, chunkZ, 2, -1, 0, BiomeMeadow.class);
 			
 		}
 	}

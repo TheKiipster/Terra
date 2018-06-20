@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "terra:blocks/planks_elm",
+        "top": "terra:blocks/planks_elm",
+        "side": "terra:blocks/planks_elm"
+    }
+}

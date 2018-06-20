@@ -66,13 +66,13 @@ public class BiomeBadlands extends Biome
 	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 2;
+		this.decorator.treesPerChunk = 1;
 		this.decorator.grassPerChunk = 10;
 		this.decorator.deadBushPerChunk = 4;
-		this.decorator.flowersPerChunk = 3;
-		this.decorator.cactiPerChunk = 1;
-		this.decorator.gravelPatchesPerChunk = 3;
-		this.decorator.sandPatchesPerChunk = 4;
+		this.decorator.flowersPerChunk = 2;
+		this.decorator.cactiPerChunk = 3;
+		this.decorator.gravelPatchesPerChunk = 10;
+		this.decorator.sandPatchesPerChunk = 10;
 		
 		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 1, 2, 6));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 1, 1, 1));

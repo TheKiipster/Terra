@@ -1,0 +1,17 @@
+{
+    "multipart": [
+        {   "apply": { "model": "terra:poplar_fencepost" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "terra:poplar_fenceside", "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "terra:poplar_fenceside", "y": 90, "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "terra:poplar_fenceside", "y": 180, "uvlock": true }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "terra:poplar_fenceside", "y": 270, "uvlock": true }
+        }
+    ]
+}

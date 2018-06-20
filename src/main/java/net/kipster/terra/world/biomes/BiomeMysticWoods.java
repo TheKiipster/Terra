@@ -18,6 +18,7 @@ import com.google.gson.GsonBuilder;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce;
+import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce2;
 import net.kipster.terra.world.gen.generators.WorldGenTreeMystic;
 import net.kipster.terra.world.gen.generators.WorldGenTreeSwampDark;
 import net.minecraft.block.BlockDoublePlant;
@@ -60,7 +61,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeMysticWoods extends Biome
 {	
 	 protected static final IBlockState WATER_LILY = Blocks.WATERLILY.getDefaultState();
-	private static final WorldGenTreeBlueSpruce BLUE_SPRUCE = new WorldGenTreeBlueSpruce(false);
+	private static final WorldGenTreeBlueSpruce2 BLUE_SPRUCE = new WorldGenTreeBlueSpruce2(false);
 	 protected static final WorldGenTreeMystic ROOF_TREE = new WorldGenTreeMystic(false);
 	 protected static final WorldGenAbstractTree SWAMP_DARK = new WorldGenTreeSwampDark();
     private static final WorldGenBlockBlob FOREST_ROCK_GENERATOR = new WorldGenBlockBlob(Blocks.MOSSY_COBBLESTONE, 0);
@@ -68,7 +69,7 @@ public class BiomeMysticWoods extends Biome
 	public BiomeMysticWoods() 
 	{
 		
-		super(new BiomeProperties("Mystic Woods").setBaseHeight(0.5F).setHeightVariation(0.1F).setTemperature(.5F).setRainfall(0.4F).setWaterColor(0x7300c9));
+		super(new BiomeProperties("Mystic Woods").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()).setWaterColor(0x7300c9));
 		
 		BiomeManager.addVillageBiome(BiomeInit.MYSTIC_WOODS , true);
 		

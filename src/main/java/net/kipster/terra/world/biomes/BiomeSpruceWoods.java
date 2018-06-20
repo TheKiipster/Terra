@@ -60,7 +60,7 @@ public class BiomeSpruceWoods extends Biome
 	public BiomeSpruceWoods() 
 	{
 		
-		super(new BiomeProperties("Spruce Woods").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.5F).setRainfall(0.3F));
+		super(new BiomeProperties("Spruce Woods").setBaseHeight(Biomes.TAIGA.getBaseHeight()).setHeightVariation(Biomes.TAIGA.getHeightVariation()).setTemperature(Biomes.TAIGA.getDefaultTemperature()).setRainfall(Biomes.TAIGA.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.SPRUCE_WOODS , true);
 		

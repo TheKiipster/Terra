@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "terra:blocks/planks_spruce_white",
+        "top": "terra:blocks/planks_spruce_white",
+        "side": "terra:blocks/planks_spruce_white"
+    }
+}

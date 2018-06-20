@@ -35,7 +35,7 @@ public class BiomeRedPlateau extends Biome
 	
 	public BiomeRedPlateau() 
 	{
-		super(new BiomeProperties("Red Plateau").setBaseHeight(2F).setHeightVariation(0.025F).setTemperature(2.0F));
+		super(new BiomeProperties("Red Plateau").setBaseHeight(0.80F).setHeightVariation(0.5F).setTemperature(2.0F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.REDPLATEAU , true);
 		

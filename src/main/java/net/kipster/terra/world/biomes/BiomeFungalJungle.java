@@ -18,6 +18,7 @@ import net.minecraft.entity.passive.EntityMooshroom;
 import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntityRabbit;
+import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -43,7 +44,7 @@ public class BiomeFungalJungle extends Biome
 	    
 	public BiomeFungalJungle() 
 	{
-		super(new BiomeProperties("Fungal Jungle").setBaseHeight(0.2F).setHeightVariation(0.2F).setTemperature(0.95F).setRainfall(0.9F));
+		super(new BiomeProperties("Fungal Jungle").setBaseHeight(Biomes.JUNGLE.getBaseHeight()).setHeightVariation(Biomes.JUNGLE.getHeightVariation()).setTemperature(Biomes.JUNGLE.getDefaultTemperature()).setRainfall(Biomes.JUNGLE.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.FUNGAL_JUNGLE , true);
 		
