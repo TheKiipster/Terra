@@ -154,6 +154,52 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("treeSapling", BlockInit.YELLOWBIRCHSAPLING);
 		OreDictionary.registerOre("treeSapling", BlockInit.MANGROVESAPLING);
 		
+		OreDictionary.registerOre("stairWood", BlockInit.ASPENSTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.BLUESPRUCESTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.BLACKSPRUCESTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.JACARANDASTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.ELMSTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.EBONYSTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.MAHOGANYSTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.MANGROVESTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.PALMSTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.PAULOWNIASTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.POPLARSTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.REDSPRUCESTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.WHITESPRUCESTAIRS);
+		OreDictionary.registerOre("stairWood", BlockInit.CHERRYSTAIRS);
+
+		
+		
+		OreDictionary.registerOre("fenceWood", BlockInit.ASPENFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.BLUESPRUCEFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.BLACKSPRUCEFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.JACARANDAFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.ELMFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.EBONYFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.MAHOGANYFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.MANGROVEFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.PALMFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.PAULOWNIAFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.POPLARFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.REDSPRUCEFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.WHITESPRUCEFENCE);
+		OreDictionary.registerOre("fenceWood", BlockInit.CHERRYFENCE);
+		
+		OreDictionary.registerOre("fenceGateWood", BlockInit.ASPENFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.BLUESPRUCEFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.BLACKSPRUCEFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.JACARANDAFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.ELMFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.EBONYFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.MAHOGANYFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.MANGROVEFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.PALMFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.PAULOWNIAFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.POPLARFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.REDSPRUCEFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.WHITESPRUCEFENCEGATE);
+		OreDictionary.registerOre("fenceGateWood", BlockInit.CHERRYFENCEGATE);
 		
 		//Stones
 		OreDictionary.registerOre("stone", BlockInit.BASALT_STONE);

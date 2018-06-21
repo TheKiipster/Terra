@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:poplar_log"
+    }
+  ],
+  "result": {
+    "item": "terra:poplar_planks",
+    "count": 4
+  }
+}

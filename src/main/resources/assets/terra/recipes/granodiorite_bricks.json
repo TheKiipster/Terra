@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:granodiorite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:granodiorite_stones",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:peridotite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:peridotite_stones",
+    "count": 4
+  }
+}

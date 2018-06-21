@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:anorthosite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:anorthosite_stones",
+    "count": 4
+  }
+}

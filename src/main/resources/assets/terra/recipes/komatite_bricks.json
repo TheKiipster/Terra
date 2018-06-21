@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:komatite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:komatite_stones",
+    "count": 4
+  }
+}

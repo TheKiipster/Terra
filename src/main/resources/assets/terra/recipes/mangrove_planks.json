@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terra:mangrove_log"
+    }
+  ],
+  "result": {
+    "item": "terra:mangrove_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:troctolite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:troctolite_stones",
+    "count": 4
+  }
+}

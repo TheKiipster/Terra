@@ -47,8 +47,35 @@ public static void registerFurnaceRecipes() {
 	GameRegistry.addSmelting(BlockInit.SCORIA_COBBLESTONE, new ItemStack(BlockInit.SCORIA_STONE), 1F);
 	GameRegistry.addSmelting(BlockInit.SLATE_COBBLESTONE, new ItemStack(BlockInit.SLATE_STONE), 1F);
 	GameRegistry.addSmelting(BlockInit.SOAPSTONE_COBBLESTONE, new ItemStack(BlockInit.SOAPSTONE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.ANORTHOSITE_COBBLESTONE, new ItemStack(BlockInit.ANORTHOSITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.DACITE_COBBLESTONE, new ItemStack(BlockInit.DACITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.DUNITE_COBBLESTONE, new ItemStack(BlockInit.DUNITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.GRANODIORITE_COBBLESTONE, new ItemStack(BlockInit.GRANODIORITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.FELSITE_COBBLESTONE, new ItemStack(BlockInit.FELSITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.PEGMATITE_COBBLESTONE, new ItemStack(BlockInit.PEGMATITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.KOMATITE_COBBLESTONE, new ItemStack(BlockInit.KOMATITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.PERIDOTITE_COBBLESTONE, new ItemStack(BlockInit.PERIDOTITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.PORPHYRY_COBBLESTONE, new ItemStack(BlockInit.PORPHYRY_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.PYROXENITE_COBBLESTONE, new ItemStack(BlockInit.PYROXENITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.LATITE_COBBLESTONE, new ItemStack(BlockInit.LATITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.SYENITE_COBBLESTONE, new ItemStack(BlockInit.SYENITE_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.TUFF_COBBLESTONE, new ItemStack(BlockInit.TUFF_STONE), 1F);
+	GameRegistry.addSmelting(BlockInit.TROCTOLITE_COBBLESTONE, new ItemStack(BlockInit.TROCTOLITE_STONE), 1F);
 	
-	
+	GameRegistry.addSmelting(BlockInit.ASPENLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.BLUESPRUCELOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.BLACKSPRUCELOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.CHERRYLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.EBONYLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.ELMLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.JACARANDALOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.POPLARLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.PALMLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.PAULOWNIALOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.MAHOGANYLOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.MANGROVELOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.WHITESPRUCELOG, new ItemStack(Items.COAL), 1F);
+	GameRegistry.addSmelting(BlockInit.REDSPRUCELOG, new ItemStack(Items.COAL), 1F);
 	
 	GameRegistry.addSmelting(BlockInit.ALIKITE, new ItemStack(ItemInit.ALIKITE_BRICK), 1F);
 	GameRegistry.addSmelting(BlockInit.TRIGLICITE, new ItemStack(ItemInit.TRIGLICITE_BRICK), 1F);

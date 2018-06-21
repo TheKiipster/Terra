@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:tuff_stone"
+    }
+  },
+  "result": {
+    "item": "terra:tuff_stones",
+    "count": 4
+  }
+}

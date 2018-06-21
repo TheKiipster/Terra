@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "terra:dunite_stone"
+    }
+  },
+  "result": {
+    "item": "terra:dunite_stones",
+    "count": 4
+  }
+}
