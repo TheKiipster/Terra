@@ -94,6 +94,10 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome GOLDEN_FOREST = new BiomeGoldenForest();
 	public static final Biome CRIMSON_WOODS = new BiomeCrimsonWoods();
 	public static final Biome MANGROVE = new BiomeMangrove();
+	public static final Biome LUSHFOREST = new BiomeLushForest();
+	public static final Biome PRAIRE = new BiomePraire();
+	public static final Biome SILKGLADES = new BiomeSilkglades();
+	
 	
 	public static void registerBiomes()
 	{
@@ -103,11 +107,7 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(STEPPE, "Steppe",  6, Config.disableSteppe,BiomeType.WARM, Type.HILLS);
 		initBiome(LAKE, "Lake",  6, Config.disableLake,BiomeType.WARM, Type.WATER);
 		initBiome(FROZENLAKE, "Frozen_Lake",  5, Config.disableFrozenLake,BiomeType.ICY, Type.WATER, Type.COLD);
-		//initBiome(COLDPLATEAU, "Cold_Plateau",  6, Config.disableColdPlateau,BiomeType.COOL, Type.COLD, Type.SNOWY);
-		//initBiome(FROZENPLATEAU, "Frozen_Plateau",  5, Config.disableFrozenPlateau,BiomeType.ICY, Type.COLD, Type.SNOWY);
-		//initBiome(GREENPLATEAU, "Green_Plateau",  4, Config.disableGreenPlateau,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.RARE);
 		initBiome(REDPLATEAU, "Red_Plateau",  5, Config.disableRedPlateau,BiomeType.DESERT, Type.DRY, Type.SANDY, Type.MESA);
-		//initBiome(DRYPLATEAU, "Dry_Plateau",  5, Config.disableDryPlateau,BiomeType.WARM, Type.DRY, Type.SPARSE, Type.SNOWY);
 		initBiome(GRASSLAND, "Grassland", 7, Config.disableGrassland, BiomeType.WARM, Type.PLAINS);
 		initBiome(FENS, "Fens", 6, Config.disableFens, BiomeType.WARM, Type.SWAMP);
 		initBiome(SHRUBLAND, "Shrubland", 7, Config.disableShrubland, BiomeType.WARM, Type.PLAINS, Type.DENSE);
@@ -156,15 +156,14 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(FUNGAL_JUNGLE, "Fungal_Jungle",  2, Config.disableFungalJungle,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.MUSHROOM);
 		initBiome(JUNGLE_ARCHIPELAGO, "Jungle_Archipelago",  1, Config.disableJungleArchipelago,BiomeType.WARM, Type.JUNGLE, Type.WATER, Type.OCEAN);
 		initBiome(AEGEAN_ARCHIPELAGO, "Aegean_Archipelago",  1, Config.disableAegeanArchipelago,BiomeType.WARM, Type.WATER, Type.OCEAN);
-		initBiome(MOUNTAINOUS_ARCHIPELAGO, "Mountainous_Archipelago",  1, Config.disableAegeanArchipelago,BiomeType.WARM, Type.MOUNTAIN, Type.WATER, Type.OCEAN);
-		initBiome(DESERT_ARCHIPELAGO, "Desert_Archipelago",  1, Config.disableAegeanArchipelago,BiomeType.DESERT, Type.DRY, Type.SANDY, Type.WATER, Type.OCEAN);
-		initBiome(ANCIENT_FOREST, "Ancient_Forest",  1, Config.disablePlateau,BiomeType.WARM, Type.FOREST);
-		initBiome(GOLDEN_FOREST, "Golden_Forest",  3, Config.disablePlateau,BiomeType.WARM, Type.FOREST);
-		initBiome(MANGROVE, "Mangrove",  10, Config.disableLushSwamp,BiomeType.WARM, Type.SWAMP);
-		
-		
-		
-		
+		initBiome(MOUNTAINOUS_ARCHIPELAGO, "Mountainous_Archipelago",  1, Config.disableMountainousArchipelago,BiomeType.WARM, Type.MOUNTAIN, Type.WATER, Type.OCEAN);
+		initBiome(DESERT_ARCHIPELAGO, "Desert_Archipelago",  1, Config.disableDesertArchipelago,BiomeType.DESERT, Type.DRY, Type.SANDY, Type.WATER, Type.OCEAN);
+		initBiome(ANCIENT_FOREST, "Ancient_Forest",  1, Config.disableAncientForest,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
+		initBiome(GOLDEN_FOREST, "Golden_Forest",  3, Config.disableGoldenForest,BiomeType.WARM, Type.FOREST);
+		initBiome(MANGROVE, "Mangrove",  4, Config.disableMangrove,BiomeType.WARM, Type.SWAMP);
+		initBiome(LUSHFOREST, "Lush_Forest", 5, Config.disableLushForest, BiomeType.WARM, Type.FOREST, Type.LUSH);
+		initBiome(PRAIRE, "Praire", 2, Config.disablePraire, BiomeType.WARM, Type.SAVANNA, Type.SPARSE);
+		initBiome(SILKGLADES, "Silkglades", 1, Config.disableSilkglades, BiomeType.WARM, Type.FOREST, Type.DRY);
 		initBiome(CRIMSON_WOODS, "Crimson_Woods", 2, Config.disableCrimsonWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
 	}
 	  public static void initSubBiomes()

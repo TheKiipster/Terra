@@ -54,7 +54,7 @@ public class BiomeDesertArchipelago extends Biome
 	    
 	public BiomeDesertArchipelago() 
 	{
-		super(new BiomeProperties("Desert Archipelago").setBaseHeight(-0.55F).setHeightVariation(0.70F).setTemperature(1.0F).setRainDisabled());
+		super(new BiomeProperties("Desert Archipelago").setBaseHeight(-1F).setHeightVariation(0.70F).setTemperature(1.0F).setRainDisabled());
 		
 		BiomeManager.addVillageBiome(BiomeInit.DESERT_ARCHIPELAGO , true);
 		

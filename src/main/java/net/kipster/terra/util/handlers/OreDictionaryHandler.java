@@ -175,6 +175,22 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("stone", BlockInit.SCORIA_STONE);
 		OreDictionary.registerOre("stone", BlockInit.SLATE_STONE);
 		OreDictionary.registerOre("stone", BlockInit.SOAPSTONE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.ANORTHOSITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.DACITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.DUNITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.FELSITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.GRANODIORITE_COBBLESTONE);
+		OreDictionary.registerOre("stone", BlockInit.KOMATITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.LATITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.PEGMATITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.PERIDOTITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.PORPHYRY_STONE);
+		OreDictionary.registerOre("stone", BlockInit.PYROXENITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.SYENITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.TROCTOLITE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.TUFF_STONE);
+		OreDictionary.registerOre("stone", BlockInit.SLATE_STONE);
+		OreDictionary.registerOre("stone", BlockInit.SOAPSTONE_STONE);
 		
 		//Cobblestone
 		OreDictionary.registerOre("cobblestone", BlockInit.BASALT_COBBLESTONE);
@@ -196,6 +212,22 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("cobblestone", BlockInit.SCORIA_COBBLESTONE);
 		OreDictionary.registerOre("cobblestone", BlockInit.SLATE_COBBLESTONE);
 		OreDictionary.registerOre("cobblestone", BlockInit.SOAPSTONE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.ANORTHOSITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.DACITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.DUNITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.GRANODIORITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.LATITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.FELSITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.KOMATITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.PEGMATITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.PERIDOTITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.PORPHYRY_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.PYROXENITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.SYENITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.TROCTOLITE_COBBLESTONE);
+		OreDictionary.registerOre("cobblestone", BlockInit.TUFF_COBBLESTONE);
+
+		
 		
 		//Stonebrick
 		OreDictionary.registerOre("stonebrick", BlockInit.BASALT_STONEBRICK);
@@ -217,7 +249,21 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("stonebrick", BlockInit.SCORIA_STONEBRICK);
 		OreDictionary.registerOre("stonebrick", BlockInit.SLATE_STONEBRICK);
 		OreDictionary.registerOre("stonebrick", BlockInit.SOAPSTONE_STONEBRICK);
-		
+		OreDictionary.registerOre("stonebrick", BlockInit.ANORTHOSITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.DACITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.DUNITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.FELSITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.GRANODIORITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.KOMATITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.LATITE_STONE);
+		OreDictionary.registerOre("stonebrick", BlockInit.PEGMATITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.PERIDOTITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.PORPHYRY_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.PYROXENITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.SYENITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.TROCTOLITE_STONEBRICK);
+		OreDictionary.registerOre("stonebrick", BlockInit.TUFF_STONEBRICK);
+
 		
 
 	}

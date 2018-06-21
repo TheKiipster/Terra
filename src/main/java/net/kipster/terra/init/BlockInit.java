@@ -241,6 +241,21 @@ public class BlockInit
 	public static final Block SCORIA_STONE = new BlockScoria("scoria_stone", Material.ROCK);
 	public static final Block SLATE_STONE = new BlockSlate("slate_stone", Material.ROCK);
 	public static final Block SOAPSTONE_STONE = new BlockSoapstone("soapstone_stone", Material.ROCK);
+	public static final Block DACITE_STONE = new BlockDacite("dacite_stone", Material.ROCK);
+	public static final Block TUFF_STONE = new BlockTuff("tuff_stone", Material.ROCK);
+	public static final Block PEGMATITE_STONE = new BlockPegmatite("pegmatite_stone", Material.ROCK);
+	public static final Block PERIDOTITE_STONE = new BlockPeridotite("peridotite_stone", Material.ROCK);
+	public static final Block ANORTHOSITE_STONE = new BlockAnorthosite("anorthosite_stone", Material.ROCK);
+	public static final Block DUNITE_STONE = new BlockDunite("dunite_stone", Material.ROCK);
+	public static final Block FELSITE_STONE = new BlockFelsite("felsite_stone", Material.ROCK);
+	public static final Block GRANODIORITE_STONE = new BlockGranodiorite("granodiorite_stone", Material.ROCK);
+	public static final Block KOMATITE_STONE = new BlockKomatite("komatite_stone", Material.ROCK);
+	public static final Block LATITE_STONE = new BlockLatite("latite_stone", Material.ROCK);
+	public static final Block PORPHYRY_STONE = new BlockPorphyry("porphyry_stone", Material.ROCK);
+	public static final Block PYROXENITE_STONE = new BlockPyroxenite("pyroxenite_stone", Material.ROCK);
+	public static final Block SYENITE_STONE = new BlockSyenite("syenite_stone", Material.ROCK);
+	public static final Block TROCTOLITE_STONE = new BlockTroctolite("troctolite_stone", Material.ROCK);
+	
 	
 	//Cobblestone
 	public static final Block BASALT_COBBLESTONE = new BlockIgneousRocks("basalt_cobblestone", Material.ROCK);
@@ -262,6 +277,21 @@ public class BlockInit
 	public static final Block SCORIA_COBBLESTONE = new BlockIgneousRocks("scoria_cobblestone", Material.ROCK);
 	public static final Block SLATE_COBBLESTONE = new BlockMetamorphicRocks("slate_cobblestone", Material.ROCK);
 	public static final Block SOAPSTONE_COBBLESTONE = new BlockMetamorphicRocks("soapstone_cobblestone", Material.ROCK);
+	public static final Block DACITE_COBBLESTONE = new BlockIgneousRocks("dacite_cobblestone", Material.ROCK);
+	public static final Block TUFF_COBBLESTONE = new BlockIgneousRocks("tuff_cobblestone", Material.ROCK);
+	public static final Block PEGMATITE_COBBLESTONE = new BlockIgneousRocks("pegmatite_cobblestone", Material.ROCK);
+	public static final Block PERIDOTITE_COBBLESTONE = new BlockIgneousRocks("peridotite_cobblestone", Material.ROCK);
+	public static final Block ANORTHOSITE_COBBLESTONE = new BlockIgneousRocks("anorthosite_cobblestone", Material.ROCK);
+	public static final Block DUNITE_COBBLESTONE = new BlockIgneousRocks("dunite_cobblestone", Material.ROCK);
+	public static final Block FELSITE_COBBLESTONE = new BlockIgneousRocks("felsite_cobblestone", Material.ROCK);
+	public static final Block GRANODIORITE_COBBLESTONE = new BlockIgneousRocks("granodiorite_cobblestone", Material.ROCK);
+	public static final Block KOMATITE_COBBLESTONE = new BlockIgneousRocks("komatite_cobblestone", Material.ROCK);
+	public static final Block LATITE_COBBLESTONE = new BlockIgneousRocks("latite_cobblestone", Material.ROCK);
+	public static final Block PORPHYRY_COBBLESTONE = new BlockIgneousRocks("porphyry_cobblestone", Material.ROCK);
+	public static final Block PYROXENITE_COBBLESTONE = new BlockIgneousRocks("pyroxenite_cobblestone", Material.ROCK);
+	public static final Block SYENITE_COBBLESTONE = new BlockIgneousRocks("syenite_cobblestone", Material.ROCK);
+	public static final Block TROCTOLITE_COBBLESTONE = new BlockIgneousRocks("troctolite_cobblestone", Material.ROCK);
+	
 	
 	//Stone Brick
 	public static final Block BASALT_STONEBRICK = new BlockIgneousRocks("basalt_stonebrick", Material.ROCK);
@@ -283,7 +313,22 @@ public class BlockInit
 	public static final Block SCORIA_STONEBRICK = new BlockIgneousRocks("scoria_stonebrick", Material.ROCK);
 	public static final Block SLATE_STONEBRICK = new BlockMetamorphicRocks("slate_stonebrick", Material.ROCK);
 	public static final Block SOAPSTONE_STONEBRICK = new BlockMetamorphicRocks("soapstone_stonebrick", Material.ROCK);
-
+	public static final Block DACITE_STONEBRICK = new BlockIgneousRocks("dacite_stonebrick", Material.ROCK);
+	public static final Block TUFF_STONEBRICK = new BlockIgneousRocks("tuff_stonebrick", Material.ROCK);
+	public static final Block PEGMATITE_STONEBRICK = new BlockIgneousRocks("pegmatite_stonebrick", Material.ROCK);
+	public static final Block PERIDOTITE_STONEBRICK = new BlockIgneousRocks("peridotite_stonebrick", Material.ROCK);
+	public static final Block ANORTHOSITE_STONEBRICK = new BlockIgneousRocks("anorthosite_stonebrick", Material.ROCK);
+	public static final Block DUNITE_STONEBRICK = new BlockIgneousRocks("dunite_stonebrick", Material.ROCK);
+	public static final Block FELSITE_STONEBRICK = new BlockIgneousRocks("felsite_stonebrick", Material.ROCK);
+	public static final Block GRANODIORITE_STONEBRICK = new BlockIgneousRocks("granodiorite_stonebrick", Material.ROCK);
+	public static final Block KOMATITE_STONEBRICK = new BlockIgneousRocks("komatite_stonebrick", Material.ROCK);
+	public static final Block LATITE_STONEBRICK = new BlockIgneousRocks("latite_stonebrick", Material.ROCK);
+	public static final Block PORPHYRY_STONEBRICK = new BlockIgneousRocks("porphyry_stonebrick", Material.ROCK);
+	public static final Block PYROXENITE_STONEBRICK = new BlockIgneousRocks("pyroxenite_stonebrick", Material.ROCK);
+	public static final Block SYENITE_STONEBRICK = new BlockIgneousRocks("syenite_stonebrick", Material.ROCK);
+	public static final Block TROCTOLITE_STONEBRICK = new BlockIgneousRocks("troctolite_stonebrick", Material.ROCK);
+	
+	
 	//Misc
 	public static final Block ANTHROSIUM = new BlockAnthrosium("anthrosium", Material.GROUND);
 	public static final Block BELLIUM = new BlockBellium("bellium", Material.GROUND);

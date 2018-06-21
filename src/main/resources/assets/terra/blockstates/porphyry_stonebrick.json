@@ -1,6 +1,6 @@
 
 {
     "variants": {
-        "normal": { "model": "terra:basalt_stonebrick" }
+        "normal": { "model": "terra:porphyry_stonebrick" }
     }
 }

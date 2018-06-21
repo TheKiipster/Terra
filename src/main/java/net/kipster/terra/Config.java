@@ -77,7 +77,12 @@ public class Config {
 	public static boolean disableSaltLake = false;
 	public static boolean disableJungleArchipelago = false;
 	public static boolean disableAegeanArchipelago = false;
-	
+	public static boolean disableMountainousArchipelago = false;
+	public static boolean disableDesertArchipelago = false;
+	public static boolean disableAncientForest = false;
+	public static boolean disableMangrove = false;
+	public static boolean disableGoldenForest = false;
+
 
  	 //Ores
  	public static int anthracitePerChunk = 8;
@@ -119,6 +124,20 @@ public class Config {
 	public static int slatePerChunk = 1;	
 	public static int scoriaPerChunk = 1;	
 	public static int soapstonePerChunk = 1;	
+	public static int dacitePerChunk = 1;
+	public static int tuffPerChunk = 1;
+	public static int pegmatitePerChunk = 1;
+	public static int peridotitePerChunk = 1;
+	public static int anorthositePerChunk = 1;
+	public static int dunitePerChunk = 1;
+	public static int felsitePerChunk = 1;
+	public static int granodioritePerChunk = 1;	
+	public static int komatitePerChunk = 1;	
+	public static int latitePerChunk = 1;	
+	public static int porphyryPerChunk = 1;	
+	public static int pyroxenitePerChunk = 1;	
+	public static int syenitePerChunk = 1;	
+	public static int troctolitePerChunk = 1;		
 	public static int alikitePerChunk = 12;	
 	public static int krundaltitePerChunk = 12;	
 	public static int triglicitePerChunk = 12;	
@@ -205,6 +224,11 @@ public class Config {
 		disableJungleArchipelago = cfg.get(CATEGORY_BIOMES, "disableJungleArchipelago", disableJungleArchipelago).getBoolean();
 		disableAegeanArchipelago = cfg.get(CATEGORY_BIOMES, "disableAegeanArchipelago", disableAegeanArchipelago).getBoolean();
 		disableSpruceWoods = cfg.get(CATEGORY_BIOMES, "disableSpruceWoods", disableSpruceWoods).getBoolean();
+		disableMountainousArchipelago = cfg.get(CATEGORY_BIOMES, "disableMountainousArchipelago", disableMountainousArchipelago).getBoolean();
+		disableDesertArchipelago = cfg.get(CATEGORY_BIOMES, "disableDesertArchipelago", disableDesertArchipelago).getBoolean();
+		disableAncientForest = cfg.get(CATEGORY_BIOMES, "disableAncientForest", disableAncientForest).getBoolean();
+		disableMangrove = cfg.get(CATEGORY_BIOMES, "disableMangrove", disableMangrove).getBoolean();
+		disableGoldenForest = cfg.get(CATEGORY_BIOMES, "disableGoldenForest", disableGoldenForest).getBoolean();
 
 		
     }
@@ -252,6 +276,20 @@ public class Config {
         slatePerChunk = cfg.getInt("slatePerChunk", CATEGORY_ROCKS, slatePerChunk, 0, 100, "Slate Per Chunk");
         scoriaPerChunk = cfg.getInt("scoriaPerChunk", CATEGORY_ROCKS, scoriaPerChunk, 0, 100, "Scoria Per Chunk");
         soapstonePerChunk = cfg.getInt("soapstonePerChunk", CATEGORY_ROCKS, soapstonePerChunk, 0, 100, "Soapstone Per Chunk");
+        dacitePerChunk = cfg.getInt("dacitePerChunk", CATEGORY_ROCKS, dacitePerChunk, 0, 100, "Dacite Per Chunk");
+        tuffPerChunk = cfg.getInt("tuffPerChunk", CATEGORY_ROCKS, tuffPerChunk, 0, 100, "Tuff");
+        pegmatitePerChunk = cfg.getInt("pegmatitePerChunk", CATEGORY_ROCKS, pegmatitePerChunk, 0, 100, "Pegmatite Per Chunk");
+        peridotitePerChunk = cfg.getInt("peridotitePerChunk", CATEGORY_ROCKS, peridotitePerChunk, 0, 100, "Peridotite Per Chunk");
+        anorthositePerChunk = cfg.getInt("anorthositePerChunk", CATEGORY_ROCKS, anorthositePerChunk, 0, 100, "Anorthosite Per Chunk");
+        dunitePerChunk = cfg.getInt("dunitePerChunk", CATEGORY_ROCKS, dunitePerChunk, 0, 100, "Dunite Per Chunk");
+        felsitePerChunk = cfg.getInt("felsitePerChunk", CATEGORY_ROCKS, felsitePerChunk, 0, 100, "Felsite Per Chunk");
+        granodioritePerChunk = cfg.getInt("granodioritePerChunk", CATEGORY_ROCKS, granodioritePerChunk, 0, 100, "Granodiorite Per Chunk");
+        komatitePerChunk = cfg.getInt("komatitePerChunk", CATEGORY_ROCKS, komatitePerChunk, 0, 100, "Komatite Per Chunk");
+        latitePerChunk = cfg.getInt("latitePerChunk", CATEGORY_ROCKS, latitePerChunk, 0, 100, "Latite Per Chunk");
+        porphyryPerChunk = cfg.getInt("porphyryPerChunk", CATEGORY_ROCKS, porphyryPerChunk, 0, 100, "Porphyry Per Chunk");
+        pyroxenitePerChunk = cfg.getInt("pyroxenitePerChunk", CATEGORY_ROCKS, pyroxenitePerChunk, 0, 100, "Pyroxenite Per Chunk");
+        syenitePerChunk = cfg.getInt("syenitePerChunk", CATEGORY_ROCKS, syenitePerChunk, 0, 100, "Syenite Per Chunk");
+        troctolitePerChunk = cfg.getInt("troctolitePerChunk", CATEGORY_ROCKS, troctolitePerChunk, 0, 100, "Troctolite Per Chunk");
         alikitePerChunk = cfg.getInt("alikitePerChunk", CATEGORY_ROCKS, alikitePerChunk, 0, 100, "Alikite Per Chunk");
         krundaltitePerChunk = cfg.getInt("krundaltitePerChunk", CATEGORY_ROCKS, krundaltitePerChunk, 0, 100, "Krundaltite Per Chunk");
         triglicitePerChunk = cfg.getInt("triglicitePerChunk", CATEGORY_ROCKS, triglicitePerChunk, 0, 100, "Triglicite Per Chunk");
