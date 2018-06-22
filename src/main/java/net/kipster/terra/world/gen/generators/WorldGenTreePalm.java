@@ -83,8 +83,8 @@ public class WorldGenTreePalm extends WorldGenAbstractTree
                 {
                     state.getBlock().onPlantGrow(state, worldIn, down, position);
                     EnumFacing enumfacing = EnumFacing.Plane.HORIZONTAL.random(rand);
-                    int k2 = i - rand.nextInt(4) - 1;
-                    int l2 = 3 - rand.nextInt(3);
+                    int k2 = i - rand.nextInt(5) - 1;
+                    int l2 = 3 - rand.nextInt(4);
                     int i3 = position.getX();
                     int j1 = position.getZ();
                     int k1 = 0;
@@ -181,19 +181,32 @@ public class WorldGenTreePalm extends WorldGenAbstractTree
                                     }
                                 }
                             }
+
+                            blockpos3 = blockpos3.up();
+
+                            for (int j5 = -1; j5 <= 1; ++j5)
+                            {
+                                for (int l5 = -1; l5 <= 1; ++l5)
+                                {
+                                    this.placeLeafAt(worldIn, blockpos3.add(j5, 0, l5));
+                                }
                             }
                         }
                     }
 
                     return true;
                 }
+                else
+                {
+                    return false;
+                }
             }
-		return false ;
         }
-        
+        else
         {
-             
+            return false;
         }
+    }
 
     private void placeLogAt(World worldIn, BlockPos pos)
     {

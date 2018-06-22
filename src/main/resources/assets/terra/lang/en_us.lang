@@ -290,6 +290,7 @@ tile.jacaranda_fence.name=Jacaranda Fence
 tile.paulownia_fence.name=Paulownia Fence
 tile.mangrove_fence.name=Mangrove Fence
 tile.poplar_fence.name=Poplar Fence
+tile.mahogany_fence.name=Mahogany Fence
 tile.aspen_fence.name=Aspen Fence
 
 tile.cherry_fencegate.name=Cherry Fence Gate
@@ -304,6 +305,7 @@ tile.jacaranda_fencegate.name=Jacaranda Fence Gate
 tile.paulownia_fencegate.name=Paulownia Fence Gate
 tile.mangrove_fencegate.name=Mangrove Fence Gate
 tile.poplar_fencegate.name=Poplar Fence Gate
+tile.mahogany_fencegate.name=Mahogany Fence Gate
 tile.aspen_fencegate.name=Aspen Fence Gate
 
 tile.alikite.name=Alikite

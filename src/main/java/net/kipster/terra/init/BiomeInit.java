@@ -97,13 +97,13 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome LUSHFOREST = new BiomeLushForest();
 	public static final Biome PRAIRE = new BiomePraire();
 	public static final Biome SILKGLADES = new BiomeSilkglades();
-	
+	public static final Biome SALT_LAKE = new BiomeSaltLake();
 	
 	public static void registerBiomes()
 	{
 		initBiome(WHITEDESERT, "White_Desert",  6, Config.disableWhiteDesert,BiomeType.DESERT, Type.LUSH, Type.SANDY, Type.SAVANNA, Type.MESA);
 		initBiome(GREENEXTREMEHILLS, "Green_Extreme_Hills",  6, Config.disableGreenExtremeHills,BiomeType.WARM, Type.MOUNTAIN, Type.HILLS, Type.LUSH);
-		initBiome(PLATEAU, "Plateau",  6, Config.disablePlateau,BiomeType.WARM, Type.MESA);
+		initBiome(PLATEAU, "Plateau",  4, Config.disablePlateau,BiomeType.WARM, Type.MESA);
 		initBiome(STEPPE, "Steppe",  6, Config.disableSteppe,BiomeType.WARM, Type.HILLS);
 		initBiome(LAKE, "Lake",  6, Config.disableLake,BiomeType.WARM, Type.WATER);
 		initBiome(FROZENLAKE, "Frozen_Lake",  5, Config.disableFrozenLake,BiomeType.ICY, Type.WATER, Type.COLD);
@@ -165,6 +165,11 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(PRAIRE, "Praire", 2, Config.disablePraire, BiomeType.WARM, Type.SAVANNA, Type.SPARSE);
 		initBiome(SILKGLADES, "Silkglades", 1, Config.disableSilkglades, BiomeType.WARM, Type.FOREST, Type.DRY);
 		initBiome(CRIMSON_WOODS, "Crimson_Woods", 2, Config.disableCrimsonWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(COLDPLATEAU, "Cold_Plateau",  4, Config.disableColdPlateau,BiomeType.COOL, Type.COLD, Type.SNOWY);
+		initBiome(FROZENPLATEAU, "Frozen_Plateau",  3, Config.disableFrozenPlateau,BiomeType.ICY, Type.COLD, Type.SNOWY);
+		initBiome(GREENPLATEAU, "Green_Plateau",  4, Config.disableGreenPlateau,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.RARE);
+		initBiome(DRYPLATEAU, "Dry_Plateau",  4, Config.disableDryPlateau,BiomeType.WARM, Type.DRY, Type.SPARSE, Type.SNOWY, Type.MESA);
+		initBiome(SALT_LAKE, "Salt_Lake",  2, Config.disableSaltLake,BiomeType.WARM, Type.WATER, Type.DEAD);
 	}
 	  public static void initSubBiomes()
 	    {

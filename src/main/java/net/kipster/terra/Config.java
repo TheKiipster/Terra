@@ -19,12 +19,12 @@ public class Config {
  	 public static boolean disableGreenExtremeHills = false;
  	 public static boolean disableGreenHills = false;
  	 public static boolean disablePlateau = false;
- 	 public static boolean disableGreenPlateau = false;
+ 	 public static boolean disableGreenPlateau = true;
  	 public static boolean disableRedPlateau = false;
- 	 public static boolean disableDryPlateau = false;
+ 	 public static boolean disableDryPlateau = true;
  	 public static boolean disableSteppe = false;
- 	 public static boolean disableFrozenPlateau = false;
- 	 public static boolean disableColdPlateau = false;
+ 	 public static boolean disableFrozenPlateau = true;
+ 	 public static boolean disableColdPlateau = true;
  	 public static boolean disableFens = false;
  	 public static boolean disableShrubland = false;
  	 public static boolean disableTundraSpikes = false;
@@ -74,7 +74,7 @@ public class Config {
 	public static boolean disableBlueMushroomPlains = false;
 	public static boolean disablePinkMushroomPlains = false;
 	public static boolean disableFungalJungle = false;
-	public static boolean disableSaltLake = false;
+	public static boolean disableSaltLake = true;
 	public static boolean disableJungleArchipelago = false;
 	public static boolean disableAegeanArchipelago = false;
 	public static boolean disableMountainousArchipelago = false;

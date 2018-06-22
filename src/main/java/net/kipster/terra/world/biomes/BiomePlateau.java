@@ -19,7 +19,7 @@ public class BiomePlateau extends Biome
 {	
 	public BiomePlateau() 
 	{
-		super(new BiomeProperties("Plateau").setBaseHeight(0.80F).setHeightVariation(0.5F).setRainfall(Biomes.MESA_ROCK.getRainfall()));
+		super(new BiomeProperties("Plateau").setBaseHeight(2F).setHeightVariation(0.025F).setRainfall(Biomes.MESA_ROCK.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.PLATEAU , true);
 		

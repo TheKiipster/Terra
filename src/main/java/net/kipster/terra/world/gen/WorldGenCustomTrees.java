@@ -36,7 +36,7 @@ public class WorldGenCustomTrees implements IWorldGenerator
 	private final WorldGenerator PAULOWNIABLUE = new WorldGenTreePaulowniaBlue(false, false);
 	private final WorldGenerator PAULOWNIAWHITE = new WorldGenTreePaulowniaWhite(false, false);
 	private final WorldGenerator POPLAR = new WorldGenPoplar(false, false);
-	
+	private final WorldGenerator PALM = new WorldGenTreePalm(false);
 	
 	
 	@Override
@@ -54,8 +54,17 @@ public class WorldGenCustomTrees implements IWorldGenerator
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMysticWoods.class);
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungle.class);
 			runGenerator(ELM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeForest.class);
-			runGenerator(POPLAR, world, random, chunkX, chunkZ, 2, -1, 0, BiomeMeadow.class);
-			
+			runGenerator(POPLAR, world, random, chunkX, chunkZ, 1, -1, 0, BiomeMeadow.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungleArchipelago.class);
+			runGenerator(PAULOWNIAGREEN, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungleArchipelago.class);
+			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeJungleArchipelago.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 1, -1, 0, BiomeGreenPlateau.class);
+			runGenerator(PAULOWNIAGREEN, world, random, chunkX, chunkZ, 1, -1, 0, BiomeGreenPlateau.class);
+			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeGreenPlateau.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 1, -1, 0, BiomeFungalJungle.class);
+			runGenerator(PAULOWNIAGREEN, world, random, chunkX, chunkZ, 1, -1, 0, BiomeFungalJungle.class);
+			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeFungalJungle.class);
+			runGenerator(PALM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeBeach.class);
 		}
 	}
 	
