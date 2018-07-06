@@ -46,9 +46,9 @@ public class BiomeSaltLake extends Biome
 	public BiomeSaltLake() 
 	{
 		
-		super(new BiomeProperties("Salt Lake").setBaseHeight(-0.6F).setHeightVariation(0.16F).setTemperature(0.8F).setRainfall(0.4F).setWaterColor(0x8859a3));
+		super(new BiomeProperties("Salt Lake").setBaseHeight(-0.7F).setHeightVariation(0.16F).setTemperature(0.8F).setRainfall(0.4F).setWaterColor(0x6c2098));
 		
-		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , false);
+		BiomeManager.addVillageBiome(BiomeInit.SALT_LAKE , false);
 		
 		topBlock = Blocks.SAND.getDefaultState();
 		fillerBlock = Blocks.SAND.getDefaultState();

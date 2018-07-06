@@ -16,12 +16,12 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.world.gen.generators.WorldGenTreeBlueSpruce;
-import net.kipster.terra.world.gen.generators.WorldGenTreeJacarandaPurple;
-import net.kipster.terra.world.gen.generators.WorldGenTreeMystic;
-import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreen;
-import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreenV;
-import net.kipster.terra.world.gen.generators.WorldGenTreeSwampDark;
+import net.kipster.terra.world.gen.trees.WorldGenTreeBlueSpruce;
+import net.kipster.terra.world.gen.trees.WorldGenTreeJacarandaPurple;
+import net.kipster.terra.world.gen.trees.WorldGenTreeMystic;
+import net.kipster.terra.world.gen.trees.WorldGenTreePaulowniaGreen;
+import net.kipster.terra.world.gen.trees.WorldGenTreePaulowniaGreenV;
+import net.kipster.terra.world.gen.trees.WorldGenTreeSwampDark;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.block.state.IBlockState;

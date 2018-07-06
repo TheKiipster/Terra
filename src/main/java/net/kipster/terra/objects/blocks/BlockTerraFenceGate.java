@@ -52,7 +52,7 @@ public class BlockTerraFenceGate extends BlockHorizontal implements IHasModel
 		setRegistryName(name);
 		setResistance(blockResistance);
 		setHardness(blockHardness);
-		setCreativeTab(Main.TERRATABPLANTS);
+		setCreativeTab(Main.TERRATAB);
         setHardness(2.0F);
 		
 		BlockInit.BLOCKS.add(this);

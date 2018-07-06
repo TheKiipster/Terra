@@ -16,8 +16,8 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.world.gen.generators.WorldGenCrimson;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
+import net.kipster.terra.world.gen.trees.WorldGenCrimson;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryWhite;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockTallGrass;

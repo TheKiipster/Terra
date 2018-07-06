@@ -43,7 +43,7 @@ public class BiomeJungleArchipelago extends Biome
 	    
 	public BiomeJungleArchipelago() 
 	{
-		super(new BiomeProperties("Jungle Archipelago").setBaseHeight(-1F).setHeightVariation(0.75F).setTemperature(0.95F).setRainfall(0.9F));
+		super(new BiomeProperties("Jungle Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.75F).setTemperature(0.95F).setRainfall(0.9F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.JUNGLE_ARCHIPELAGO , true);
 		
@@ -186,10 +186,10 @@ public class BiomeJungleArchipelago extends Biome
 
 @Override
 public int getModdedBiomeGrassColor(int original) {
-    return 0x34dd00;
+    return 0x36e700;
 }
 @Override
 public int  getModdedBiomeFoliageColor(int original) {
-    return 0x34dd00;
+    return 0x36e700;
 }
 }

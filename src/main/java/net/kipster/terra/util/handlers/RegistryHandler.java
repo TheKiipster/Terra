@@ -10,6 +10,7 @@ import net.kipster.terra.util.interfaces.IHasModel;
 import net.kipster.terra.world.gen.WorldGenCustomTrees;
 import net.kipster.terra.world.gen.WorldGenOres;
 import net.kipster.terra.world.gen.WorldGenRocks;
+import net.kipster.terra.world.gen.WorldGenSandPatches;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.world.WorldType;
@@ -67,8 +68,9 @@ public class RegistryHandler
 	        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 	        GameRegistry.registerWorldGenerator(new WorldGenRocks(), 0);
 	        GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
+	   
 
-		BiomeInit.initSubBiomes();
+
 		BiomeInit.registerBiomes();
 		
 	}

@@ -21,7 +21,7 @@ public class BlockTerraFence extends BlockFence implements IHasModel
 		setResistance(blockResistance);
 		setHardness(blockHardness);
 		this.useNeighborBrightness = true;
-		setCreativeTab(Main.TERRATABPLANTS);
+		setCreativeTab(Main.TERRATAB);
         setHardness(2.0F);
 		
 		BlockInit.BLOCKS.add(this);

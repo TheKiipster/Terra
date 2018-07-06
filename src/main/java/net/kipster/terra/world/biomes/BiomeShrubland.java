@@ -3,7 +3,7 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
-import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockNewLeaf;

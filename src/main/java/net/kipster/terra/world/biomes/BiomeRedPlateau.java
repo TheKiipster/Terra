@@ -23,15 +23,17 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 
 public class BiomeRedPlateau extends Biome 
 {	
 
     protected static final IBlockState STAINED_HARDENED_CLAY = Blocks.STAINED_HARDENED_CLAY.getDefaultState().withProperty(BlockColored.COLOR, EnumDyeColor.RED);
-
+    protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
 	
 	public BiomeRedPlateau() 
 	{
@@ -76,6 +78,21 @@ public class BiomeRedPlateau extends Biome
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 	}
+	public void decorate(World worldIn, Random rand, BlockPos pos)
+	{
+	   
+	        if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_LAVA)) {
+	        	           int boulderChance = rand.nextInt(12);
+	        	           if (boulderChance == 0) {
+	        	            int k6 = rand.nextInt(16) + 8;
+	        	            int l = rand.nextInt(16) + 8;
+	        	             BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+	        	             LAVA_LAKE_FEATURE.generate(worldIn, rand, blockpos);
+	        	           }
+	        	        }
+
+	    super.decorate(worldIn, rand, pos);
+	        }
 	private static class EmeraldGenerator extends WorldGenerator
 	{
 	    @Override

@@ -16,7 +16,7 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.passive.EntityParrot;
@@ -35,18 +35,21 @@ import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenBirchTree;
 import net.minecraft.world.gen.feature.WorldGenCanopyTree;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga1;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 
 public class BiomeWoodlands extends Biome
 {	
+	 protected static final WorldGenLakes LAKE = new WorldGenLakes(Blocks.WATER);
 	private final WorldGenTaiga2 spruceGenerator = new WorldGenTaiga2(false);
     protected static final WorldGenBirchTree SUPER_BIRCH_TREE = new WorldGenBirchTree(false, true);
     protected static final WorldGenBirchTree BIRCH_TREE = new WorldGenBirchTree(false, false);
@@ -107,8 +110,18 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
         DOUBLE_PLANT_GENERATOR.generate(worldIn, rand, pos.add(j, l, k));
     }
 
+	 if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_WATER)) {
+        int boulderChance = rand.nextInt(12);
+        if (boulderChance == 0) {
+         int k6 = rand.nextInt(16) + 8;
+         int l = rand.nextInt(16) + 8;
+          BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+          LAKE.generate(worldIn, rand, blockpos);
+        }
+
     super.decorate(worldIn, rand, pos);
         }
+}
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
 	    return 0x618545;

@@ -5,8 +5,8 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.world.biomes.BiomeGrassland.EmeraldGenerator;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryPurple;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryPurple;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryWhite;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockLeaves;
@@ -54,7 +54,7 @@ public class BiomeDesertArchipelago extends Biome
 	    
 	public BiomeDesertArchipelago() 
 	{
-		super(new BiomeProperties("Desert Archipelago").setBaseHeight(-1F).setHeightVariation(0.70F).setTemperature(1.0F).setRainDisabled());
+		super(new BiomeProperties("Desert Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.70F).setTemperature(1.0F).setRainDisabled());
 		
 		BiomeManager.addVillageBiome(BiomeInit.DESERT_ARCHIPELAGO , true);
 		

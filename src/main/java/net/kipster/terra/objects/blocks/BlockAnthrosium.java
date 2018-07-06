@@ -41,7 +41,7 @@ public class BlockAnthrosium extends BlockMycelium implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.GROUND);
 		setHardness(0.8F);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATAB);
 		setDefaultState(this.blockState.getBaseState().withProperty(SNOWY, Boolean.valueOf(false)));
         setTickRandomly(true);
 		

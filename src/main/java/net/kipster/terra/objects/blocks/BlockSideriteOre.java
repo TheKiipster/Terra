@@ -24,7 +24,7 @@ public class BlockSideriteOre extends Block implements IHasModel
 		setSoundType(SoundType.STONE);
 		setHardness(3F);
 		setHarvestLevel("pickaxe", 1);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATABROCKS);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

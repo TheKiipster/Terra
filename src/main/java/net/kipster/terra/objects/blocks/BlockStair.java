@@ -18,7 +18,7 @@ public class BlockStair extends BlockStairs implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.WOOD);
-		setCreativeTab(Main.TERRATABPLANTS);
+		setCreativeTab(Main.TERRATAB);
 		this.useNeighborBrightness = true;
 		
 		

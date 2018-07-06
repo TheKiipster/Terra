@@ -3,8 +3,8 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
-import net.kipster.terra.world.gen.generators.WorldGenMangrove;
-import net.kipster.terra.world.gen.generators.WorldGenTreeSwamp;
+import net.kipster.terra.world.gen.trees.WorldGenMangrove;
+import net.kipster.terra.world.gen.trees.WorldGenTreeSwamp;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

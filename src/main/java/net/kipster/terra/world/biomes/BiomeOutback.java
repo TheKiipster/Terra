@@ -6,7 +6,7 @@ import java.util.Random;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.WorldGenGreyDeadBush;
-import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockSand;
 import net.minecraft.block.BlockTallGrass;

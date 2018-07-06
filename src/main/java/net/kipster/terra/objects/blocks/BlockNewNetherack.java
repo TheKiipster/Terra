@@ -28,7 +28,7 @@ public class BlockNewNetherack extends Block implements IHasModel
 		setSoundType(SoundType.STONE);
 		setRegistryName(name);
 		setHardness(0.6F);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATABROCKS);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

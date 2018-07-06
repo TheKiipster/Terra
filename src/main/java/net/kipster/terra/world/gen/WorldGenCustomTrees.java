@@ -6,7 +6,7 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.world.biomes.*;
-import net.kipster.terra.world.gen.generators.*;
+import net.kipster.terra.world.gen.trees.*;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -64,6 +64,9 @@ public class WorldGenCustomTrees implements IWorldGenerator
 			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 1, -1, 0, BiomeFungalJungle.class);
 			runGenerator(PAULOWNIAGREEN, world, random, chunkX, chunkZ, 1, -1, 0, BiomeFungalJungle.class);
 			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeFungalJungle.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, 1, -1, 0, BiomeTropicalForest.class);
+			runGenerator(PAULOWNIAGREEN, world, random, chunkX, chunkZ, 1, -1, 0, BiomeTropicalForest.class);
+			runGenerator(JACARANDAMAGENTA, world, random, chunkX, chunkZ, 1, -1, 0, BiomeTropicalForest.class);
 			runGenerator(PALM, world, random, chunkX, chunkZ, 1, -1, 0, BiomeBeach.class);
 		}
 	}

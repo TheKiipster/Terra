@@ -5,8 +5,8 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.world.biomes.BiomeGrassland.EmeraldGenerator;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryPurple;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryPurple;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryWhite;
 import net.minecraft.block.BlockColored;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockDoublePlant;
@@ -61,7 +61,7 @@ public class BiomeMountainousArchipelago extends Biome
 	    
 	public BiomeMountainousArchipelago() 
 	{
-		super(new BiomeProperties("Mountainous Archipelago").setBaseHeight(-1F).setHeightVariation(1F).setTemperature(0.95F).setRainfall(0.9F));
+		super(new BiomeProperties("Mountainous Archipelago").setBaseHeight(-1.8F).setHeightVariation(1F).setTemperature(0.95F).setRainfall(0.9F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.JUNGLE_ARCHIPELAGO , true);
 		

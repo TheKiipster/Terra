@@ -38,7 +38,7 @@ public class BlockNewNetherGemPillar extends BlockRotatedPillar implements IHasM
 		setSoundType(SoundType.STONE);
 		setRegistryName(name);
 		setHardness(1.5F);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATABROCKS);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

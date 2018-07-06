@@ -27,9 +27,8 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class BiomeInit 
 {
     public static Set<Biome> presentBiomes;
-public static Map<Integer, List<Integer>> subBiomesMap;
 
-	public static final Biome WHITEDESERT = new BiomeWhiteDesert();
+	public static final Biome TROPICAL_DESERT = new BiomeTropicalDesert();
 	public static final Biome GREENEXTREMEHILLS = new BiomeGreenExtremeHills();
 	public static final Biome PLATEAU = new BiomePlateau();
     public static final Biome GREENPLATEAU = new BiomeGreenPlateau();
@@ -47,7 +46,7 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome LAKE = new BiomeLake();
 	public static final Biome FROZENLAKE = new BiomeFrozenLake();
 	public static final Biome SAHEL = new BiomeSahel();
-	public static final Biome DUNES = new BiomeDunes();
+	public static final Biome SANDSTONEDUNES = new BiomeSandstoneDunes();
 	public static final Biome ALPS = new BiomeAlps();
 	public static final Biome HIGHLANDS = new BiomeHighlands();
 	public static final Biome GLACIER = new BiomeGlacier();
@@ -98,11 +97,15 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 	public static final Biome PRAIRE = new BiomePraire();
 	public static final Biome SILKGLADES = new BiomeSilkglades();
 	public static final Biome SALT_LAKE = new BiomeSaltLake();
+	public static final Biome OAK_FOREST = new BiomeOakForest();
+	public static final Biome SAHARA = new BiomeSahara();
+	public static final Biome CLIFFS = new BiomeCliffs();
+	public static final Biome TROPICAL_FOREST = new BiomeTropicalForest();
 	
 	public static void registerBiomes()
 	{
-		initBiome(WHITEDESERT, "White_Desert",  6, Config.disableWhiteDesert,BiomeType.DESERT, Type.LUSH, Type.SANDY, Type.SAVANNA, Type.MESA);
-		initBiome(GREENEXTREMEHILLS, "Green_Extreme_Hills",  6, Config.disableGreenExtremeHills,BiomeType.WARM, Type.MOUNTAIN, Type.HILLS, Type.LUSH);
+		initBiome(TROPICAL_DESERT, "Tropical_Desert",  6, Config.disableWhiteDesert,BiomeType.DESERT, Type.LUSH, Type.JUNGLE);
+		initBiome(GREENEXTREMEHILLS, "Green_Extreme_Hills",  6, Config.disableGreenExtremeHills,BiomeType.WARM, Type.MOUNTAIN, Type.HILLS);
 		initBiome(PLATEAU, "Plateau",  4, Config.disablePlateau,BiomeType.WARM, Type.MESA);
 		initBiome(STEPPE, "Steppe",  6, Config.disableSteppe,BiomeType.WARM, Type.HILLS);
 		initBiome(LAKE, "Lake",  6, Config.disableLake,BiomeType.WARM, Type.WATER);
@@ -115,7 +118,7 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(TUNDRA, "Tundra", 5, Config.disableTundra, BiomeType.ICY, Type.WASTELAND, Type.COLD, Type.SNOWY, Type.DRY);
 		initBiome(ROCKLAND, "Rockland", 4, Config.disableRockland, BiomeType.WARM, Type.RARE, Type.DEAD, Type.DRY, Type.WASTELAND);
 		initBiome(SAHEL, "Sahel", 6, Config.disableSahel, BiomeType.DESERT, Type.HOT, Type.SAVANNA, Type.SANDY);
-		initBiome(DUNES, "Dunes", 6, Config.disableDunes, BiomeType.DESERT, Type.SANDY, Type.SPARSE);
+		initBiome(SANDSTONEDUNES, "Sandstone_Dunes", 6, Config.disableDunes, BiomeType.DESERT, Type.SANDY, Type.SPARSE);
 		initBiome(REDMOUNTAIN, "Red_Mountain", 5, Config.disableRedMountains, BiomeType.DESERT, Type.SANDY, Type.SPARSE, Type.MOUNTAIN);
 		initBiome(ALPS, "Alps", 5, Config.disableAlps, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY);
 		initBiome(HIGHLANDS, "Highlands", 5, Config.disableHighlands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
@@ -170,35 +173,13 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		initBiome(GREENPLATEAU, "Green_Plateau",  4, Config.disableGreenPlateau,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.RARE);
 		initBiome(DRYPLATEAU, "Dry_Plateau",  4, Config.disableDryPlateau,BiomeType.WARM, Type.DRY, Type.SPARSE, Type.SNOWY, Type.MESA);
 		initBiome(SALT_LAKE, "Salt_Lake",  2, Config.disableSaltLake,BiomeType.WARM, Type.WATER, Type.DEAD);
+		initBiome(OAK_FOREST, "Oak_Forest",  5, Config.disableSaltLake,BiomeType.WARM, Type.FOREST);
+		initBiome(SAHARA, "Sahara",  2, Config.disableSahara,BiomeType.DESERT, Type.SANDY);
+		initBiome(CLIFFS, "Cliffs",  6, Config.disableCliffs,BiomeType.WARM, Type.HILLS);
+		initBiome(TROPICAL_FOREST, "Tropical_Forest",  4, Config.disableTropicalForest,BiomeType.WARM, Type.JUNGLE);
+		
 	}
-	  public static void initSubBiomes()
-	    {
-	        subBiomesMap = new HashMap<Integer, List<Integer>>();
 
-	
-	       
-	        setSubBiome(Biomes.DESERT, Biomes.DESERT_HILLS);
-	        setSubBiome(Biomes.FOREST, Biomes.FOREST_HILLS);
-	        setSubBiome(Biomes.BIRCH_FOREST, Biomes.BIRCH_FOREST_HILLS);
-	        setSubBiome(Biomes.ROOFED_FOREST, Biomes.PLAINS);
-	        setSubBiome(Biomes.TAIGA, Biomes.TAIGA_HILLS);
-	        setSubBiome(Biomes.REDWOOD_TAIGA, Biomes.REDWOOD_TAIGA_HILLS);
-	        setSubBiome(Biomes.COLD_TAIGA, Biomes.COLD_TAIGA_HILLS);
-	        setSubBiome(Biomes.PLAINS, Biomes.FOREST_HILLS, Biomes.FOREST);
-	        setSubBiome(Biomes.ICE_PLAINS, Biomes.ICE_MOUNTAINS);
-	        setSubBiome(Biomes.JUNGLE, Biomes.JUNGLE_HILLS);
-	        setSubBiome(Biomes.EXTREME_HILLS, Biomes.EXTREME_HILLS_WITH_TREES);
-	        setSubBiome(Biomes.SAVANNA, Biomes.SAVANNA_PLATEAU);
-	        setSubBiome(Biomes.MESA_ROCK, Biomes.MESA);
-	        setSubBiome(Biomes.OCEAN, Biomes.DEEP_OCEAN);
-	        setSubBiome(Biomes.BEACH, BiomeInit.WHITEBEACH);
-	         setSubBiome(Biomes.DESERT, BiomeInit.WHITEDESERT);
-	         setSubBiome(BiomeInit.HIGHLANDS, BiomeInit.LAKE);
-	         setSubBiome(BiomeInit.PINELANDS, BiomeInit.LAKE);
-	         setSubBiome(Biomes.REDWOOD_TAIGA, BiomeInit.LAKE);
-	         setSubBiome(Biomes.COLD_TAIGA, BiomeInit.FROZENLAKE);
-	         setSubBiome(BiomeInit.BLUE_TAIGA, Biomes.COLD_TAIGA);
-	}
 	
 	private static Biome initBiome(Biome biome, String name, int weight, boolean disabled, BiomeType biomeType, Type... types){
 		if (!disabled) {
@@ -214,37 +195,6 @@ public static Map<Integer, List<Integer>> subBiomesMap;
 		}
 		return biome;
 	}
-	  public ImmutableSet<Biome> getPresentBiomes()
-	    {
-	        return ImmutableSet.copyOf(presentBiomes);
-	    }
 
-	    private static void setSubBiome(Optional<Biome> parent, Optional<Biome>... subBiomes)
-	    {
-	        if (parent.isPresent())
-	        {
-	            for (Optional<Biome> subBiome : subBiomes)
-	            {
-	                if (subBiome.isPresent())
-	                {
-	                    setSubBiome(parent.get(), subBiome.get());
-	                }
-	            }
-	        }
-	    }
-	    
-	    private static void setSubBiome(Biome parent, Biome... subBiomes)
-	    {
-	        Map<Integer, List<Integer>> map = subBiomesMap;
-	        int parentId = Biome.getIdForBiome(parent);
-	        if (!map.containsKey(parentId))
-	        {
-	            map.put(parentId, new ArrayList<Integer>());
-	        }
-	        for (Biome subBiome : subBiomes)
-	        {
-	            map.get(parentId).add(Biome.getIdForBiome(subBiome));
-	        }
 	}
 	    
-}

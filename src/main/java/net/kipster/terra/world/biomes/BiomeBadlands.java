@@ -17,8 +17,8 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
-import net.kipster.terra.world.gen.generators.WorldGenTreeEbony;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTreeEbony;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockStone;
 import net.minecraft.block.BlockTallGrass;
@@ -40,6 +40,9 @@ import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenBlockBlob;
+import net.minecraft.world.gen.feature.WorldGenDesertWells;
+import net.minecraft.world.gen.feature.WorldGenFossils;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -53,7 +56,7 @@ public class BiomeBadlands extends Biome
 {
 	
 	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
-	
+	protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
 	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(BlockInit.EBONYLEAVES, BlockInit.EBONYLOG, 0, 0, false);
 	
 	public BiomeBadlands() 
@@ -66,7 +69,8 @@ public class BiomeBadlands extends Biome
 	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.treesPerChunk = 1;
+		this.decorator.extraTreeChance = 2F;
+		//this.decorator.treesPerChunk = 1;
 		this.decorator.grassPerChunk = 10;
 		this.decorator.deadBushPerChunk = 4;
 		this.decorator.flowersPerChunk = 2;
@@ -112,19 +116,37 @@ public class BiomeBadlands extends Biome
 			return TREE;
 	}
 		@Override
-	    public void decorate(World worldIn, Random rand, BlockPos pos) {
-	        if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.ROCK)) {
-	            int boulderChance = rand.nextInt(5);
-	            if (boulderChance == 0) {
-	                int k6 = rand.nextInt(16) + 8;
-	                int l = rand.nextInt(16) + 8;
-	                BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
-	                COBBLESTONE_BOULDER_FEATURE.generate(worldIn, rand, blockpos);
-	            }
-	        }
+		public void decorate(World worldIn, Random rand, BlockPos pos)
+		{
+		   
+		        if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_LAVA)) {
+		        	           int boulderChance = rand.nextInt(12);
+		        	           if (boulderChance == 0) {
+		        	            int k6 = rand.nextInt(16) + 8;
+		        	            int l = rand.nextInt(16) + 8;
+		        	             BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+		        	             LAVA_LAKE_FEATURE.generate(worldIn, rand, blockpos);
+		        	           }
+		        	           if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.DESERT_WELL))
+		        	   	        if (rand.nextInt(1000) == 0)
+		        	   	        {
+		        	   	            int i = rand.nextInt(16) + 8;
+		        	   	            int j = rand.nextInt(16) + 8;
+		        	   	            BlockPos blockpos = worldIn.getHeight(pos.add(i, 0, j)).up();
+		        	   	            (new WorldGenDesertWells()).generate(worldIn, rand, blockpos);
+		        	   	        }
 
-	        super.decorate(worldIn, rand, pos);
-	}
+		        	   	        if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.FOSSIL))
+		        	   	        if (rand.nextInt(64) == 0)
+		        	   	        {
+		        	   	            (new WorldGenFossils()).generate(worldIn, rand, pos);
+		        	   	        }
+		        	   	      
+		        	        }
+
+		    super.decorate(worldIn, rand, pos);
+		        }
+	
 
 
 		@Override

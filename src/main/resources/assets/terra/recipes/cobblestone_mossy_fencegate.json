@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "minecraft:cobblestone",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "terra:cobblestone_mossy_fencegate",
+    "count": 3
+  }
+}

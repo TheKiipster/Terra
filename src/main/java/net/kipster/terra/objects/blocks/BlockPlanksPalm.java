@@ -22,7 +22,7 @@ public class BlockPlanksPalm extends Block implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.WOOD);
-		setCreativeTab(Main.TERRATABPLANTS);
+		setCreativeTab(Main.TERRATAB);
 		setHarvestLevel("axe", 0);
 	    setHardness(2.0F);
 		

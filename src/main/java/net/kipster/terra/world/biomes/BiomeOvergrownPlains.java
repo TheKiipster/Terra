@@ -3,8 +3,8 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
-import net.kipster.terra.world.gen.generators.WorldGenTreeOvergrown;
-import net.kipster.terra.world.gen.generators.WorldGenTreeOvergrown2;
+import net.kipster.terra.world.gen.trees.WorldGenTreeOvergrown;
+import net.kipster.terra.world.gen.trees.WorldGenTreeOvergrown2;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockTallGrass;

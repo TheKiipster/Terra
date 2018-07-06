@@ -29,28 +29,28 @@ public class Main {
 	public static CommonProxy proxy;
 	
 
-	public static final CreativeTabs TERRATABMISC = new TerraTabMisc("terratabmisc");
-	public static final CreativeTabs TERRATABPLANTS = new TerraTabPlants("terratabplants");
-	public static final CreativeTabs TERRATABIGNEOUS = new TerraTabIgneous("terratabigneous");
-	public static final CreativeTabs TERRATABSEDIMENTARY = new TerraTabSedimentary("terratabsedimentary");
-	public static final CreativeTabs TERRATABMETAMORPHIC = new TerraTabMetamorphic("terratabmetamorphic");
+	public static final CreativeTabs TERRATAB = new TerraTab("terratab");
+	public static final CreativeTabs TERRATABROCKS = new TerraTabRocks("terratabrocks");
+
 	
 	
 	
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		System.out.println(name + " is doing a thing!");
+		System.out.println(name + " is doing a thing uWu");
 		RegistryHandler.preInitRegistries(event);
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		System.out.println("uWu");
 		RegistryHandler.initRegistries();
 	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		System.out.println("uWu");
 		RegistryHandler.postInitRegistries();
 	}
 }

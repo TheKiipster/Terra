@@ -34,7 +34,7 @@ public class BlockMushrooms extends BlockMushroom implements IGrowable, IHasMode
     	super();
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.TERRATABPLANTS);
+		setCreativeTab(Main.TERRATAB);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

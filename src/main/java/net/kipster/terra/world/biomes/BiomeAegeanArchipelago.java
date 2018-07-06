@@ -48,7 +48,7 @@ public class BiomeAegeanArchipelago extends Biome
 	public BiomeAegeanArchipelago() 
 	{
 		
-		super(new BiomeProperties("Aegean Archipelago").setBaseHeight(-1F).setHeightVariation(0.70F).setTemperature(0.5F).setRainfall(0.3F).setWaterColor(0x00b8ff));
+		super(new BiomeProperties("Aegean Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.70F).setTemperature(0.5F).setRainfall(0.3F).setWaterColor(0x00b8ff));
 		
 		
 		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , true);

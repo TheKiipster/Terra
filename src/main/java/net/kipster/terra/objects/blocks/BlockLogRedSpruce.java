@@ -31,7 +31,7 @@ public class BlockLogRedSpruce extends BlockLog implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.WOOD);
     setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
-    setCreativeTab(Main.TERRATABPLANTS);
+    setCreativeTab(Main.TERRATAB);
 
 	BlockInit.BLOCKS.add(this);
 	ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

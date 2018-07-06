@@ -42,7 +42,7 @@ public class BlockGreyDeadBush extends BlockDeadBush implements net.minecraftfor
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.PLANT);
-		setCreativeTab(Main.TERRATABPLANTS);
+		setCreativeTab(Main.TERRATAB);
 		useNeighborBrightness = true;
 		
 		BlockInit.BLOCKS.add(this);

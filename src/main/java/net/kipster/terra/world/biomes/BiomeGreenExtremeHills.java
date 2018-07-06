@@ -3,8 +3,8 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
-import net.kipster.terra.world.gen.generators.WorldGenTreeBlackSpruce;
-import net.kipster.terra.world.gen.generators.WorldGenTreeRedSpruce;
+import net.kipster.terra.world.gen.trees.WorldGenTreeBlackSpruce;
+import net.kipster.terra.world.gen.trees.WorldGenTreeRedSpruce;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockSilverfish;
 import net.minecraft.block.BlockTallGrass;

@@ -1,9 +1,5 @@
-itemGroup.terratabgeology=Terra Geology
-itemGroup.terratabmisc=Terra Misc
-itemGroup.terratabplants=Terra Plants
-itemGroup.terratabigneous=Terra Igneous Rocks
-itemGroup.terratabsedimentary=Terra Sedimentary Rocks
-itemGroup.terratabmetamorphic=Terra Metamorphic Rocks
+itemGroup.terratab=Terra
+itemGroup.terratabrocks=Terra Underground
 
 tile.black_sand.name=Black Sand
 tile.black_sandstone.name=Black Sandstone
@@ -248,20 +244,20 @@ tile.aspen_sapling.name=Aspen Sapling
 tile.poplar_sapling.name=Poplar Sapling
 tile.mangrove_sapling.name=Mangrove Sapling
 
-tile.cherry_planks.name=Cherry Stairs 
-tile.bluespruce_planks.name=Blue Spruce Stairs 
-tile.blackspruce_planks.name=Black Spruce Stairs 
-tile.whitespruce_planks.name=White Spruce Stairs 
-tile.redspruce_planks.name=Red Spruce Stairs 
-tile.elm_planks.name=Elm Stairs 
-tile.palm_planks.name=Palm Stairs 
-tile.mahogany_planks.name=Mahogany Stairs 
-tile.ebony_planks.name=Ebony Stairs
-tile.jacaranda_planks.name=Jacaranda Stairs
-tile.paulownia_planks.name=Paulownia Stairs
-tile.mangrove_planks.name=Mangrove Stairs
-tile.poplar_planks.name=Poplar Stairs
-tile.aspen_planks.name=Aspen Stairs
+tile.cherry_planks.name=Cherry Wood Planks 
+tile.bluespruce_planks.name=Blue Spruce Wood Planks 
+tile.blackspruce_planks.name=Black Spruce Wood Planks 
+tile.whitespruce_planks.name=White Spruce Wood Planks 
+tile.redspruce_planks.name=Red Spruce Wood Planks 
+tile.elm_planks.name=Elm Wood Planks 
+tile.palm_planks.name=Palm Wood Planks 
+tile.mahogany_planks.name=Mahogany Wood Planks 
+tile.ebony_planks.name=Ebony Wood Planks
+tile.jacaranda_planks.name=Jacaranda Wood Planks
+tile.paulownia_planks.name=Paulownia Wood Planks
+tile.mangrove_planks.name=Mangrove Wood Planks
+tile.poplar_planks.name=Poplar Wood Planks
+tile.aspen_planks.name=Aspen Wood Planks
 
 tile.cherry_stairs.name=Cherry Stairs 
 tile.bluespruce_stairs.name=Blue Spruce Stairs 
@@ -292,6 +288,9 @@ tile.mangrove_fence.name=Mangrove Fence
 tile.poplar_fence.name=Poplar Fence
 tile.mahogany_fence.name=Mahogany Fence
 tile.aspen_fence.name=Aspen Fence
+tile.cobblestone_fence.name=Cobblestone Fence
+tile.cobblestone_mossy_fence.name=Mossy Cobblestone Fence
+
 
 tile.cherry_fencegate.name=Cherry Fence Gate
 tile.bluespruce_fencegate.name=Blue Spruce Fence Gate
@@ -307,6 +306,8 @@ tile.mangrove_fencegate.name=Mangrove Fence Gate
 tile.poplar_fencegate.name=Poplar Fence Gate
 tile.mahogany_fencegate.name=Mahogany Fence Gate
 tile.aspen_fencegate.name=Aspen Fence Gate
+tile.cobblestone_fencegate.name=Cobblestone Fence Gate
+tile.cobblestone_mossy_fencegate.name=Mossy Cobblestone Fence Gate
 
 tile.alikite.name=Alikite
 tile.triglicite.name=Triglicite

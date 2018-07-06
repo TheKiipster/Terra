@@ -20,7 +20,7 @@ public class BlockSandstoneCarved extends Block implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.STONE);
 		setHardness(0.8F);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATAB);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -191,6 +191,11 @@ public class BlockInit
 	public static final Block PAULOWNIAFENCEGATE = new BlockTerraFenceGate("paulownia_fencegate", Material.WOOD);
 	public static final Block MANGROVEFENCE = new BlockTerraFence("mangrove_fence", Material.WOOD);
 	public static final Block MANGROVEFENCEGATE = new BlockTerraFenceGate("mangrove_fencegate", Material.WOOD);
+	
+	public static final Block COBBLESTONEFENCEGATE = new BlockTerraStoneFenceGate("cobblestone_fencegate", Material.ROCK);
+	public static final Block MOSSYCOBBLESTONEFENCEGATE = new BlockTerraStoneFenceGate("cobblestone_mossy_fencegate", Material.ROCK);
+	
+	
 	//Planks
 	public static final Block CHERRYPLANKS = new BlockPlanksCherry("cherry_planks", Material.WOOD);
 	public static final Block BLUESPRUCEPLANKS = new BlockPlanksBlueSpruce("bluespruce_planks", Material.WOOD);

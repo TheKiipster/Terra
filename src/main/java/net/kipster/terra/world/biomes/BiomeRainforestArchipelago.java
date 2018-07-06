@@ -4,11 +4,11 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.world.biomes.BiomeGrassland.EmeraldGenerator;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryPurple;
-import net.kipster.terra.world.gen.generators.WorldGenTreeCherryWhite;
-import net.kipster.terra.world.gen.generators.WorldGenTreeJacarandaPurple;
-import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreen;
-import net.kipster.terra.world.gen.generators.WorldGenTreePaulowniaGreenV;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryPurple;
+import net.kipster.terra.world.gen.trees.WorldGenTreeCherryWhite;
+import net.kipster.terra.world.gen.trees.WorldGenTreeJacarandaPurple;
+import net.kipster.terra.world.gen.trees.WorldGenTreePaulowniaGreen;
+import net.kipster.terra.world.gen.trees.WorldGenTreePaulowniaGreenV;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockLeaves;
@@ -51,7 +51,7 @@ public class BiomeRainforestArchipelago extends Biome
 	    
 	public BiomeRainforestArchipelago() 
 	{
-		super(new BiomeProperties("Rainforest Archipelago").setBaseHeight(-0.55F).setHeightVariation(0.70F).setTemperature(0.7F).setRainfall(1F));
+		super(new BiomeProperties("Rainforest Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.70F).setTemperature(0.7F).setRainfall(1F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , true);
 		

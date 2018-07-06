@@ -6,6 +6,7 @@ import java.util.Random;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.WorldGenGreyDeadBush;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.monster.EntityHusk;
@@ -26,6 +27,7 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenBlockBlob;
 import net.minecraft.world.gen.feature.WorldGenDesertWells;
 import net.minecraft.world.gen.feature.WorldGenFossils;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMelon;
 import net.minecraft.world.gen.feature.WorldGenSavannaTree;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
@@ -37,6 +39,9 @@ import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 public class BiomeSemiAridDesert extends Biome
 {
 	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
+	protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
+	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(BlockInit.EBONYLEAVES, BlockInit.EBONYLOG, 0, 0, false);
+	
 	public BiomeSemiAridDesert() 
 	{
 		super(new BiomeProperties("Semiarid Desert").setBaseHeight(0.120F).setHeightVariation(0.028F).setTemperature(1.8F).setRainfall(0.9F));
@@ -47,6 +52,7 @@ public class BiomeSemiAridDesert extends Biome
 		this.decorator.flowersPerChunk = -999;
         this.decorator.grassPerChunk = 4;
         this.decorator.cactiPerChunk = 2;
+        this.decorator.treesPerChunk = 1;
         this.decorator.deadBushPerChunk = 5;
         this.decorator.extraTreeChance = 2;
         
@@ -83,6 +89,11 @@ public class BiomeSemiAridDesert extends Biome
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 }
+	@Override
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+	{
+		return TREE;
+	}
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {
@@ -109,6 +120,15 @@ public void decorate(World worldIn, Random rand, BlockPos pos)
                 COBBLESTONE_BOULDER_FEATURE.generate(worldIn, rand, blockpos);
             }
         }
+        if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_LAVA)) {
+        	           int boulderChance = rand.nextInt(12);
+        	           if (boulderChance == 0) {
+        	            int k6 = rand.nextInt(16) + 8;
+        	            int l = rand.nextInt(16) + 8;
+        	             BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+        	             LAVA_LAKE_FEATURE.generate(worldIn, rand, blockpos);
+        	           }
+        	        }
 
     super.decorate(worldIn, rand, pos);
         }

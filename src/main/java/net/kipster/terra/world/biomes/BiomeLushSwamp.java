@@ -17,8 +17,8 @@ import com.google.gson.GsonBuilder;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.biomes.BiomeLushForest.EmeraldGenerator;
-import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
-import net.kipster.terra.world.gen.generators.WorldGenTreeSwamp;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTreeSwamp;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockTallGrass;
@@ -214,10 +214,10 @@ public static class EmeraldGenerator extends WorldGenerator
 }
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
-	    return 0x71D81D;
+	    return 0x49c124;
 	}
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
-	    return 0x71D81D;
+	    return 0x49c124;
 	}
 }

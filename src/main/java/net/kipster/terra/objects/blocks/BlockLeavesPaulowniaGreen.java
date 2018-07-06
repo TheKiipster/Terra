@@ -43,7 +43,7 @@ public class BlockLeavesPaulowniaGreen extends BlockLeaves implements IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.PLANT);
         setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));  
-        setCreativeTab(Main.TERRATABPLANTS);
+        setCreativeTab(Main.TERRATAB);
 		
 		
 		BlockInit.BLOCKS.add(this);

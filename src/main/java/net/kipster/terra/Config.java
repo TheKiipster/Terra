@@ -82,6 +82,9 @@ public class Config {
 	public static boolean disableAncientForest = false;
 	public static boolean disableMangrove = false;
 	public static boolean disableGoldenForest = false;
+	public static boolean disableCliffs = false;
+	public static boolean disableSahara = false;
+	public static boolean disableTropicalForest = false;
 
 
  	 //Ores
@@ -229,6 +232,9 @@ public class Config {
 		disableAncientForest = cfg.get(CATEGORY_BIOMES, "disableAncientForest", disableAncientForest).getBoolean();
 		disableMangrove = cfg.get(CATEGORY_BIOMES, "disableMangrove", disableMangrove).getBoolean();
 		disableGoldenForest = cfg.get(CATEGORY_BIOMES, "disableGoldenForest", disableGoldenForest).getBoolean();
+		disableCliffs = cfg.get(CATEGORY_BIOMES, "disableCliffs", disableCliffs).getBoolean();
+		disableSahara = cfg.get(CATEGORY_BIOMES, "disableSahara", disableSahara).getBoolean();
+		disableTropicalForest = cfg.get(CATEGORY_BIOMES, "disableTropicalForest", disableTropicalForest).getBoolean();
 
 		
     }

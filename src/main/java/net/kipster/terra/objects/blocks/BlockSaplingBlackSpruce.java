@@ -6,7 +6,7 @@ import net.kipster.terra.Main;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.init.ItemInit;
 import net.kipster.terra.util.interfaces.IHasModel;
-import net.kipster.terra.world.gen.generators.WorldGenTreeBlackSpruce;
+import net.kipster.terra.world.gen.trees.WorldGenTreeBlackSpruce;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
@@ -36,7 +36,7 @@ public class BlockSaplingBlackSpruce extends BlockBush implements IHasModel, IGr
 		setRegistryName(name);
         setHardness(0.0F);
         setSoundType(SoundType.PLANT);
-        setCreativeTab(Main.TERRATABPLANTS);
+        setCreativeTab(Main.TERRATAB);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

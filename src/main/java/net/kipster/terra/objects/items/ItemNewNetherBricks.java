@@ -12,7 +12,7 @@ public class ItemNewNetherBricks extends Item implements IHasModel
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATABROCKS);
 		
 		ItemInit.ITEMS.add(this);
 	}

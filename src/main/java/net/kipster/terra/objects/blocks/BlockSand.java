@@ -28,7 +28,7 @@ public class BlockSand extends BlockFalling implements IHasModel
 		setSoundType(SoundType.SAND);
 		setRegistryName(name);
 		setHardness(0.8F);
-		setCreativeTab(Main.TERRATABMISC);
+		setCreativeTab(Main.TERRATAB);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

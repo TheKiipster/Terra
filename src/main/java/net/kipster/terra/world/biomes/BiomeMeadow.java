@@ -48,16 +48,16 @@ public class BiomeMeadow extends Biome
 	public BiomeMeadow() 
 	{
 		
-		super(new BiomeProperties("Meadow").setBaseHeight(0.125F).setHeightVariation(0.09F).setTemperature(0.8F).setRainfall(0.3F));
+		super(new BiomeProperties("Meadow").setBaseHeight(0.125F).setHeightVariation(0.08F).setTemperature(0.8F).setRainfall(0.3F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.MEADOW , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.extraTreeChance = 0.5F;
+		this.decorator.extraTreeChance = 0.3F;
 		 this.decorator.flowersPerChunk = 100;
-	        this.decorator.grassPerChunk = 20;
+	        this.decorator.grassPerChunk = 26;
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 5, 2, 6));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 1, 1, 3));
@@ -163,10 +163,10 @@ public static class EmeraldGenerator extends WorldGenerator
 }
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
-	    return 0x71D81D;
+	    return 0x5db426 ;
 	}
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
-	    return 0x71D81D;
+	    return 0x5db426 ;
 	}
 }

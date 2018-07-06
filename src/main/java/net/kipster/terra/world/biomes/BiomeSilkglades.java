@@ -16,7 +16,7 @@ import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.world.gen.generators.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.monster.EntitySpider;
@@ -68,7 +68,7 @@ public class BiomeSilkglades extends Biome
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
-	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 4, 4, 4));
+	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 6, 6, 6));
 	}
 
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
