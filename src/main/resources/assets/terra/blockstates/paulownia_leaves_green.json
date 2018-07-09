@@ -2,7 +2,7 @@
     "forge_marker": 1,
      "defaults": {
         "textures": {
-            "particle": "blocks/log_oak"
+            "particle": "terra:blocks/leaves_paulownia_green"
         },
         "model": "terra:paulownia_leaves_green",
         "uvlock": true

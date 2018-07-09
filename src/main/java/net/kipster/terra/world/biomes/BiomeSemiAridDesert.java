@@ -7,6 +7,7 @@ import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.gen.WorldGenGreyDeadBush;
 import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTreeEbony;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.monster.EntityHusk;
@@ -40,7 +41,7 @@ public class BiomeSemiAridDesert extends Biome
 {
 	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
 	protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
-	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(BlockInit.EBONYLEAVES, BlockInit.EBONYLOG, 0, 0, false);
+	protected static final WorldGenAbstractTree SHRUB_EBONY = new WorldGenTreeEbony();
 	
 	public BiomeSemiAridDesert() 
 	{
@@ -54,7 +55,7 @@ public class BiomeSemiAridDesert extends Biome
         this.decorator.cactiPerChunk = 2;
         this.decorator.treesPerChunk = 1;
         this.decorator.deadBushPerChunk = 5;
-        this.decorator.extraTreeChance = 2;
+		this.decorator.treesPerChunk = 1;
         
         this.spawnableCreatureList.clear();
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
@@ -92,8 +93,8 @@ public class BiomeSemiAridDesert extends Biome
 	@Override
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
 	{
-		return TREE;
-	}
+		return (WorldGenAbstractTree)(rand.nextInt(2) == 0 ? SHRUB_EBONY : SHRUB_EBONY);
+		}
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {

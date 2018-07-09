@@ -85,8 +85,12 @@ public class Config {
 	public static boolean disableCliffs = false;
 	public static boolean disableSahara = false;
 	public static boolean disableTropicalForest = false;
-
-
+	public static boolean disableTropicalGrassland = false;
+	public static boolean disableBlossomArchipelago = true;
+	public static boolean disableColdArchipelago = true;
+	public static boolean disableRainforestArchipelago = true;
+	public static boolean disableDenseShrubland = false;
+	
  	 //Ores
  	public static int anthracitePerChunk = 8;
 	public static int bituminousPerChunk = 8;
@@ -235,7 +239,11 @@ public class Config {
 		disableCliffs = cfg.get(CATEGORY_BIOMES, "disableCliffs", disableCliffs).getBoolean();
 		disableSahara = cfg.get(CATEGORY_BIOMES, "disableSahara", disableSahara).getBoolean();
 		disableTropicalForest = cfg.get(CATEGORY_BIOMES, "disableTropicalForest", disableTropicalForest).getBoolean();
-
+		disableTropicalGrassland = cfg.get(CATEGORY_BIOMES, "disableTropicalGrassland", disableTropicalGrassland).getBoolean();
+		disableBlossomArchipelago = cfg.get(CATEGORY_BIOMES, "disableBlossomArchipelago", disableBlossomArchipelago).getBoolean();
+		disableColdArchipelago = cfg.get(CATEGORY_BIOMES, "disableColdArchipelago", 		disableColdArchipelago).getBoolean();
+		disableRainforestArchipelago = cfg.get(CATEGORY_BIOMES, "disableRainforestArchipelago", disableRainforestArchipelago).getBoolean();
+		disableDenseShrubland = cfg.get(CATEGORY_BIOMES, "disableDenseShrubland", disableDenseShrubland).getBoolean();
 		
     }
     private static void initOreConfig(Configuration cfg) {

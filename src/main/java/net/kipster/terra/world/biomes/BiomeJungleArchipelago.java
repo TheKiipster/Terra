@@ -43,9 +43,9 @@ public class BiomeJungleArchipelago extends Biome
 	    
 	public BiomeJungleArchipelago() 
 	{
-		super(new BiomeProperties("Jungle Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.75F).setTemperature(0.95F).setRainfall(0.9F));
+		super(new BiomeProperties("Jungle Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.85F).setTemperature(0.95F).setRainfall(0.9F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.JUNGLE_ARCHIPELAGO , true);
+		BiomeManager.addVillageBiome(BiomeInit.JUNGLE_ARCHIPELAGO , false);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

@@ -60,7 +60,7 @@ public class BiomeWoodlands extends Biome
 		
 		super(new BiomeProperties("Woodlands").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.WOODLANDS , true);
+		BiomeManager.addVillageBiome(BiomeInit.WOODLANDS , false);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

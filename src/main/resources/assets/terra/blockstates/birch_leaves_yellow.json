@@ -2,7 +2,7 @@
     "forge_marker": 1,
      "defaults": {
         "textures": {
-            "particle": "blocks/log_oak"
+            "particle": "terra:blocks/leaves_birch_yellow"
         },
         "model": "terra:birch_leaves_yellow",
         "uvlock": true

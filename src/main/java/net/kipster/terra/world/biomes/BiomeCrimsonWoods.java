@@ -54,7 +54,7 @@ public class BiomeCrimsonWoods extends Biome
 		
 		super(new BiomeProperties("Crimson Woods").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()).setWaterColor(0x9f4b4b));
 		
-		BiomeManager.addVillageBiome(BiomeInit.CRIMSON_WOODS , true);
+		BiomeManager.addVillageBiome(BiomeInit.CRIMSON_WOODS , false);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

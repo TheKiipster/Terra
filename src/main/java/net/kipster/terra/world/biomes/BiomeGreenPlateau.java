@@ -40,7 +40,7 @@ public class BiomeGreenPlateau extends Biome
 	{
 		super(new BiomeProperties("Green Plateau").setBaseHeight(2F).setHeightVariation(0.025F).setTemperature(1.0F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.GREENPLATEAU , true);
+		BiomeManager.addVillageBiome(BiomeInit.GREENPLATEAU , false);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

@@ -62,7 +62,7 @@ public class BiomeRainforest extends Biome
 		
 		super(new BiomeProperties("Rainforest").setBaseHeight(Biomes.JUNGLE.getBaseHeight()).setHeightVariation(Biomes.JUNGLE.getHeightVariation()).setTemperature(Biomes.JUNGLE.getDefaultTemperature()).setRainfall(Biomes.JUNGLE.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.RAINFOREST , true);
+		BiomeManager.addVillageBiome(BiomeInit.RAINFOREST , false);
 		
 	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
@@ -74,7 +74,6 @@ public class BiomeRainforest extends Biome
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class, 4, 4, 4));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityOcelot.class, 2, 1, 1));
-	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityParrot.class, 40, 1, 2));
 		
 	}

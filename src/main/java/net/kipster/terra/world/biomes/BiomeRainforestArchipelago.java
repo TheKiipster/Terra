@@ -26,6 +26,7 @@ import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
+import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -51,9 +52,9 @@ public class BiomeRainforestArchipelago extends Biome
 	    
 	public BiomeRainforestArchipelago() 
 	{
-		super(new BiomeProperties("Rainforest Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.70F).setTemperature(0.7F).setRainfall(1F));
+		super(new BiomeProperties("Rainforest Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.85F).setTemperature(0.7F).setTemperature(Biomes.JUNGLE.getDefaultTemperature()).setRainfall(Biomes.JUNGLE.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , true);
+		BiomeManager.addVillageBiome(BiomeInit.RAINFOREST_ARCHIPELAGO , false);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
@@ -66,7 +67,6 @@ public class BiomeRainforestArchipelago extends Biome
 	        
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class, 4, 4, 4));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityOcelot.class, 2, 1, 1));
-	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityParrot.class, 40, 1, 2));
 		
 	}
@@ -88,42 +88,42 @@ public class BiomeRainforestArchipelago extends Biome
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {
-   DOUBLE_PLANT_GENERATOR.setPlantType(BlockDoublePlant.EnumPlantType.GRASS);
+    DOUBLE_PLANT_GENERATOR.setPlantType(BlockDoublePlant.EnumPlantType.GRASS);
 
-   if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
-   for (int i = 0; i < 7; ++i)
-   {
-       int j = rand.nextInt(16) + 8;
-       int k = rand.nextInt(16) + 8;
-       int l = rand.nextInt(worldIn.getHeight(pos.add(j, 0, k)).getY() + 32);
-       DOUBLE_PLANT_GENERATOR.generate(worldIn, rand, pos.add(j, l, k));
-   }
-   int i = rand.nextInt(16) + 8;
-   int j = rand.nextInt(16) + 8;
-   int height = worldIn.getHeight(pos.add(i, 0, j)).getY() * 2; // could == 0, which crashes nextInt
-   if (height < 1) height = 1;
-   int k = rand.nextInt(height);
-   if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.PUMPKIN))
-       (new WorldGenMelon()).generate(worldIn, rand, pos.add(i, k, j));
-   WorldGenVines worldgenvines = new WorldGenVines();
+    if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
+    for (int i = 0; i < 7; ++i)
+    {
+        int j = rand.nextInt(16) + 8;
+        int k = rand.nextInt(16) + 8;
+        int l = rand.nextInt(worldIn.getHeight(pos.add(j, 0, k)).getY() + 32);
+        DOUBLE_PLANT_GENERATOR.generate(worldIn, rand, pos.add(j, l, k));
+    }
+    int i = rand.nextInt(16) + 8;
+    int j = rand.nextInt(16) + 8;
+    int height = worldIn.getHeight(pos.add(i, 0, j)).getY() * 2; // could == 0, which crashes nextInt
+    if (height < 1) height = 1;
+    int k = rand.nextInt(height);
+    if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.PUMPKIN))
+        (new WorldGenMelon()).generate(worldIn, rand, pos.add(i, k, j));
+    WorldGenVines worldgenvines = new WorldGenVines();
 
-   if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
-       for (j = 0; j < 50; ++j) {
-           k = rand.nextInt(16) + 8;
-           int l = 128;
-           int i1 = rand.nextInt(16) + 8;
-           worldgenvines.generate(worldIn, rand, pos.add(k, 128, i1));
+    if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
+        for (j = 0; j < 50; ++j) {
+            k = rand.nextInt(16) + 8;
+            int l = 128;
+            int i1 = rand.nextInt(16) + 8;
+            worldgenvines.generate(worldIn, rand, pos.add(k, 128, i1));
 EntityPig pig = new EntityPig(worldIn);
-       }
+        }
 
-   super.decorate(worldIn, rand, pos);
-       }
-@Override
-public int getModdedBiomeGrassColor(int original) {
-    return 0x85c140;
-}
-@Override
-public int getModdedBiomeFoliageColor(int original) {
-    return 0x85c140;
+    super.decorate(worldIn, rand, pos);
+        }
+	@Override
+	public int getModdedBiomeGrassColor(int original) {
+	    return 0x85c140;
+	}
+	@Override
+	public int getModdedBiomeFoliageColor(int original) {
+	    return 0x85c140;
 	}
 }

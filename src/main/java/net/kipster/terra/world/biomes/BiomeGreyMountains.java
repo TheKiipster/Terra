@@ -45,6 +45,7 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -59,6 +60,8 @@ public class BiomeGreyMountains extends Biome
 	{
 		
 		super(new BiomeProperties("Grey Mountains").setBaseHeight(3.8F).setHeightVariation(0.78F).setTemperature(0.95F).setRainfall(0.9F));
+		
+		BiomeManager.addVillageBiome(BiomeInit.GREYMOUNTAIN, false);
 		
 		this.decorator.generateFalls = true;
 		this.decorator.treesPerChunk = 2;

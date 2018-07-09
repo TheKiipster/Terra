@@ -24,8 +24,8 @@ import net.minecraftforge.common.BiomeManager.BiomeEntry;
 import net.minecraftforge.common.BiomeManager.BiomeType;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-public class BiomeInit 
-{
+public class BiomeInit {
+	
     public static Set<Biome> presentBiomes;
 
 	public static final Biome TROPICAL_DESERT = new BiomeTropicalDesert();
@@ -101,33 +101,39 @@ public class BiomeInit
 	public static final Biome SAHARA = new BiomeSahara();
 	public static final Biome CLIFFS = new BiomeCliffs();
 	public static final Biome TROPICAL_FOREST = new BiomeTropicalForest();
+	public static final Biome TROPICAL_GRASSLAND = new BiomeTropicalGrassland();
+	public static final Biome BLOSSOM_ARCHIPELAGO = new BiomeBlossomArchipelago();
+	public static final Biome COLD_ARCHIPELAGO = new BiomeColdArchipelago();
+	public static final Biome GREEN_ARCHIPELAGO = new BiomeGreenArchipelago();
+	public static final Biome RAINFOREST_ARCHIPELAGO = new BiomeRainforestArchipelago();
+	public static final Biome DENSE_SHRUBLAND = new BiomeDenseShrubland();
 	
-	public static void registerBiomes()
-	{
+	public static void registerBiomes() {
+		
 		initBiome(TROPICAL_DESERT, "Tropical_Desert",  6, Config.disableWhiteDesert,BiomeType.DESERT, Type.LUSH, Type.JUNGLE);
 		initBiome(GREENEXTREMEHILLS, "Green_Extreme_Hills",  6, Config.disableGreenExtremeHills,BiomeType.WARM, Type.MOUNTAIN, Type.HILLS);
 		initBiome(PLATEAU, "Plateau",  4, Config.disablePlateau,BiomeType.WARM, Type.MESA);
-		initBiome(STEPPE, "Steppe",  6, Config.disableSteppe,BiomeType.WARM, Type.HILLS);
+		initBiome(STEPPE, "Steppe",  5, Config.disableSteppe,BiomeType.WARM, Type.HILLS);
 		initBiome(LAKE, "Lake",  6, Config.disableLake,BiomeType.WARM, Type.WATER);
 		initBiome(FROZENLAKE, "Frozen_Lake",  5, Config.disableFrozenLake,BiomeType.ICY, Type.WATER, Type.COLD);
 		initBiome(REDPLATEAU, "Red_Plateau",  5, Config.disableRedPlateau,BiomeType.DESERT, Type.DRY, Type.SANDY, Type.MESA);
 		initBiome(GRASSLAND, "Grassland", 7, Config.disableGrassland, BiomeType.WARM, Type.PLAINS);
-		initBiome(FENS, "Fens", 6, Config.disableFens, BiomeType.WARM, Type.SWAMP);
-		initBiome(SHRUBLAND, "Shrubland", 7, Config.disableShrubland, BiomeType.WARM, Type.PLAINS, Type.DENSE);
+		initBiome(FENS, "Fens", 7, Config.disableFens, BiomeType.WARM, Type.SWAMP);
+		initBiome(SHRUBLAND, "Shrubland", 8, Config.disableShrubland, BiomeType.WARM, Type.PLAINS);
 		initBiome(TUNDRASPIKES, "Tundra_Spikes", 4, Config.disableTundraSpikes, BiomeType.ICY, Type.WASTELAND, Type.COLD, Type.SNOWY, Type.DRY);
 		initBiome(TUNDRA, "Tundra", 5, Config.disableTundra, BiomeType.ICY, Type.WASTELAND, Type.COLD, Type.SNOWY, Type.DRY);
 		initBiome(ROCKLAND, "Rockland", 4, Config.disableRockland, BiomeType.WARM, Type.RARE, Type.DEAD, Type.DRY, Type.WASTELAND);
-		initBiome(SAHEL, "Sahel", 6, Config.disableSahel, BiomeType.DESERT, Type.HOT, Type.SAVANNA, Type.SANDY);
+		initBiome(SAHEL, "Sahel", 7, Config.disableSahel, BiomeType.DESERT, Type.HOT, Type.SAVANNA, Type.SANDY);
 		initBiome(SANDSTONEDUNES, "Sandstone_Dunes", 6, Config.disableDunes, BiomeType.DESERT, Type.SANDY, Type.SPARSE);
 		initBiome(REDMOUNTAIN, "Red_Mountain", 5, Config.disableRedMountains, BiomeType.DESERT, Type.SANDY, Type.SPARSE, Type.MOUNTAIN);
-		initBiome(ALPS, "Alps", 5, Config.disableAlps, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY);
-		initBiome(HIGHLANDS, "Highlands", 5, Config.disableHighlands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
-		initBiome(PINELANDS, "Pinelands", 5, Config.disablePinelands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
+		initBiome(ALPS, "Alps", 6, Config.disableAlps, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY);
+		initBiome(HIGHLANDS, "Highlands", 6, Config.disableHighlands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
+		initBiome(PINELANDS, "Pinelands", 6, Config.disablePinelands, BiomeType.WARM, Type.HILLS, Type.SPARSE);
 		initBiome(GLACIER, "Glacier", 3, Config.disableGlacier, BiomeType.ICY, Type.COLD, Type.SNOWY, Type.DRY);
-		initBiome(GREENHILLS, "Green_Hills", 6, Config.disableGreenHills, BiomeType.WARM, Type.HILLS, Type.SPARSE);
+		initBiome(GREENHILLS, "Green_Hills", 7, Config.disableGreenHills, BiomeType.WARM, Type.HILLS, Type.SPARSE);
 		initBiome(RAINFOREST, "Rainforest", 6, Config.disableRainforest, BiomeType.WARM, Type.JUNGLE, Type.LUSH, Type.WET);
 		initBiome(MEADOW, "Meadow", 7, Config.disableMeadow, BiomeType.WARM, Type.PLAINS, Type.SPARSE, Type.LUSH);
-		initBiome(WOODLANDS, "Woodlands", 6, Config.disableWoodlands, BiomeType.WARM, Type.FOREST);
+		initBiome(WOODLANDS, "Woodlands", 7, Config.disableWoodlands, BiomeType.WARM, Type.FOREST);
 		initBiome(PINKBEACH, "Pink_Beach", 3, Config.disablePinkBeach, BiomeType.WARM, Type.BEACH, Type.WATER);
 		initBiome(REDBEACH, "Red_Beach", 3, Config.disableRedBeach, BiomeType.WARM, Type.BEACH, Type.WATER);
 		initBiome(PURPLEBEACH, "Purple_Beach", 3, Config.disablePurpleBeach, BiomeType.WARM, Type.BEACH, Type.WATER);
@@ -138,63 +144,65 @@ public class BiomeInit
 		initBiome(BLACKDESERT, "Black_Desert", 3, Config.disableBlackDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.DRY, Type.SPARSE);
 		initBiome(BLUEMOUNTAIN, "Blue_Mountain", 5, Config.disableBlueMountains, BiomeType.ICY, Type.COLD, Type.SPARSE, Type.SNOWY, Type.MOUNTAIN);
 		initBiome(GREYMOUNTAIN, "Grey_Mountain",  5, Config.disableGreyMountains,BiomeType.WARM, Type.MOUNTAIN, Type.SPARSE);
-		initBiome(BADLANDS, "Badlands",  6, Config.disableBadlands,BiomeType.WARM, Type.HILLS, Type.SPARSE, Type.SAVANNA);
-		initBiome(OVERGROWN_PLAINS, "Overgrown_Plain",  1, Config.disableOvergrownPlains,BiomeType.WARM, Type.PLAINS, Type.JUNGLE, Type.LUSH);
-		initBiome(LUSH_SWAMP, "Lush_Swamp",  6, Config.disableLushSwamp,BiomeType.WARM, Type.SWAMP, Type.LUSH, Type.WET);
-		initBiome(THICKET, "Thicket",  5, Config.disableThicket,BiomeType.WARM, Type.PLAINS, Type.DENSE, Type.SAVANNA);
-		initBiome(BLOSSOM_WOODS, "Blossom_Woods",  6, Config.disableBlossomWoods,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
-		initBiome(BLUE_TAIGA, "Blue_Taiga",  5, Config.disableBlueTaiga,BiomeType.COOL, Type.CONIFEROUS, Type.COLD, Type.SNOWY);
-		initBiome(MYSTIC_WOODS, "Mystic_Woods", 3, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
-		initBiome(COLD_DESERT, "Cold_Desert", 5, Config.disableColdDesert, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
-		initBiome(SPRUCE_WOODS, "Spruce_Woods", 5, Config.disableSpruceWoods, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
-		initBiome(SEMI_ARID_DESERT, "Semi_Arid_Desert", 5, Config.disableSemiAridDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
-		initBiome(OUTBACK, "Outback", 5, Config.disableOutback, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
-		initBiome(COLD_FOREST, "Cold_Forest", 5, Config.disableColdForest, BiomeType.ICY, Type.COLD, Type.FOREST);
-		initBiome(COLD_BIRCH_FOREST, "Cold_Birch_Forest", 4, Config.disableColdBirchForest, BiomeType.ICY, Type.COLD, Type.FOREST);
-		initBiome(COLD_ROOFED_FOREST, "Cold_Roofed_Forest", 4, Config.disableColdRoofedForest, BiomeType.ICY, Type.COLD, Type.FOREST);
-		initBiome(COLD_MEGA_TAIGA, "Cold_Mega_Taiga", 4, Config.disableColdMegaTaiga, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
-		initBiome(COLD_MEGA_SPRUCE_TAIGA, "Cold_Mega_Spruce_Taiga", 4, Config.disableColdMegaSpruceTaiga, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
+		initBiome(BADLANDS, "Badlands",  7, Config.disableBadlands,BiomeType.WARM, Type.HILLS, Type.SPARSE, Type.SAVANNA);
+		initBiome(OVERGROWN_PLAINS, "Overgrown_Plains",  2, Config.disableOvergrownPlains,BiomeType.WARM, Type.PLAINS, Type.JUNGLE, Type.LUSH);
+		initBiome(LUSH_SWAMP, "Lush_Swamp",  7, Config.disableLushSwamp,BiomeType.WARM, Type.SWAMP, Type.LUSH, Type.WET);
+		initBiome(THICKET, "Thicket",  6, Config.disableThicket,BiomeType.WARM, Type.PLAINS, Type.DENSE, Type.SAVANNA);
+		initBiome(BLOSSOM_WOODS, "Blossom_Woods",  7, Config.disableBlossomWoods,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
+		initBiome(BLUE_TAIGA, "Blue_Taiga",  6, Config.disableBlueTaiga,BiomeType.COOL, Type.CONIFEROUS, Type.COLD, Type.SNOWY);
+		initBiome(MYSTIC_WOODS, "Mystic_Woods", 4, Config.disableMysticWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(COLD_DESERT, "Cold_Desert", 6, Config.disableColdDesert, BiomeType.ICY, Type.DEAD, Type.COLD, Type.SNOWY);
+		initBiome(SPRUCE_WOODS, "Spruce_Woods", 6, Config.disableSpruceWoods, BiomeType.COOL, Type.CONIFEROUS, Type.DENSE);
+		initBiome(SEMI_ARID_DESERT, "Semi_Arid_Desert", 6, Config.disableSemiAridDesert, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
+		initBiome(OUTBACK, "Outback", 6, Config.disableOutback, BiomeType.DESERT, Type.DRY, Type.SANDY, Type.SPARSE);
+		initBiome(COLD_FOREST, "Cold_Forest", 6, Config.disableColdForest, BiomeType.ICY, Type.COLD, Type.FOREST);
+		initBiome(COLD_BIRCH_FOREST, "Cold_Birch_Forest", 5, Config.disableColdBirchForest, BiomeType.ICY, Type.COLD, Type.FOREST);
+		initBiome(COLD_ROOFED_FOREST, "Cold_Roofed_Forest", 5, Config.disableColdRoofedForest, BiomeType.ICY, Type.COLD, Type.FOREST);
+		initBiome(COLD_MEGA_TAIGA, "Cold_Mega_Taiga", 5, Config.disableColdMegaTaiga, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
+		initBiome(COLD_MEGA_SPRUCE_TAIGA, "Cold_Mega_Spruce_Taiga", 5, Config.disableColdMegaSpruceTaiga, BiomeType.ICY, Type.COLD, Type.CONIFEROUS);
 		initBiome(BLUE_MUSHROOM_PLAINS, "Blue_Mushroom_Plains", 1, Config.disableBlueMushroomPlains, BiomeType.WARM, Type.MAGICAL, Type.PLAINS, Type.MUSHROOM);
 		initBiome(PINK_MUSHROOM_PLAINS, "Pink_Mushroom_Plains", 1, Config.disablePinkMushroomPlains, BiomeType.WARM, Type.MAGICAL, Type.PLAINS, Type.MUSHROOM);
-		initBiome(FUNGAL_JUNGLE, "Fungal_Jungle",  2, Config.disableFungalJungle,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.MUSHROOM);
-		initBiome(JUNGLE_ARCHIPELAGO, "Jungle_Archipelago",  1, Config.disableJungleArchipelago,BiomeType.WARM, Type.JUNGLE, Type.WATER, Type.OCEAN);
-		initBiome(AEGEAN_ARCHIPELAGO, "Aegean_Archipelago",  1, Config.disableAegeanArchipelago,BiomeType.WARM, Type.WATER, Type.OCEAN);
-		initBiome(MOUNTAINOUS_ARCHIPELAGO, "Mountainous_Archipelago",  1, Config.disableMountainousArchipelago,BiomeType.WARM, Type.MOUNTAIN, Type.WATER, Type.OCEAN);
-		initBiome(DESERT_ARCHIPELAGO, "Desert_Archipelago",  1, Config.disableDesertArchipelago,BiomeType.DESERT, Type.DRY, Type.SANDY, Type.WATER, Type.OCEAN);
-		initBiome(ANCIENT_FOREST, "Ancient_Forest",  1, Config.disableAncientForest,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
-		initBiome(GOLDEN_FOREST, "Golden_Forest",  3, Config.disableGoldenForest,BiomeType.WARM, Type.FOREST);
-		initBiome(MANGROVE, "Mangrove",  4, Config.disableMangrove,BiomeType.WARM, Type.SWAMP);
-		initBiome(LUSHFOREST, "Lush_Forest", 5, Config.disableLushForest, BiomeType.WARM, Type.FOREST, Type.LUSH);
-		initBiome(PRAIRE, "Praire", 2, Config.disablePraire, BiomeType.WARM, Type.SAVANNA, Type.SPARSE);
-		initBiome(SILKGLADES, "Silkglades", 1, Config.disableSilkglades, BiomeType.WARM, Type.FOREST, Type.DRY);
-		initBiome(CRIMSON_WOODS, "Crimson_Woods", 2, Config.disableCrimsonWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
-		initBiome(COLDPLATEAU, "Cold_Plateau",  4, Config.disableColdPlateau,BiomeType.COOL, Type.COLD, Type.SNOWY);
-		initBiome(FROZENPLATEAU, "Frozen_Plateau",  3, Config.disableFrozenPlateau,BiomeType.ICY, Type.COLD, Type.SNOWY);
-		initBiome(GREENPLATEAU, "Green_Plateau",  4, Config.disableGreenPlateau,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.RARE);
-		initBiome(DRYPLATEAU, "Dry_Plateau",  4, Config.disableDryPlateau,BiomeType.WARM, Type.DRY, Type.SPARSE, Type.SNOWY, Type.MESA);
-		initBiome(SALT_LAKE, "Salt_Lake",  2, Config.disableSaltLake,BiomeType.WARM, Type.WATER, Type.DEAD);
-		initBiome(OAK_FOREST, "Oak_Forest",  5, Config.disableSaltLake,BiomeType.WARM, Type.FOREST);
-		initBiome(SAHARA, "Sahara",  2, Config.disableSahara,BiomeType.DESERT, Type.SANDY);
-		initBiome(CLIFFS, "Cliffs",  6, Config.disableCliffs,BiomeType.WARM, Type.HILLS);
-		initBiome(TROPICAL_FOREST, "Tropical_Forest",  4, Config.disableTropicalForest,BiomeType.WARM, Type.JUNGLE);
-		
+		initBiome(FUNGAL_JUNGLE, "Fungal_Jungle",  3, Config.disableFungalJungle,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.MUSHROOM);
+		initBiome(JUNGLE_ARCHIPELAGO, "Jungle_Archipelago",  2, Config.disableJungleArchipelago,BiomeType.WARM, Type.JUNGLE, Type.WATER, Type.OCEAN);
+		initBiome(AEGEAN_ARCHIPELAGO, "Aegean_Archipelago",  2, Config.disableAegeanArchipelago,BiomeType.WARM, Type.WATER, Type.OCEAN);
+		initBiome(MOUNTAINOUS_ARCHIPELAGO, "Mountainous_Archipelago",  2, Config.disableMountainousArchipelago,BiomeType.WARM, Type.MOUNTAIN, Type.WATER, Type.OCEAN);
+		initBiome(DESERT_ARCHIPELAGO, "Desert_Archipelago",  2, Config.disableDesertArchipelago,BiomeType.DESERT, Type.DRY, Type.SANDY, Type.WATER, Type.OCEAN);
+		initBiome(ANCIENT_FOREST, "Ancient_Forest",  2, Config.disableAncientForest,BiomeType.WARM, Type.FOREST, Type.MAGICAL);
+		initBiome(GOLDEN_FOREST, "Golden_Forest",  4, Config.disableGoldenForest,BiomeType.WARM, Type.FOREST);
+		initBiome(MANGROVE, "Mangrove",  5, Config.disableMangrove,BiomeType.WARM, Type.SWAMP);
+		initBiome(LUSHFOREST, "Lush_Forest", 6, Config.disableLushForest, BiomeType.WARM, Type.FOREST, Type.LUSH);
+		initBiome(PRAIRE, "Praire", 3, Config.disablePraire, BiomeType.WARM, Type.SAVANNA, Type.SPARSE);
+		initBiome(SILKGLADES, "Silkglades", 2, Config.disableSilkglades, BiomeType.WARM, Type.FOREST, Type.DRY);
+		initBiome(CRIMSON_WOODS, "Crimson_Woods", 4, Config.disableCrimsonWoods, BiomeType.WARM, Type.MAGICAL, Type.FOREST, Type.RARE);
+		initBiome(COLDPLATEAU, "Cold_Plateau",  5, Config.disableColdPlateau,BiomeType.COOL, Type.COLD, Type.SNOWY);
+		initBiome(FROZENPLATEAU, "Frozen_Plateau",  4, Config.disableFrozenPlateau,BiomeType.ICY, Type.COLD, Type.SNOWY);
+		initBiome(GREENPLATEAU, "Green_Plateau",  5, Config.disableGreenPlateau,BiomeType.WARM, Type.LUSH, Type.JUNGLE, Type.RARE);
+		initBiome(DRYPLATEAU, "Dry_Plateau",  5, Config.disableDryPlateau,BiomeType.WARM, Type.DRY, Type.SPARSE, Type.SNOWY, Type.MESA);
+		initBiome(SALT_LAKE, "Salt_Lake",  3, Config.disableSaltLake,BiomeType.WARM, Type.WATER, Type.DEAD);
+		initBiome(OAK_FOREST, "Oak_Forest",  6, Config.disableSaltLake,BiomeType.WARM, Type.FOREST);
+		initBiome(SAHARA, "Sahara",  3, Config.disableSahara,BiomeType.DESERT, Type.SANDY);
+		initBiome(CLIFFS, "Cliffs",  7, Config.disableCliffs,BiomeType.WARM, Type.HILLS);
+		initBiome(TROPICAL_FOREST, "Tropical_Forest",  5, Config.disableTropicalForest,BiomeType.WARM, Type.JUNGLE);
+		initBiome(TROPICAL_GRASSLAND, "Tropical_Grassland", 4, Config.disableTropicalGrassland, BiomeType.WARM, Type.JUNGLE);
+		initBiome(BLOSSOM_ARCHIPELAGO, "Blossom_Archipelago",  2, Config.disableBlossomArchipelago,BiomeType.WARM, Type.WATER, Type.OCEAN);
+		initBiome(COLD_ARCHIPELAGO, "Cold_Archipelago",  2, Config.disableColdArchipelago,BiomeType.COOL, Type.WATER, Type.OCEAN);
+		initBiome(RAINFOREST_ARCHIPELAGO, "Rainforest_Archipelago",  2, Config.disableRainforestArchipelago,BiomeType.WARM, Type.WATER, Type.OCEAN);
+		initBiome(DENSE_SHRUBLAND, "Dense_Shrubland", 5, Config.disableDenseShrubland, BiomeType.WARM, Type.PLAINS, Type.DENSE);
 	}
 
-	
-	private static Biome initBiome(Biome biome, String name, int weight, boolean disabled, BiomeType biomeType, Type... types){
+	private static Biome initBiome(Biome biome, String name, int weight, boolean disabled, BiomeType biomeType, Type... types)	{
 		if (!disabled) {
 		biome.setRegistryName(name);
 		ForgeRegistries.BIOMES.register(biome);
 		System.out.println("Biome Registered");
 		BiomeDictionary.addTypes(biome, types);
-		BiomeManager.addVillageBiome(biome, true);
 		BiomeManager.addBiome(biomeType, new BiomeEntry(biome, weight));
 		BiomeManager.addSpawnBiome(biome);
+		BiomeManager.addStrongholdBiome(biome);
+		BiomeManager.addVillageBiome(biome, true);
 		System.out.println("Biome Added");
-
 		}
 		return biome;
 	}
-
 	}
 	    

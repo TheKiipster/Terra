@@ -2,7 +2,7 @@
     "forge_marker": 1,
      "defaults": {
         "textures": {
-            "particle": "blocks/log_oak"
+            "particle": "terra:blocks/leaves_spruce_black"
         },
         "model": "terra:blackspruce_leaves",
         "uvlock": true

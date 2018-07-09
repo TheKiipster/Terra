@@ -48,7 +48,7 @@ public class BiomePraire extends Biome
 		
 		super(new BiomeProperties("Praire").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(1F).setRainfall(0.3F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , true);
+		BiomeManager.addVillageBiome(BiomeInit.PRAIRE , true);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

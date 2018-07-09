@@ -29,7 +29,7 @@ public class BiomeFrozenPlateau extends Biome
 	{
 		super(new BiomeProperties("Frozen Plateau").setBaseHeight(2F).setHeightVariation(0.025F).setTemperature(-1F).setSnowEnabled());
 		
-		BiomeManager.addVillageBiome(BiomeInit.FROZENPLATEAU , true);
+		BiomeManager.addVillageBiome(BiomeInit.FROZENPLATEAU , false);
 		
 		topBlock = Blocks.SNOW.getDefaultState();
 		fillerBlock = Blocks.SNOW.getDefaultState();

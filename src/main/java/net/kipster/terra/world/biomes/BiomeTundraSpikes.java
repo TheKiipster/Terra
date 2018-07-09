@@ -36,7 +36,7 @@ public class BiomeTundraSpikes extends Biome
 	{
 		super(new BiomeProperties("Tundra Spikes").setBaseHeight(0.115F).setHeightVariation(0.05F).setTemperature(-2F).setRainfall(0.4F).setSnowEnabled());
 		
-		BiomeManager.addVillageBiome(BiomeInit.TUNDRASPIKES , true);
+		BiomeManager.addVillageBiome(BiomeInit.TUNDRASPIKES , false);
 		
 		
 	

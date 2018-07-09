@@ -2,7 +2,7 @@
     "forge_marker": 1,
      "defaults": {
         "textures": {
-            "particle": "blocks/log_oak"
+            "particle": "terra:blocks/leaves_ebony"
         },
         "model": "terra:ebony_leaves",
         "uvlock": true

@@ -25,7 +25,7 @@ public class BiomeFens extends Biome
 	{
 		super(new BiomeProperties("Fens").setBaseHeight(-0.28F).setHeightVariation(0F).setTemperature(0.8F).setRainfall(0.9F).setWaterColor(14745518));
 		
-		BiomeManager.addVillageBiome(BiomeInit.FENS , true);
+		BiomeManager.addVillageBiome(BiomeInit.FENS , false);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

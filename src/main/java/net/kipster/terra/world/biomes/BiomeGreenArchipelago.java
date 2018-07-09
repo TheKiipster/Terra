@@ -47,9 +47,9 @@ public class BiomeGreenArchipelago extends Biome
 	    
 	public BiomeGreenArchipelago() 
 	{
-		super(new BiomeProperties("Green Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.70F).setTemperature(0.95F).setRainfall(0.9F));
+		super(new BiomeProperties("Green Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.85F).setTemperature(0.95F).setRainfall(0.9F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , true);
+		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , false);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

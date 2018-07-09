@@ -63,7 +63,7 @@ public class BiomeMountainousArchipelago extends Biome
 	{
 		super(new BiomeProperties("Mountainous Archipelago").setBaseHeight(-1.8F).setHeightVariation(1F).setTemperature(0.95F).setRainfall(0.9F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.JUNGLE_ARCHIPELAGO , true);
+		BiomeManager.addVillageBiome(BiomeInit.MOUNTAINOUS_ARCHIPELAGO , false);
 		
 		this.decorator.generateFalls = true;
 		this.decorator.treesPerChunk = 2;

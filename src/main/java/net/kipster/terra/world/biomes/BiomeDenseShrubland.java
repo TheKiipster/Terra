@@ -4,7 +4,9 @@ import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.world.gen.trees.WorldGenTerraShrub;
+import net.kipster.terra.world.gen.trees.WorldGenTreeShrubBirch;
 import net.kipster.terra.world.gen.trees.WorldGenTreeShrubOak;
+import net.kipster.terra.world.gen.trees.WorldGenTreeShrubSpruce;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockNewLeaf;
@@ -29,16 +31,17 @@ import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
 
-public class BiomeShrubland extends Biome 
+public class BiomeDenseShrubland extends Biome 
 {	
 	protected static final WorldGenAbstractTree SHRUB_OAK = new WorldGenTreeShrubOak();
-	
+	protected static final WorldGenAbstractTree SHRUB_SPRUCE = new WorldGenTreeShrubSpruce();
+	protected static final WorldGenAbstractTree SHRUB_BIRCH = new WorldGenTreeShrubBirch();
 	 
-	public BiomeShrubland() 
+	public BiomeDenseShrubland() 
 	{
-		super(new BiomeProperties("Shrubland").setBaseHeight(0.1F).setHeightVariation(0.024F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Dense Shrubland").setBaseHeight(0.1F).setHeightVariation(0.024F).setTemperature(0.8F).setRainfall(0.4F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.SHRUBLAND , true);
+		BiomeManager.addVillageBiome(BiomeInit.DENSE_SHRUBLAND , true);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
@@ -46,18 +49,23 @@ public class BiomeShrubland extends Biome
         this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntitySheep.class, 5, 2, 6));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityPig.class, 5, 2, 6));
-        this.decorator.treesPerChunk = 1;
+        this.decorator.treesPerChunk = 3;
         this.decorator.flowersPerChunk = 2;
-        this.decorator.grassPerChunk = 4;
+        this.decorator.grassPerChunk = 5;
 
 	}
 
 	@Override
-	public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
+	if (rand.nextInt(3) > 0)
 	{
-		return (WorldGenAbstractTree)(rand.nextInt(2) == 0 ? SHRUB_OAK : SHRUB_OAK);
-		}
-
+		  return SHRUB_BIRCH;
+	}
+	else
+	{
+	  return (WorldGenAbstractTree)(rand.nextInt(3) == 0 ? SHRUB_OAK : SHRUB_SPRUCE);
+}
+    }
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
 	    return 0x89BA60;

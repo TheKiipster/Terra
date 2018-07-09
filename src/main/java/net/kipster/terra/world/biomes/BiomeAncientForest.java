@@ -51,11 +51,13 @@ import net.minecraft.world.gen.feature.WorldGenBigTree;
 import net.minecraft.world.gen.feature.WorldGenBlockBlob;
 import net.minecraft.world.gen.feature.WorldGenCanopyTree;
 import net.minecraft.world.gen.feature.WorldGenFossils;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -68,13 +70,14 @@ public class BiomeAncientForest extends Biome
 	 //protected static final WorldGenAbstractTree TREE_DARK = new WorldGenTreeSwampDark();
 	 protected static final WorldGenAbstractTree TREE = new WorldGenBigTree(false);
 	// protected static final WorldGenAbstractTree TREE = new WorldGenBiggerOak(false);
+	 protected static final WorldGenLakes LAKE = new WorldGenLakes(Blocks.WATER);
 	
 	public BiomeAncientForest() 
 	{
 		
 		super(new BiomeProperties("Ancient Forest").setBaseHeight(0.5F).setHeightVariation(0.1F).setTemperature(.5F).setRainfall(0.4F).setWaterColor(0x00097c));
 		
-		BiomeManager.addVillageBiome(BiomeInit.ANCIENT_FOREST , true);
+		BiomeManager.addVillageBiome(BiomeInit.ANCIENT_FOREST , false);
 		
 	topBlock = BlockInit.MOSS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
@@ -124,6 +127,7 @@ public class BiomeAncientForest extends Biome
 		            {
 		                worldIn.setBlockState(blockpos, Blocks.EMERALD_ORE.getDefaultState(), 16 | 3);
 		            }
+		            
 		        }
 		        return true;
 		    }
@@ -142,6 +146,15 @@ public class BiomeAncientForest extends Biome
 
     public void decorate(World worldIn, Random rand, BlockPos pos)
     {
+
+   	 if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_WATER)) {
+           int boulderChance = rand.nextInt(12);
+           if (boulderChance == 0) {
+            int k6 = rand.nextInt(16) + 8;
+            int l = rand.nextInt(16) + 8;
+             BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+             LAKE.generate(worldIn, rand, blockpos);
+           }
     	if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.FOSSIL))
             if (rand.nextInt(64) == 0)
             {
@@ -183,6 +196,7 @@ public class BiomeAncientForest extends Biome
         }
 
         super.decorate(worldIn, rand, pos);
+    }
     }
 
 	@Override

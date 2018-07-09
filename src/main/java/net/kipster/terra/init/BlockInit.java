@@ -9,10 +9,11 @@ import net.minecraft.block.BlockBush;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 
-public class BlockInit
-{
+public class BlockInit	{
+	
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
+	//SANDS
 	public static final Block WHITE_SAND = new BlockSand("white_sand", Material.SAND);
 	public static final Block WHITE_SANDSTONE = new BlockSandstone("white_sandstone", Material.ROCK);
 	public static final Block WHITE_SANDSTONE_SMOOTH = new BlockSandstoneSmooth("white_sandstone_smooth", Material.ROCK);
@@ -61,6 +62,8 @@ public class BlockInit
 	public static final Block ORANGE_SANDSTONE_CARVED = new BlockSandstoneCarved("orange_sandstone_carved", Material.ROCK);
 	public static final Block ORANGE_SANDSTONE_FACE = new BlockSandstoneFace("orange_sandstone_face", Material.ROCK);
 	public static final Block ORANGE_SANDSTONE_GLYPH = new BlockSandstoneGlyph("orange_sandstone_glyph", Material.ROCK);
+	
+	//COAL & IRON
 	public static final Block ORE_OVERWORLD_ANTHRACITE = new BlockAnthraciteOre("ore_overworldc_anthracite", Material.ROCK);
 	public static final Block ORE_OVERWORLD_BITUMINOUS = new BlockBituminousOre("ore_overworldc_bituminous", Material.ROCK);
 	public static final Block ORE_OVERWORLD_LIGNITE = new BlockLigniteOre("ore_overworldc_lignite", Material.ROCK);
@@ -77,7 +80,8 @@ public class BlockInit
 	public static final Block ORE_OVERWORLDI_ANKERITE = new BlockAnkeriteOre("ore_overworldi_ankerite", Material.ROCK);
 	public static final Block ORE_OVERWORLDI_TACONITE = new BlockTaconiteOre("ore_overworldi_taconite", Material.ROCK);
 	public static final Block ORE_OVERWORLDI_BANDED = new BlockBandedOre("ore_overworldi_banded", Material.ROCK);
-	public static final Block GREYDEADBUSH = new BlockGreyDeadBush("grey_deadbush", Material.PLANTS);
+	
+	//NETHER
 	public static final Block ALIKITE = new BlockNewNetherack("alikite", Material.ROCK);
 	public static final Block TRIGLICITE = new BlockNewNetherack("triglicite", Material.ROCK);
 	public static final Block KRUNDALTITE = new BlockNewNetherack("krundaltite", Material.ROCK);
@@ -103,7 +107,7 @@ public class BlockInit
 	public static final Block SOLITUDITE_PILLAR = new BlockNewNetherGemPillar("solitudite_pillar", Material.ROCK);
 	public static final Block KAMBORADOITE_PILLAR = new BlockNewNetherGemPillar("kamboradoite_pillar", Material.ROCK);
 	
-	//Logs
+	//LOGS
 	public static final Block CHERRYLOG = new BlockLogCherry("cherry_log", Material.WOOD);
 	public static final Block BLUESPRUCELOG = new BlockLogBlueSpruce("bluespruce_log", Material.WOOD);
 	public static final Block BLACKSPRUCELOG = new BlockLogBlackSpruce("blackspruce_log", Material.WOOD);
@@ -119,7 +123,7 @@ public class BlockInit
 	public static final Block POPLARLOG = new BlockLogPoplar("poplar_log", Material.WOOD);
 	public static final Block MANGROVELOG = new BlockLogMangrove("mangrove_log", Material.WOOD);
 	
-	//Leaves
+	//LEAVES
 	public static final Block CHERRYLEAVESWHITE = new BlockLeavesCherryWhite("cherry_leaves_white", Material.LEAVES);
 	public static final Block CHERRYLEAVESPURPLE = new BlockLeavesCherryPurple("cherry_leaves_purple", Material.LEAVES);
 	public static final Block BLUESPRUCELEAVES = new BlockLeavesBlueSpruce("bluespruce_leaves", Material.LEAVES);
@@ -140,8 +144,7 @@ public class BlockInit
 	public static final Block YELLOWBIRCHLEAVES = new BlockLeavesYellowBirch("birch_leaves_yellow", Material.LEAVES);
 	public static final Block MANGROVELEAVES = new BlockLeavesMangrove("mangrove_leaves", Material.LEAVES);
 	
-	
-	//Saplings
+	//SAPLINGS
 	public static final Block CHERRYSAPLINGWHITE = new BlockSaplingCherryWhite("cherry_sapling_white", Material.LEAVES);
 	public static final Block CHERRYSAPLINGPURPLE = new BlockSaplingCherryPurple("cherry_sapling_purple", Material.LEAVES);
 	public static final Block BLUESPRUCESAPLING = new BlockSaplingBlueSpruce("bluespruce_sapling", Material.LEAVES);
@@ -162,7 +165,7 @@ public class BlockInit
 	public static final Block YELLOWBIRCHSAPLING = new BlockSaplingYellowBirch("birch_sapling_yellow", Material.LEAVES);
 	public static final Block MANGROVESAPLING = new BlockSaplingMangrove("mangrove_sapling", Material.LEAVES);
 	
-	//Other
+	//FENCES
 	public static final Block CHERRYFENCE = new BlockTerraFence("cherry_fence", Material.WOOD);
 	public static final Block CHERRYFENCEGATE = new BlockTerraFenceGate("cherry_fencegate", Material.WOOD);
 	public static final Block BLUESPRUCEFENCE = new BlockTerraFence("bluespruce_fence", Material.WOOD);
@@ -196,7 +199,7 @@ public class BlockInit
 	public static final Block MOSSYCOBBLESTONEFENCEGATE = new BlockTerraStoneFenceGate("cobblestone_mossy_fencegate", Material.ROCK);
 	
 	
-	//Planks
+	//PLANKS
 	public static final Block CHERRYPLANKS = new BlockPlanksCherry("cherry_planks", Material.WOOD);
 	public static final Block BLUESPRUCEPLANKS = new BlockPlanksBlueSpruce("bluespruce_planks", Material.WOOD);
 	public static final Block WHITESPRUCEPLANKS = new BlockPlanksWhiteSpruce("whitespruce_planks", Material.WOOD);
@@ -212,7 +215,7 @@ public class BlockInit
 	public static final Block POPLARPLANKS = new BlockPlanksPoplar("poplar_planks", Material.WOOD);
 	public static final Block MANGROVEPLANKS = new BlockPlanksMangrove("mangrove_planks", Material.WOOD);
 	
-	//Stairs
+	//STAIRS
 	public static final Block CHERRYSTAIRS = new BlockStair("cherry_stairs", CHERRYPLANKS.getDefaultState());
 	public static final Block BLUESPRUCESTAIRS = new BlockStair("bluespruce_stairs", BLUESPRUCEPLANKS.getDefaultState());
 	public static final Block WHITESPRUCESTAIRS = new BlockStair("whitespruce_stairs", WHITESPRUCEPLANKS.getDefaultState());
@@ -228,7 +231,7 @@ public class BlockInit
 	public static final Block POPLARSTAIRS = new BlockStair("poplar_stairs", POPLARPLANKS.getDefaultState());
 	public static final Block MANGROVESTAIRS = new BlockStair("mangrove_stairs", MANGROVEPLANKS.getDefaultState());
 	
-	//Stone
+	//STONE
 	public static final Block BASALT_STONE = new BlockBasalt("basalt_stone", Material.ROCK);
 	public static final Block BLACKDIORITE_STONE = new BlockBlackDiorite("blackdiorite_stone", Material.ROCK);
 	public static final Block IMPERIALQUARTZITE_STONE = new BlockImperialQuartzite("imperialquartzite_stone", Material.ROCK);
@@ -264,7 +267,7 @@ public class BlockInit
 	public static final Block TROCTOLITE_STONE = new BlockTroctolite("troctolite_stone", Material.ROCK);
 	
 	
-	//Cobblestone
+	//COBBLESTONE
 	public static final Block BASALT_COBBLESTONE = new BlockIgneousRocks("basalt_cobblestone", Material.ROCK);
 	public static final Block BLACKDIORITE_COBBLESTONE = new BlockIgneousRocks("blackdiorite_cobblestone", Material.ROCK);
 	public static final Block IMPERIALQUARTZITE_COBBLESTONE = new BlockMetamorphicRocks("imperialquartzite_cobblestone", Material.ROCK);
@@ -300,7 +303,7 @@ public class BlockInit
 	public static final Block TROCTOLITE_COBBLESTONE = new BlockIgneousRocks("troctolite_cobblestone", Material.ROCK);
 	
 	
-	//Stone Brick
+	//STONEBRICK
 	public static final Block BASALT_STONEBRICK = new BlockIgneousRocks("basalt_stonebrick", Material.ROCK);
 	public static final Block BLACKDIORITE_STONEBRICK = new BlockIgneousRocks("blackdiorite_stonebrick", Material.ROCK);
 	public static final Block IMPERIALQUARTZITE_STONEBRICK = new BlockMetamorphicRocks("imperialquartzite_stonebrick", Material.ROCK);
@@ -335,13 +338,12 @@ public class BlockInit
 	public static final Block SYENITE_STONEBRICK = new BlockIgneousRocks("syenite_stonebrick", Material.ROCK);
 	public static final Block TROCTOLITE_STONEBRICK = new BlockIgneousRocks("troctolite_stonebrick", Material.ROCK);
 	
-	
-	//Misc
+	//MISC
 	public static final Block ANTHROSIUM = new BlockAnthrosium("anthrosium", Material.GROUND);
 	public static final Block BELLIUM = new BlockBellium("bellium", Material.GROUND);
 	public static final BlockMushrooms KLELDA = new BlockMushrooms("klelda", Material.PLANTS);
 	public static final BlockMushrooms SAJERRY = new BlockMushrooms("sajerry", Material.PLANTS);
 	public static final Block MOSS = new BlockMoss("moss", Material.GROUND);
+	public static final Block GREYDEADBUSH = new BlockGreyDeadBush("grey_deadbush", Material.PLANTS);
 
 	}
-	

@@ -52,7 +52,7 @@ public class BiomeThicket extends Biome
 		
 		super(new BiomeProperties("Thicket").setBaseHeight(0.192F).setHeightVariation(0.085F).setTemperature(1F).setRainfall(0.2F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.THICKET , true);
+		BiomeManager.addVillageBiome(BiomeInit.THICKET , false);
 		
 	 topBlock = Blocks.DIRT.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

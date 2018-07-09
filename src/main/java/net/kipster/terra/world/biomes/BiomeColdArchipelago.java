@@ -29,6 +29,7 @@ import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
+import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -61,9 +62,9 @@ public class BiomeColdArchipelago extends Biome
     
 	public BiomeColdArchipelago() 
 	{
-		super(new BiomeProperties("Cold Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.70F).setTemperature(-0.6F));
+		super(new BiomeProperties("Cold Archipelago").setBaseHeight(-1.8F).setHeightVariation(0.85F).setTemperature(Biomes.COLD_TAIGA.getDefaultTemperature()).setRainfall(Biomes.COLD_TAIGA.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.AEGEAN_ARCHIPELAGO , true);
+		BiomeManager.addVillageBiome(BiomeInit.COLD_ARCHIPELAGO , false);
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		

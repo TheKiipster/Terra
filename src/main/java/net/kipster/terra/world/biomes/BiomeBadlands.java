@@ -57,7 +57,7 @@ public class BiomeBadlands extends Biome
 	
 	protected static final WorldGenBlockBlob COBBLESTONE_BOULDER_FEATURE = new WorldGenBlockBlob(Blocks.COBBLESTONE, 1);
 	protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
-	protected static final WorldGenAbstractTree TREE = new WorldGenTerraShrub(BlockInit.EBONYLEAVES, BlockInit.EBONYLOG, 0, 0, false);
+	protected static final WorldGenAbstractTree SHRUB_EBONY = new WorldGenTreeEbony();
 	
 	public BiomeBadlands() 
 	{
@@ -69,8 +69,8 @@ public class BiomeBadlands extends Biome
 	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.decorator.extraTreeChance = 2F;
-		//this.decorator.treesPerChunk = 1;
+		//this.decorator.extraTreeChance = 2F;
+		this.decorator.treesPerChunk = 1;
 		this.decorator.grassPerChunk = 10;
 		this.decorator.deadBushPerChunk = 4;
 		this.decorator.flowersPerChunk = 2;
@@ -110,11 +110,11 @@ public class BiomeBadlands extends Biome
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 }
-		@Override
-		public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
-		{
-			return TREE;
-	}
+	@Override
+	public WorldGenAbstractTree getRandomTreeFeature(Random rand) 
+	{
+		return (WorldGenAbstractTree)(rand.nextInt(2) == 0 ? SHRUB_EBONY : SHRUB_EBONY);
+		}
 		@Override
 		public void decorate(World worldIn, Random rand, BlockPos pos)
 		{

@@ -83,8 +83,6 @@ public class BiomeCliffs extends Biome
 	public int getModdedBiomeGrassColor(int original) {
 	    return 0x8cb06b;
 	}
-	
-	    
 	@Override
 	public int getModdedBiomeFoliageColor(int original) {
 	    return 0x8cb06b;

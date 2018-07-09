@@ -45,7 +45,7 @@ public class BiomePinkMushroomPlains extends Biome
 	{
 		super(new BiomeProperties("Pink Mushroom Plains").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(0.95F).setRainfall(0.9F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.PINK_MUSHROOM_PLAINS , true);
+		BiomeManager.addVillageBiome(BiomeInit.PINK_MUSHROOM_PLAINS , false);
 		
 		topBlock = BlockInit.BELLIUM.getDefaultState();
 		

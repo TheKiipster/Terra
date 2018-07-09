@@ -28,7 +28,7 @@ public class BiomeMangrove extends Biome
 	{
 		super(new BiomeProperties("Mangrove").setBaseHeight(-.23F).setHeightVariation(0.01F).setTemperature(0.8F).setRainfall(0.9F).setWaterColor(0x4e653c));
 		
-		BiomeManager.addVillageBiome(BiomeInit.FENS , true);
+		BiomeManager.addVillageBiome(BiomeInit.MANGROVE , false);
 		
 		this.decorator.generateFalls = true;
 		this.decorator.bigMushroomsPerChunk = 2;

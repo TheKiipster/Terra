@@ -9,7 +9,9 @@ import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.init.ItemInit;
 import net.kipster.terra.objects.blocks.item.ItemBlockVariants;
 import net.kipster.terra.util.interfaces.IHasModel;
+import net.kipster.terra.world.gen.trees.WorldGenTallPineTest;
 import net.kipster.terra.world.gen.trees.WorldGenTreeBlueSpruce;
+import net.kipster.terra.world.gen.trees.WorldGenTreePine2;
 import net.kipster.terra.world.gen.trees.WorldGenTreeCherryWhite;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
@@ -70,7 +72,7 @@ public class BlockSaplingBlueSpruce extends BlockBush implements IHasModel, IGro
     public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) return;
-        WorldGenerator worldgenerator = new WorldGenTreeBlueSpruce(false);
+        WorldGenerator worldgenerator = new WorldGenTallPineTest(false, true);
 
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
 

@@ -46,7 +46,7 @@ public class BiomeFungalJungle extends Biome
 	{
 		super(new BiomeProperties("Fungal Jungle").setBaseHeight(Biomes.JUNGLE.getBaseHeight()).setHeightVariation(Biomes.JUNGLE.getHeightVariation()).setTemperature(Biomes.JUNGLE.getDefaultTemperature()).setRainfall(Biomes.JUNGLE.getRainfall()));
 		
-		BiomeManager.addVillageBiome(BiomeInit.FUNGAL_JUNGLE , true);
+		BiomeManager.addVillageBiome(BiomeInit.FUNGAL_JUNGLE , false);
 		
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

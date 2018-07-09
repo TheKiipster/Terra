@@ -78,7 +78,7 @@ public class BiomeTropicalForest extends Biome
 		
 		super(new BiomeProperties("Tropical Forest").setBaseHeight(Biomes.JUNGLE.getBaseHeight()).setHeightVariation(Biomes.JUNGLE.getHeightVariation()).setTemperature(Biomes.JUNGLE.getDefaultTemperature()).setRainfall(Biomes.JUNGLE.getRainfall()).setWaterColor(0x63d4ff));
 		
-		BiomeManager.addVillageBiome(BiomeInit.RAINFOREST , true);
+		BiomeManager.addVillageBiome(BiomeInit.TROPICAL_FOREST , false);
 		
 	    topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = BlockInit.WHITE_SAND.getDefaultState();

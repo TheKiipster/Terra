@@ -43,7 +43,7 @@ public class BiomeBlueMushroomPlains extends Biome
 	{
 		super(new BiomeProperties("Blue Mushroom Plains").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(0.95F).setRainfall(0.9F));
 		
-		BiomeManager.addVillageBiome(BiomeInit.BLACKDESERT , true);
+		BiomeManager.addVillageBiome(BiomeInit.BLUE_MUSHROOM_PLAINS , false);
 		
 		topBlock = BlockInit.ANTHROSIUM.getDefaultState();
 		

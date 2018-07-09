@@ -28,15 +28,18 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenShrub;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 
 public class BiomeGoldenForest extends Biome
 {	
 	protected static final WorldGenGoldenBirch TREE = new WorldGenGoldenBirch(false, false);
 	protected static final WorldGenAbstractTree TREE2 = new WorldGenAspen(false, false);
+	 protected static final WorldGenLakes LAKE = new WorldGenLakes(Blocks.WATER);
 	public BiomeGoldenForest() 
 	{
 		
@@ -120,6 +123,15 @@ public void addDoublePlants(World p_185378_1_, Random p_185378_2_, BlockPos p_18
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {
+
+	 if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_WATER)) {
+       int boulderChance = rand.nextInt(12);
+       if (boulderChance == 0) {
+        int k6 = rand.nextInt(16) + 8;
+        int l = rand.nextInt(16) + 8;
+         BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+         LAKE.generate(worldIn, rand, blockpos);
+       }
 DOUBLE_PLANT_GENERATOR.setPlantType(BlockDoublePlant.EnumPlantType.GRASS);
 
 if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
@@ -141,6 +153,7 @@ this.addDoublePlants(worldIn, rand, pos, i);
 }
 super.decorate(worldIn, rand, pos);
     }
+}
 @Override
 public int getModdedBiomeFoliageColor(int original) {
     return 0xfff857;

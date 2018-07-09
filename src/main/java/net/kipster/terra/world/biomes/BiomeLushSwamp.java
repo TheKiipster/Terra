@@ -59,7 +59,7 @@ public class BiomeLushSwamp extends Biome
 		
 		super(new BiomeProperties("Lush Swamp").setBaseHeight(-0.2F).setHeightVariation(0.1F).setTemperature(0.8F).setRainfall(0.9F).setWaterColor(14745518));
 		
-		BiomeManager.addVillageBiome(BiomeInit.LUSH_SWAMP , true);
+		BiomeManager.addVillageBiome(BiomeInit.LUSH_SWAMP , false);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

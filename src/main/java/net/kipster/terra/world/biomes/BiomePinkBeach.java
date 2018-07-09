@@ -42,6 +42,8 @@ public class BiomePinkBeach extends BiomeBeach{
 	topBlock = BlockInit.PINK_SAND.getDefaultState();
 		fillerBlock = BlockInit.PINK_SAND.getDefaultState();
 		
+		BiomeManager.addVillageBiome(BiomeInit.PINKBEACH , false);
+		
 		 this.decorator.treesPerChunk = -999;
 	        this.decorator.deadBushPerChunk = 0;
 	        this.decorator.reedsPerChunk = 0;

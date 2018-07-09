@@ -71,7 +71,7 @@ public class BiomeMysticWoods extends Biome
 		
 		super(new BiomeProperties("Mystic Woods").setBaseHeight(Biomes.FOREST.getBaseHeight()).setHeightVariation(Biomes.FOREST.getHeightVariation()).setTemperature(Biomes.FOREST.getDefaultTemperature()).setRainfall(Biomes.FOREST.getRainfall()).setWaterColor(0x7300c9));
 		
-		BiomeManager.addVillageBiome(BiomeInit.MYSTIC_WOODS , true);
+		BiomeManager.addVillageBiome(BiomeInit.MYSTIC_WOODS , false);
 		
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();

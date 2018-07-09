@@ -18,6 +18,8 @@ import com.google.gson.GsonBuilder;
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
 import net.kipster.terra.world.biomes.BiomeAlps.EmeraldGenerator;
+import net.kipster.terra.world.gen.WorldGenSandPatches;
+import net.kipster.terra.world.gen.trees.WorldGenTallerSpruce;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockSilverfish;
 import net.minecraft.block.BlockTallGrass;
@@ -49,13 +51,14 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeAlps extends Biome 
 {	
 	
+	protected static final WorldGenSandPatches GRASS = new WorldGenSandPatches(Blocks.GRASS.getDefaultState(), 8);
 	private final WorldGenerator silverfishSpawner = new WorldGenMinable(Blocks.MONSTER_EGG.getDefaultState().withProperty(BlockSilverfish.VARIANT, BlockSilverfish.EnumType.STONE), 9);
-    private final WorldGenTaiga2 spruceGenerator = new WorldGenTaiga2(false);
+    private final WorldGenTallerSpruce spruceGenerator = new WorldGenTallerSpruce(true);
 	
 	public BiomeAlps() 
 	{
 		
-		super(new BiomeProperties("Alps").setBaseHeight(5F).setHeightVariation(0.8F).setTemperature(-3F).setRainfall(1F).setSnowEnabled());
+		super(new BiomeProperties("Alps").setBaseHeight(5F).setHeightVariation(0.8F).setTemperature(Biomes.EXTREME_HILLS.getDefaultTemperature()).setRainfall(Biomes.EXTREME_HILLS.getRainfall()));
 		
 		BiomeManager.addVillageBiome(BiomeInit.ALPS , false);
 		topBlock = Blocks.SNOW.getDefaultState();
@@ -63,7 +66,7 @@ public class BiomeAlps extends Biome
 		
 		
 		this.decorator.generateFalls = true;
-		this.decorator.treesPerChunk = 4;
+		this.decorator.treesPerChunk = 5;
 		this.decorator.flowersPerChunk = 1;
 	    this.decorator.grassPerChunk = 2;
 	    this.spawnableCreatureList.clear();
@@ -100,7 +103,7 @@ public class BiomeAlps extends Biome
 
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
 	{
-	    return (WorldGenAbstractTree)(rand.nextInt(3) > 0 ? this.spruceGenerator : super.getRandomTreeFeature(rand));
+	    return (WorldGenAbstractTree)(rand.nextInt(3) > 0 ? this.spruceGenerator : this.spruceGenerator);
 	}
 	public WorldGenerator getRandomWorldGenForGrass(Random rand)
 	{
@@ -111,6 +114,13 @@ public class BiomeAlps extends Biome
 	{
 	    super.decorate(worldIn, rand, pos);
 
+	    int grassChance = rand.nextInt(4);
+		if (grassChance == 0) {
+			int k6 = rand.nextInt(16) + 8;
+			int l = rand.nextInt(16) + 8;
+			BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+			GRASS.generate(worldIn, rand, blockpos);
+		}
 	    DOUBLE_PLANT_GENERATOR.setPlantType(BlockDoublePlant.EnumPlantType.GRASS);
 
 	    if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))

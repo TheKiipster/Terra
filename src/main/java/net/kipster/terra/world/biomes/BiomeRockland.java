@@ -35,7 +35,7 @@ public BiomeRockland()
 {
 	super(new BiomeProperties("Rockland").setBaseHeight(3.7F).setHeightVariation(0.6F).setTemperature(0.2F).setRainfall(0.3F));
 	
-	BiomeManager.addVillageBiome(BiomeInit.ROCKLAND , true);
+	BiomeManager.addVillageBiome(BiomeInit.ROCKLAND , false);
 	
 	topBlock = Blocks.STONE.getDefaultState();
 	fillerBlock = Blocks.STONE.getDefaultState();
