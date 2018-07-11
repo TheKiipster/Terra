@@ -66,6 +66,7 @@ public class BiomeSilkglades extends Biome
 		 this.decorator.flowersPerChunk = 1;
 	        this.decorator.grassPerChunk = 4;
 	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 6, 6, 6));

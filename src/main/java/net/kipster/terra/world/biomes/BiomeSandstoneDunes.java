@@ -45,14 +45,14 @@ import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class BiomeSandstoneDunes extends BiomeBeach 
+public class BiomeSandstoneDunes extends Biome 
 {	
 	protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
 	
 	public BiomeSandstoneDunes() 
 	{
 		
-		super(new BiomeProperties("Sandstone Dunes").setBaseHeight(0.9F).setHeightVariation(0.4F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Sandstone Dunes").setBaseHeight(0F).setHeightVariation(0.5F).setTemperature(Biomes.DESERT.getDefaultTemperature()).setRainfall(Biomes.DESERT.getRainfall()).setRainDisabled());
 		
 		BiomeManager.addVillageBiome(BiomeInit.SANDSTONEDUNES , true);
 		
@@ -61,6 +61,7 @@ public class BiomeSandstoneDunes extends BiomeBeach
         this.decorator.reedsPerChunk = 3;
         this.decorator.cactiPerChunk = 10;
 		
+        this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 1, 2, 6));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 1, 1, 1));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
@@ -115,22 +116,4 @@ public class BiomeSandstoneDunes extends BiomeBeach
 	public int getModdedBiomeFoliageColor(int original) {
 	    return 10387789;
 	}
-
-    class Decorator extends BiomeDecorator
-    {
-        private Decorator()
-        {
-        }
-
-        /**
-         * Generates ores in the current chunk
-         */
-        protected void generateOres(World worldIn, Random random)
-        {
-            super.generateOres(worldIn, random);
-            if (net.minecraftforge.event.terraingen.TerrainGen.generateOre(worldIn, random, goldGen, chunkPos, net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType.GOLD))
-            this.genStandardOre1(worldIn, random, 20, this.goldGen, 32, 80);
-        }
-}
-
 }

@@ -76,6 +76,7 @@ public class BiomeMysticWoods extends Biome
 	topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
+		  this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 8, 4, 4));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
         this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityWitch.class, 2, 2, 3));

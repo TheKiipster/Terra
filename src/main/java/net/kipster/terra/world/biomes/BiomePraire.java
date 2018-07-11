@@ -57,6 +57,7 @@ public class BiomePraire extends Biome
 		 this.decorator.flowersPerChunk = 2;
 	        this.decorator.grassPerChunk = 25;
 	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityOcelot.class, 2, 1, 1));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 5, 2, 6));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 1, 1, 3));

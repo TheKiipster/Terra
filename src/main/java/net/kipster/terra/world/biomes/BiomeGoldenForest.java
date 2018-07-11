@@ -53,6 +53,8 @@ public class BiomeGoldenForest extends Biome
 		 this.decorator.treesPerChunk = 11;
 	        this.decorator.grassPerChunk = 6;
 	        this.decorator.flowersPerChunk = 10;
+	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
         this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));

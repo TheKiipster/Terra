@@ -38,10 +38,12 @@ import net.minecraft.world.biome.BiomeBeach;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -49,6 +51,8 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeCrimsonWoods extends Biome
 {	
 	protected static final WorldGenAbstractTree TREE = new WorldGenCrimson(false, false);
+	 protected static final WorldGenLakes LAKE = new WorldGenLakes(Blocks.WATER);
+	
 	public BiomeCrimsonWoods() 
 	{
 		
@@ -64,6 +68,7 @@ public class BiomeCrimsonWoods extends Biome
 		 this.decorator.flowersPerChunk = 4;
 	        this.decorator.grassPerChunk = 6;
 	        
+	        this.spawnableCreatureList.clear();
 			this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 8, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityWitch.class, 2, 2, 3));
@@ -81,6 +86,24 @@ public class BiomeCrimsonWoods extends Biome
     {
         return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
     }
+
+	public void decorate(World worldIn, Random rand, BlockPos pos)
+	{
+		
+		 if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_WATER)) {
+	         int boulderChance = rand.nextInt(12);
+	         if (boulderChance == 0) {
+	          int k6 = rand.nextInt(16) + 8;
+	          int l = rand.nextInt(16) + 8;
+	           BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+	           LAKE.generate(worldIn, rand, blockpos);
+	         }
+	   
+	        }
+
+	    super.decorate(worldIn, rand, pos);
+	        }
+	
 	@Override
 	public int getModdedBiomeGrassColor(int original) {
 	    return 0x8d0000;

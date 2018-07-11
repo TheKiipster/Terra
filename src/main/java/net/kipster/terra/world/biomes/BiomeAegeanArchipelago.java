@@ -5,18 +5,8 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import org.apache.commons.lang3.tuple.Pair;
-
-import com.google.common.base.Function;
-import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
-import net.kipster.terra.world.biomes.BiomeLushForest.EmeraldGenerator;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.init.Biomes;

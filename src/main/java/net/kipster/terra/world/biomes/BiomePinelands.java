@@ -58,6 +58,7 @@ public class BiomePinelands extends Biome
 		this.decorator.grassPerChunk = 12;
 		this.decorator.flowersPerChunk = 6;
 		
+		  this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 4, 2, 3));
 	}
 

@@ -17,6 +17,7 @@ import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntityRabbit;
+import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -25,28 +26,30 @@ import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenDesertWells;
 import net.minecraft.world.gen.feature.WorldGenFossils;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMelon;
 import net.minecraft.world.gen.feature.WorldGenSavannaTree;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenVines;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 
 public class BiomeBlackDesert extends Biome
 {
 	 public static final WorldGenerator GREY_DEADBUSH_FEATURE = new WorldGenGreyDeadBush();
-	 private static final WorldGenSavannaTree SAVANNA_TREE = new WorldGenSavannaTree(false);
+	 protected static final WorldGenLakes LAVA_LAKE_FEATURE = new WorldGenLakes(Blocks.LAVA);
 	 
 	public BiomeBlackDesert() 
 	{
-		super(new BiomeProperties("Black Desert").setBaseHeight(0.125F).setHeightVariation(0.05F).setTemperature(0.95F).setRainfall(0.9F));
+		super(new BiomeProperties("Black Desert").setBaseHeight(Biomes.DESERT.getBaseHeight()).setHeightVariation(Biomes.DESERT.getHeightVariation()).setTemperature(Biomes.DESERT.getDefaultTemperature()).setRainfall(Biomes.DESERT.getRainfall()).setRainDisabled());
 		
 		BiomeManager.addVillageBiome(BiomeInit.BLACKDESERT , true);
 		
 		this.decorator.generateFalls = false;
 		this.decorator.treesPerChunk = -999;
 		this.decorator.flowersPerChunk = -999;
-        this.decorator.grassPerChunk = 4;
+        this.decorator.grassPerChunk = 7;
         this.decorator.reedsPerChunk = 2;
         this.decorator.cactiPerChunk = 1;
         
@@ -80,10 +83,7 @@ public class BiomeBlackDesert extends Biome
 
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 }
-	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
-    {
-        return (WorldGenAbstractTree)(rand.nextInt(5) > 0 ? SAVANNA_TREE : TREE_FEATURE);
-    }
+	
 	 @Override
 	    public WorldGenerator getRandomWorldGenForGrass(Random rand) {
 	        return GREY_DEADBUSH_FEATURE;
@@ -91,50 +91,21 @@ public class BiomeBlackDesert extends Biome
 
 public void decorate(World worldIn, Random rand, BlockPos pos)
 {
-    DOUBLE_PLANT_GENERATOR.setPlantType(BlockDoublePlant.EnumPlantType.GRASS);
 
-    if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
-    for (int i = 0; i < 7; ++i)
-    {
-        int j = rand.nextInt(16) + 8;
-        int k = rand.nextInt(16) + 8;
-        int l = rand.nextInt(worldIn.getHeight(pos.add(j, 0, k)).getY() + 32);
-        DOUBLE_PLANT_GENERATOR.generate(worldIn, rand, pos.add(j, l, k));
-    }
-    if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.DESERT_WELL))
-        if (rand.nextInt(1000) == 0)
-        {
-            int i = rand.nextInt(16) + 8;
-            int j = rand.nextInt(16) + 8;
-            BlockPos blockpos = worldIn.getHeight(pos.add(i, 0, j)).up();
-            (new WorldGenDesertWells()).generate(worldIn, rand, blockpos);
-        }
-
-        if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.FOSSIL))
-        if (rand.nextInt(64) == 0)
-        {
-            (new WorldGenFossils()).generate(worldIn, rand, pos);
-        }
-        int i = rand.nextInt(16) + 8;
-        int j = rand.nextInt(16) + 8;
-        int height = worldIn.getHeight(pos.add(i, 0, j)).getY() * 2; // could == 0, which crashes nextInt
-        if (height < 1) height = 1;
-        int k = rand.nextInt(height);
-        if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.PUMPKIN))
-        (new WorldGenMelon()).generate(worldIn, rand, pos.add(i, k, j));
-        WorldGenVines worldgenvines = new WorldGenVines();
-
-        if(net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.GRASS))
-        for (int j1 = 0; j1 < 50; ++j1)
-        {
-            k = rand.nextInt(16) + 8;
-            int l = 128;
-            int i1 = rand.nextInt(16) + 8;
-            worldgenvines.generate(worldIn, rand, pos.add(k, 128, i1));
+    if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_LAVA)) {
+    	           int boulderChance = rand.nextInt(15);
+    	           if (boulderChance == 0) {
+    	            int k6 = rand.nextInt(18) + 8;
+    	            int l = rand.nextInt(18) + 8;
+    	             BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+    	             LAVA_LAKE_FEATURE.generate(worldIn, rand, blockpos);
+    	           }
+ 
         }
 
     super.decorate(worldIn, rand, pos);
         }
+
 @Override
 public int getModdedBiomeGrassColor(int original) {
     return 0x52503F;
@@ -144,6 +115,5 @@ public int getModdedBiomeGrassColor(int original) {
 public int getModdedBiomeFoliageColor(int original) {
     return 0x52503F;
 }
-
 
 	}

@@ -59,6 +59,7 @@ public class BiomeLushForest extends Biome
 		 this.decorator.flowersPerChunk = 25;
 	        this.decorator.grassPerChunk = 29;
 	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityParrot.class, 40, 1, 2));
 	        this.flowers.clear();

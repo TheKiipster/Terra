@@ -8,7 +8,7 @@ import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.entity.passive.EntityDonkey;
 import net.minecraft.entity.passive.EntityHorse;
-import net.minecraft.entity.passive.EntityOcelot;
+import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -30,7 +30,8 @@ public class BiomeGrassland extends Biome
 		topBlock = Blocks.GRASS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
-		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityOcelot.class, 5, 2, 6));
+		  this.spawnableCreatureList.clear();
+		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class, 5, 2, 6));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 5, 2, 6));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 1, 1, 3));
         this.decorator.treesPerChunk = 0;

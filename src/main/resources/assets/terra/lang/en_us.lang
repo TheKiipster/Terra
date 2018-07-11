@@ -221,6 +221,8 @@ tile.birch_leaves_yellow.name=Yellow Birch Leaves
 tile.aspen_leaves.name=Aspen Leaves
 tile.mangrove_leaves.name=Mangrove Leaves
 tile.poplar_leaves.name=Poplar Leaves
+tile.conifer_leaves_yellow.name=Yellow Conifer Leaves
+tile.conifer_leaves_orange.name=Orange Conifer Leaves
 
 tile.jacaranda_sapling_magenta.name=Jacaranda Sapling
 tile.jacaranda_sapling_purple.name=Jacaranda Sapling
@@ -243,6 +245,8 @@ tile.birch_sapling_yellow.name=Yellow Birch Sapling
 tile.aspen_sapling.name=Aspen Sapling
 tile.poplar_sapling.name=Poplar Sapling
 tile.mangrove_sapling.name=Mangrove Sapling
+tile.conifer_sapling_yellow.name=Yellow Conifer Sapling
+tile.conifer_sapling_orange.name=Orange Conifer Sapling
 
 tile.cherry_planks.name=Cherry Wood Planks 
 tile.bluespruce_planks.name=Blue Spruce Wood Planks 

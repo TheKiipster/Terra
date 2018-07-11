@@ -143,6 +143,8 @@ public class BlockInit	{
 	public static final Block POPLARLEAVES = new BlockLeavesPoplar("poplar_leaves", Material.LEAVES);
 	public static final Block YELLOWBIRCHLEAVES = new BlockLeavesYellowBirch("birch_leaves_yellow", Material.LEAVES);
 	public static final Block MANGROVELEAVES = new BlockLeavesMangrove("mangrove_leaves", Material.LEAVES);
+	public static final Block CONIFERLEAVESYELLOW = new BlockLeavesConiferYellow("conifer_leaves_yellow", Material.LEAVES);
+	public static final Block CONIFERLEAVESORANGE = new BlockLeavesConiferOrange("conifer_leaves_orange", Material.LEAVES);
 	
 	//SAPLINGS
 	public static final Block CHERRYSAPLINGWHITE = new BlockSaplingCherryWhite("cherry_sapling_white", Material.LEAVES);
@@ -164,6 +166,8 @@ public class BlockInit	{
 	public static final Block POPLARSAPLING = new BlockSaplingPoplar("poplar_sapling", Material.LEAVES);
 	public static final Block YELLOWBIRCHSAPLING = new BlockSaplingYellowBirch("birch_sapling_yellow", Material.LEAVES);
 	public static final Block MANGROVESAPLING = new BlockSaplingMangrove("mangrove_sapling", Material.LEAVES);
+	public static final Block CONIFERSAPLINGYELLOW = new BlockSaplingConiferYellow("conifer_sapling_yellow", Material.LEAVES);
+	public static final Block CONIFERSAPLINGORANGE = new BlockSaplingConiferOrange("conifer_sapling_orange", Material.LEAVES);
 	
 	//FENCES
 	public static final Block CHERRYFENCE = new BlockTerraFence("cherry_fence", Material.WOOD);

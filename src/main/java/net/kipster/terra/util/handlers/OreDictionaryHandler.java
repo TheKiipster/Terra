@@ -153,6 +153,11 @@ public class OreDictionaryHandler {
 		OreDictionary.registerOre("treeSapling", BlockInit.POPLARSAPLING);
 		OreDictionary.registerOre("treeSapling", BlockInit.YELLOWBIRCHSAPLING);
 		OreDictionary.registerOre("treeSapling", BlockInit.MANGROVESAPLING);
+		OreDictionary.registerOre("treeSapling", BlockInit.CONIFERSAPLINGORANGE);
+		OreDictionary.registerOre("treeSapling", BlockInit.CONIFERSAPLINGYELLOW);
+		OreDictionary.registerOre("treeLeaves", BlockInit.CONIFERLEAVESORANGE);
+		OreDictionary.registerOre("treeLeaves", BlockInit.CONIFERLEAVESYELLOW);
+		
 		
 		OreDictionary.registerOre("stairWood", BlockInit.ASPENSTAIRS);
 		OreDictionary.registerOre("stairWood", BlockInit.BLUESPRUCESTAIRS);

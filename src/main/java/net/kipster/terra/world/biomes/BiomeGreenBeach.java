@@ -26,18 +26,21 @@ import net.minecraft.world.biome.BiomeBeach;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class BiomeGreenBeach extends BiomeBeach{	
+public class BiomeGreenBeach extends BiomeBeach {	
 	
+	protected static final WorldGenLakes LAKE = new WorldGenLakes(Blocks.WATER);
 	public BiomeGreenBeach() 
 	{
 		
-		super(new BiomeProperties("Green Beach").setBaseHeight(-.79F).setHeightVariation(0.23F).setTemperature(0.8F).setTemperature(0.8F).setRainfall(0.4F));
+		super(new BiomeProperties("Green Beach").setBaseHeight(-0.45F).setHeightVariation(0.017F).setTemperature(0.8F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.GREENBEACH , false);
 		
@@ -51,5 +54,19 @@ public class BiomeGreenBeach extends BiomeBeach{
 		this.spawnableCreatureList.clear();
 		
 	}
+	  public void decorate(World worldIn, Random rand, BlockPos pos)
+	    {
+	       
+	        if (net.minecraftforge.event.terraingen.TerrainGen.decorate(worldIn, rand, pos, DecorateBiomeEvent.Decorate.EventType.LAKE_WATER)) {
+	            int boulderChance = rand.nextInt(12);
+	            if (boulderChance == 0) {
+	             int k6 = rand.nextInt(16) + 8;
+	             int l = rand.nextInt(16) + 8;
+	              BlockPos blockpos = worldIn.getHeight(pos.add(k6, 0, l));
+	              LAKE.generate(worldIn, rand, blockpos);
+	            }
 
+	        super.decorate(worldIn, rand, pos);
+	    }
+	    }
 }

@@ -41,6 +41,8 @@ public class BiomeMangrove extends Biome
 	        this.decorator.clayPerChunk = 7;
 	        this.decorator.waterlilyPerChunk = 6;
 	        this.decorator.grassPerChunk = 5;
+	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));
 		
 		topBlock = Blocks.GRASS.getDefaultState();

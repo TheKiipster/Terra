@@ -72,6 +72,7 @@ public class BiomeRainforest extends Biome
 	        this.decorator.grassPerChunk = 15;
 	        this.decorator.extraTreeChance = 5;
 	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class, 4, 4, 4));
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityOcelot.class, 2, 1, 1));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityParrot.class, 40, 1, 2));

@@ -72,7 +72,7 @@ public class BlockSaplingBlueSpruce extends BlockBush implements IHasModel, IGro
     public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) return;
-        WorldGenerator worldgenerator = new WorldGenTallPineTest(false, true);
+        WorldGenerator worldgenerator = new WorldGenTreeBlueSpruce(false);
 
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
 

@@ -6,14 +6,6 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import org.apache.commons.lang3.tuple.Pair;
-
-import com.google.common.base.Function;
-import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import net.kipster.terra.init.BiomeInit;
 import net.kipster.terra.init.BlockInit;
@@ -66,10 +58,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class BiomeAncientForest extends Biome
 {	
 	  private static final WorldGenBlockBlob FOREST_ROCK_GENERATOR = new WorldGenBlockBlob(Blocks.MOSSY_COBBLESTONE, 0);
-	//protected static final IBlockState WATER_LILY = Blocks.WATERLILY.getDefaultState();
-	 //protected static final WorldGenAbstractTree TREE_DARK = new WorldGenTreeSwampDark();
 	 protected static final WorldGenAbstractTree TREE = new WorldGenBigTree(false);
-	// protected static final WorldGenAbstractTree TREE = new WorldGenBiggerOak(false);
 	 protected static final WorldGenLakes LAKE = new WorldGenLakes(Blocks.WATER);
 	
 	public BiomeAncientForest() 
@@ -82,6 +71,7 @@ public class BiomeAncientForest extends Biome
 	topBlock = BlockInit.MOSS.getDefaultState();
 		fillerBlock = Blocks.DIRT.getDefaultState();
 		
+		  this.spawnableCreatureList.clear();		
 		this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 8, 4, 4));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
         this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityWitch.class, 2, 2, 3));
@@ -94,7 +84,6 @@ public class BiomeAncientForest extends Biome
         this.decorator.flowersPerChunk = 9;
         this.decorator.generateFalls = true;
         this.decorator.bigMushroomsPerChunk= 17;
-       // this.decorator.waterlilyPerChunk = 4;
     }
 
 	 
@@ -111,27 +100,7 @@ public class BiomeAncientForest extends Biome
 
 	        this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
 	    }
-		class EmeraldGenerator extends WorldGenerator
-		{
-		    @Override
-		    public boolean generate(World worldIn, Random rand, BlockPos pos)
-		    {
-		        int count = 3 + rand.nextInt(6);
-		        for (int i = 0; i < count; i++)
-		        {
-		            int offset = net.minecraftforge.common.ForgeModContainer.fixVanillaCascading ? 8 : 0; // MC-114332
-		            BlockPos blockpos = pos.add(rand.nextInt(16) + offset, rand.nextInt(28) + 4, rand.nextInt(16) + offset);
-
-		            net.minecraft.block.state.IBlockState state = worldIn.getBlockState(blockpos);
-		            if (state.getBlock().isReplaceableOreGen(state, worldIn, blockpos, net.minecraft.block.state.pattern.BlockMatcher.forBlock(Blocks.STONE)))
-		            {
-		                worldIn.setBlockState(blockpos, Blocks.EMERALD_ORE.getDefaultState(), 16 | 3);
-		            }
-		            
-		        }
-		        return true;
-		    }
-		}
+	
 		    
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
     {
@@ -207,17 +176,5 @@ public class BiomeAncientForest extends Biome
 	public int getModdedBiomeFoliageColor(int original) {
 	    return 0x09ab56;
 	}
-    class Decorator extends BiomeDecorator
-    {
-        private Decorator()
-        {
-        }
-
-        protected void generateOres(World worldIn, Random random)
-        {
-            super.generateOres(worldIn, random);
-            if (net.minecraftforge.event.terraingen.TerrainGen.generateOre(worldIn, random, goldGen, chunkPos, net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType.EMERALD))
-            this.genStandardOre1(worldIn, random, 20, this.goldGen, 32, 80);
-        }
-    }
+  
 }

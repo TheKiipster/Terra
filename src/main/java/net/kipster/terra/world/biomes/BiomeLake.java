@@ -37,7 +37,7 @@ public class BiomeLake extends Biome
 	public BiomeLake() 
 	{
 		
-		super(new BiomeProperties("Lake").setBaseHeight(-0.7F).setHeightVariation(0.16F).setTemperature(0.8F).setRainfall(0.4F).setWaterColor(2320566));
+		super(new BiomeProperties("Lake").setBaseHeight(-0.7F).setHeightVariation(0.1F).setTemperature(0.8F).setRainfall(0.4F));
 		
 		BiomeManager.addVillageBiome(BiomeInit.LAKE , false);
 		

@@ -3,7 +3,6 @@ package net.kipster.terra.world.biomes;
 import java.util.Random;
 
 import net.kipster.terra.init.BiomeInit;
-import net.kipster.terra.world.biomes.BiomeGrassland.EmeraldGenerator;
 import net.kipster.terra.world.gen.trees.WorldGenTreeCherryPurple;
 import net.kipster.terra.world.gen.trees.WorldGenTreeCherryWhite;
 import net.minecraft.block.BlockDoublePlant;
@@ -16,10 +15,6 @@ import net.minecraft.block.BlockTallGrass;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.entity.passive.EntityChicken;
-import net.minecraft.entity.passive.EntityLlama;
-import net.minecraft.entity.passive.EntityMooshroom;
-import net.minecraft.entity.passive.EntityOcelot;
-import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Biomes;
@@ -30,13 +25,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
-import net.minecraft.world.gen.feature.WorldGenMegaJungle;
-import net.minecraft.world.gen.feature.WorldGenMelon;
-import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenShrub;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
-import net.minecraft.world.gen.feature.WorldGenTrees;
-import net.minecraft.world.gen.feature.WorldGenVines;
+
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
@@ -59,6 +49,8 @@ public class BiomeBlossomArchipelago extends Biome
 		 this.decorator.treesPerChunk = 7;
 	        this.decorator.grassPerChunk = 6;
 	        this.decorator.flowersPerChunk = 10;
+	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 4, 2, 3));
 	        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
         this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));

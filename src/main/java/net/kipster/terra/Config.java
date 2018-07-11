@@ -11,10 +11,10 @@ public class Config {
     private static final String CATEGORY_ORES = "Ores";
     private static final String CATEGORY_ROCKS = "Rocks";
 
- // Biomes
+    //Biomes
 	
  	 public static boolean disableGrassland = false;
- 	 public static boolean disableWhiteDesert = false;
+ 	 public static boolean disableTropicalDesert = false;
  	 public static boolean disableBlackDesert = false;
  	 public static boolean disableGreenExtremeHills = false;
  	 public static boolean disableGreenHills = false;
@@ -33,7 +33,10 @@ public class Config {
  	 public static boolean disableLake = false;
  	 public static boolean disableFrozenLake = false;
  	 public static boolean disableSahel = false;
- 	 public static boolean disableDunes = false;
+ 	 public static boolean disableSandstoneDunes = false;
+ 	 public static boolean disableSandDunes = false;
+ 	 public static boolean disableRedSandDunes = false;
+ 	 public static boolean disableOrangeSandDunes = false;
  	 public static boolean disableAlps = false;
  	 public static boolean disableHighlands = false;
  	 public static boolean disableGlacier = false;
@@ -45,6 +48,7 @@ public class Config {
  	 public static boolean disableWoodlands = false;
  	 public static boolean disablePinkBeach = false;
  	 public static boolean disableBlackBeach = false;
+ 	 public static boolean disableBrownBeach = false;
  	 public static boolean disablePurpleBeach = false;
  	 public static boolean disableRedBeach = false;
  	 public static boolean disableWhiteBeach = false;
@@ -53,12 +57,13 @@ public class Config {
  	public static boolean disableRedMountains = false;
  	public static boolean disableBlueMountains = false;
  	public static boolean disableGreyMountains = false;
- 	public static boolean disableBadlands = false;
+ 	public static boolean disableClaylands = false;
  	public static boolean disableOvergrownPlains = false;
  	public static boolean disableLushSwamp = false;
  	public static boolean disableThicket = false;
  	public static boolean disableBlossomWoods = false;
  	public static boolean disableBlueTaiga = false;
+ 	public static boolean disableColdBlueTaiga = false;
 	public static boolean disableCrimsonWoods = false;
 	public static boolean disableSilkglades = false;
 	public static boolean disableColdDesert = false;
@@ -90,6 +95,12 @@ public class Config {
 	public static boolean disableColdArchipelago = true;
 	public static boolean disableRainforestArchipelago = true;
 	public static boolean disableDenseShrubland = false;
+	public static boolean disableOakForest = false;
+	public static boolean disableStonelands = false;
+	public static boolean disableAutumnTaiga = false;
+	public static boolean disableBlackSandDunes = false;
+	public static boolean disableDryShrubland = false;
+	public static boolean disableTallOakForest = false;
 	
  	 //Ores
  	public static int anthracitePerChunk = 8;
@@ -175,10 +186,11 @@ public class Config {
 		disablePinkBeach = cfg.get(CATEGORY_BIOMES, "disablePinkBeach", disablePinkBeach).getBoolean();
 		disablePurpleBeach = cfg.get(CATEGORY_BIOMES, "disablePurpleBeach", disablePurpleBeach).getBoolean();
 		disableRedBeach = cfg.get(CATEGORY_BIOMES, "disableRedBeach", disableRedBeach).getBoolean();
+		disableBrownBeach = cfg.get(CATEGORY_BIOMES, "disableBrownBeach", disableBrownBeach).getBoolean();
 		disableGreenBeach = cfg.get(CATEGORY_BIOMES, "disableGreenBeach", disableGreenBeach).getBoolean();
 		disableOrangeBeach = cfg.get(CATEGORY_BIOMES, "disableOrangeBeach", disableOrangeBeach).getBoolean();
 		disableBlackDesert = cfg.get(CATEGORY_BIOMES, "disableBlackDesert", disableBlackDesert).getBoolean();
-		disableWhiteDesert = cfg.get(CATEGORY_BIOMES, "disableWhiteDesert", disableWhiteDesert).getBoolean();
+		disableTropicalDesert = cfg.get(CATEGORY_BIOMES, "disableTropicalDesert", disableTropicalDesert).getBoolean();
 		disableGreenExtremeHills = cfg.get(CATEGORY_BIOMES, "disableGreenExtremeHills", disableGreenExtremeHills).getBoolean();
 		disableGreenHills = cfg.get(CATEGORY_BIOMES, "disableGreenHills", disableGreenHills).getBoolean();
 		disablePlateau = cfg.get(CATEGORY_BIOMES, "disablePlateau", disablePlateau).getBoolean();
@@ -196,7 +208,10 @@ public class Config {
 		disableLake = cfg.get(CATEGORY_BIOMES, "disableLake", disableLake).getBoolean();
 		disableFrozenLake = cfg.get(CATEGORY_BIOMES, "disableFrozenLake", disableFrozenLake).getBoolean();
 		disableSahel = cfg.get(CATEGORY_BIOMES, "disableSahel", disableSahel).getBoolean();
-		disableDunes = cfg.get(CATEGORY_BIOMES, "disableDunes", disableDunes).getBoolean();
+		disableSandstoneDunes = cfg.get(CATEGORY_BIOMES, "disableSandstoneDunes", disableSandstoneDunes).getBoolean();
+		disableSandDunes = cfg.get(CATEGORY_BIOMES, "disableSandDunes", disableSandDunes).getBoolean();
+		disableRedSandDunes = cfg.get(CATEGORY_BIOMES, "disableRedSandDunes", disableRedSandDunes).getBoolean();
+		disableOrangeSandDunes = cfg.get(CATEGORY_BIOMES, "disableOrangeSandDunes", disableOrangeSandDunes).getBoolean();
 		disableAlps = cfg.get(CATEGORY_BIOMES, "disableAlps", disableAlps).getBoolean();
 		disableHighlands = cfg.get(CATEGORY_BIOMES, "disableHighlands", disableHighlands).getBoolean();
 		disableGlacier = cfg.get(CATEGORY_BIOMES, "disableGlacier", disableGlacier).getBoolean();
@@ -206,13 +221,14 @@ public class Config {
 		disableRedMountains = cfg.get(CATEGORY_BIOMES, "disableRedMountains", disableRedMountains).getBoolean();
 		disableBlueMountains = cfg.get(CATEGORY_BIOMES, "disableBlueMountains", disableBlueMountains).getBoolean();
 		disableGreyMountains = cfg.get(CATEGORY_BIOMES, "disableGreyMountains", disableGreyMountains).getBoolean();
-		disableBadlands = cfg.get(CATEGORY_BIOMES, "disableBadlands", disableBadlands).getBoolean();
+		disableClaylands = cfg.get(CATEGORY_BIOMES, "disableClaylands", disableClaylands).getBoolean();
 		disableThicket = cfg.get(CATEGORY_BIOMES, "disableThicket", disableThicket).getBoolean();
 		disableOvergrownPlains = cfg.get(CATEGORY_BIOMES, "disableOvergrownPlains", disableOvergrownPlains).getBoolean();
 		disableLushSwamp = cfg.get(CATEGORY_BIOMES, "disableLushSwamp", disableLushSwamp).getBoolean();
 		disableBlossomWoods = cfg.get(CATEGORY_BIOMES, "disableBlossomWoods", disableBlossomWoods).getBoolean();
 		disableWoodlands = cfg.get(CATEGORY_BIOMES, "disableWoodlands", disableWoodlands).getBoolean();
 		disableBlueTaiga = cfg.get(CATEGORY_BIOMES, "disableBlueTaiga", disableBlueTaiga).getBoolean();
+		disableColdBlueTaiga = cfg.get(CATEGORY_BIOMES, "disableColdBlueTaiga", disableColdBlueTaiga).getBoolean();
 		disableCrimsonWoods = cfg.get(CATEGORY_BIOMES, "disableCrimsonWoods", disableCrimsonWoods).getBoolean();
 		disableSilkglades = cfg.get(CATEGORY_BIOMES, "disableSilkglades", disableSilkglades).getBoolean();
 		disableColdDesert = cfg.get(CATEGORY_BIOMES, "disableColdDesert", disableColdDesert).getBoolean();
@@ -244,6 +260,12 @@ public class Config {
 		disableColdArchipelago = cfg.get(CATEGORY_BIOMES, "disableColdArchipelago", 		disableColdArchipelago).getBoolean();
 		disableRainforestArchipelago = cfg.get(CATEGORY_BIOMES, "disableRainforestArchipelago", disableRainforestArchipelago).getBoolean();
 		disableDenseShrubland = cfg.get(CATEGORY_BIOMES, "disableDenseShrubland", disableDenseShrubland).getBoolean();
+		disableDryShrubland = cfg.get(CATEGORY_BIOMES, "disableDryShrubland", disableDryShrubland).getBoolean();
+		disableOakForest = cfg.get(CATEGORY_BIOMES, "disableOakForest", disableOakForest).getBoolean();
+		disableStonelands = cfg.get(CATEGORY_BIOMES, "disableStonelands", disableStonelands).getBoolean();
+		disableAutumnTaiga = cfg.get(CATEGORY_BIOMES, "disableAutumnTaiga", disableAutumnTaiga).getBoolean();
+		disableBlackSandDunes = cfg.get(CATEGORY_BIOMES, "disableBlackSandDunes", disableBlackSandDunes).getBoolean();
+		disableTallOakForest = cfg.get(CATEGORY_BIOMES, "disableTallOakForest", disableTallOakForest).getBoolean();
 		
     }
     private static void initOreConfig(Configuration cfg) {

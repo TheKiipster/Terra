@@ -46,7 +46,7 @@ public class BiomeSaltLake extends Biome
 	public BiomeSaltLake() 
 	{
 		
-		super(new BiomeProperties("Salt Lake").setBaseHeight(-0.7F).setHeightVariation(0.16F).setTemperature(0.8F).setRainfall(0.4F).setWaterColor(0x6c2098));
+		super(new BiomeProperties("Salt Lake").setBaseHeight(-0.7F).setHeightVariation(0.1F).setTemperature(0.8F).setRainfall(0.4F).setWaterColor(0x6c2098));
 		
 		BiomeManager.addVillageBiome(BiomeInit.SALT_LAKE , false);
 		

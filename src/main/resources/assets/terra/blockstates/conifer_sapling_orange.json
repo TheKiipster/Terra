@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+     "defaults": {
+        "model": "terra:conifer_sapling_orange",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{ }],
+        "inventory": [{ }],
+        "stage=0":[{ "model": "terra:conifer_sapling_orange"}],
+        "stage=1":[{"model": "terra:conifer_sapling_orange" }]
+    }
+}

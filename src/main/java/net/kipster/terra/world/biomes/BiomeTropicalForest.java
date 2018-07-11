@@ -94,6 +94,7 @@ public class BiomeTropicalForest extends Biome
 	     this.decorator.clayPerChunk = 4;
 	     this.decorator.cactiPerChunk = 7;
 	        
+	     this.spawnableCreatureList.clear();
 	     this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityChicken.class, 4, 4, 4));
 	     this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntityOcelot.class, 2, 1, 1));
 	     this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityParrot.class, 40, 1, 2));

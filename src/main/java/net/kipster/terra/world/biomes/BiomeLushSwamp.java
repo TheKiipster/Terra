@@ -74,6 +74,8 @@ public class BiomeLushSwamp extends Biome
 	        this.decorator.sandPatchesPerChunk = 0;
 	        this.decorator.gravelPatchesPerChunk = 0;
 	        this.decorator.grassPerChunk = 5;
+	        
+	        this.spawnableCreatureList.clear();
 	        this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));
 	        this.flowers.clear();
             for (BlockFlower.EnumFlowerType type : BlockFlower.EnumFlowerType.values())
